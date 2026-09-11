@@ -1,4 +1,4 @@
-import profile from "./assets/profile.svg"
+import profile from "./assets/uerprofDef.png"
 function Profile(){
     return(
         <>
