@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.header p{
+    padding: 10px;
+    border-radius: 60px;
+    border: 2px ;
+}
+.header p:hover{
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px ;
+    background-color: aquamarine;
+}
+#logo{
+    height: 80px;
+    width: 120px;
+    object-fit: cover;
+}
+.herosec{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    /* border: 2px solid black; */
+}
+#line{
+    margin-top:15px;
+    height: 40px;
+    border-right: 2px solid rgba(11, 10, 10, 0.441);
+    border-radius: 5px;
+}
+#search{
+    margin-top:15px;
+    border-radius:50px;
+    height:50px;
+    width:25%;
+    padding-left:10px;
+    font-size:18px;
+    border:2px solid rgba(0, 0, 0, 0.452);
+}
+#bar,&:focus{
+    border:0px black;
+    outline: none;
+    margin-left:10px;
+    width:90%;
+    height:100%;
+    border-radius:50px;
+    padding-left:10px;
+    font-size:18px;
+}
+.fa-solid{
+    padding-left: 2px ;
+    color: rgba(8, 8, 8, 0.724);
+}
+.usprofile{
+   border:5px solid black;
+   border-radius:30px;
+}
