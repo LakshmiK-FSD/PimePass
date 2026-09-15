@@ -14,6 +14,11 @@ function Header(){
           <span id="search"><i className="fa-solid fa-magnifying-glass"></i>
           <input id="bar" placeholder="Search,Events,Movies,..."/></span>
           <Profile />
+          <button className="hamburger">
+  <span className="line"></span>
+  <span className="line"></span>
+  <span className="line"></span>
+</button>
           </div>
         </>
     );

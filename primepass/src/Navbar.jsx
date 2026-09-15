@@ -4,9 +4,9 @@ function Navbar(){
         <div className="header">
             <p>Home</p>
             <p>AboutUs</p>
-            <p>EventPass</p>
-            <p>MoviePass</p>
-            <p>Support</p>
+            <p>Passes</p>
+            <p>Organize</p>
+            <p>MyPasses</p>
         </div>
         </>
     );
