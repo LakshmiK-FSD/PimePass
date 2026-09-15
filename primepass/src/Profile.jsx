@@ -1,4 +1,4 @@
-import defaultprof from "./assets/profuser.png"
+import defaultprof from "./assets/userdef.png"
 function Profile(props){
        const profile=props.profileuse || defaultprof;
     return(
