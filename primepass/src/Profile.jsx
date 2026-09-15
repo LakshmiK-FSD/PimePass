@@ -1,11 +1,11 @@
-import profile from "./assets/uerprofDef.png"
-function Profile(){
+import defaultprof from "./assets/profuser.png"
+function Profile(props){
+       const profile=props.profileuse || defaultprof;
     return(
-        <>
         <div id="usprofile" >
-             <img  src={profile} alt="" />
+            <img id="imagecs" src={profile} alt="" />
         </div>
-        </>
+        
     );
 }
 export default Profile;

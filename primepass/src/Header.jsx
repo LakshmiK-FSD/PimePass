@@ -1,17 +1,17 @@
-import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Navbar from "./Navbar"
 import logo from "./assets/logo.png"
+import Profile from "./Profile"
 
 function Header(){
     return (
         <>
-        <div className="herosec">
+        <div className="headersec">
         <img id="logo" src={logo} alt="" />
         <span id="line"></span>
           <Navbar/>
           <span id="search"><i class="fa-solid fa-magnifying-glass"></i>
-          <input id="bar" placeholder=" Search"/></span>
-          <Profile/>
+          <input id="bar" placeholder="Search,Events,Movies,..."/></span>
+          <Profile />
           </div>
         </>
     );
