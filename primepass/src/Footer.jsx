@@ -1,4 +1,5 @@
 import logo from './assets/fav2.png';
+import Media from './Media';
 
 function Footer() {
   return (
@@ -14,6 +15,7 @@ function Footer() {
           <p>
             Your all-in-one pass for movies and live events - book seats, skip queues, and never miss a show.
           </p>
+        <Media/>
         </div>
 
         <div className="fs1">

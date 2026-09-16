@@ -2,7 +2,7 @@ import Navbar from "./Navbar"
 import logo from "./assets/logo.png"
 import Profile from "./Profile"
 import { MapPin } from 'lucide-react';
-function Header(){
+function Header(props){
     return (
         <>
         <div className="headersec">
@@ -14,11 +14,22 @@ function Header(){
           <span id="search"><i className="fa-solid fa-magnifying-glass"></i>
           <input id="bar" placeholder="Search,Events,Movies,..."/></span>
           <Profile />
-          <button className="hamburger">
-  <span className="line"></span>
-  <span className="line"></span>
-  <span className="line"></span>
-</button>
+          <div className="hamburger">
+           <span className="line"></span>
+           <span className="line"></span>
+           <span className="line"></span>
+           <div className="hamburgmenu">
+            <div className="hamprofile">
+             <Profile />
+           {props.usernamepr || <h6>Guest</h6>}
+            </div>
+             <p>Home</p>
+             <p>AboutUs</p>
+             <p>Passes</p>
+             <p>Organize</p>
+             <p>MyPasses</p>
+           </div>
+</div>
           </div>
         </>
     );

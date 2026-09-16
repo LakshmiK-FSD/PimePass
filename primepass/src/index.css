@@ -9,17 +9,20 @@
     display: flex;
     flex-direction: row;
     gap:10px;
+
 }
 .header p{
     padding: 10px;
     border-radius: 60px;
     border: 2px ;
+    font-weight: 700;
 }
 .header p:hover{
     padding: 10px;
     border-radius: 15px;
     border: 2px ;
     background-color: aquamarine;
+    transition: 0.5s;
 }
 #logo{
     height: 80px;
@@ -196,6 +199,95 @@ flex-direction: column;
     padding:3px 0 0 8px;
     font-size:12px;
 }
+.sociallink{
+    margin-left:15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.sociallink a{
+
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.sociallink svg{
+    position: relative;
+    top: 2.5px;
+    left:6px;
+}
+
+.sociallink svg:hover,a:hover{
+    color: #70da07;
+}
+.sociallink a:hover{
+    border-radius: 50%;
+    border: 1px solid #70da07;
+}
+.cardalign{
+    display: flex;
+    flex-direction:row;
+    gap:10px;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    
+}
+.card{
+    padding:10px;
+    border-radius: 5px;
+    width: 210px;
+    & img{
+        width:200px;
+        height: 300px;
+        border-radius:10px;
+    }
+    & p{
+        font-size: 13px;
+        font-weight: 500;
+        color: #1f2020f0;
+       text-align: center;
+    }
+    & h5{
+        text-align: center;
+        font-size:20px;
+    }
+}
+.contents{
+    padding:40px 20px 0px 60px;
+}
+.slide, .slide img{
+   border-radius: 30px;
+    height: auto;
+    width:800px;   
+  
+}
+.slider{
+    border-radius: 30px;
+    margin:30px 0 30px 250px;
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+      width:800px; 
+      gap: 2px;  
+      scrollbar-width: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:920px) {
    .footbox{
       display: grid;
@@ -215,50 +307,21 @@ flex-direction: column;
         display: none;
     }
 }
-@media (max-width:1255px) {
+@media (max-width:1271px) {
     #bar,&:focus{
     margin-left:5px;
     border-radius:50px;
     padding-left:3px;
     font-size:15px;
 }
-    
 #search i{
 display: none;
 }
 
 }
 @media (max-width:1000px) {
-    .hamburger{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 33px;
-    height: 27px;
-    border:none;
-    cursor: pointer;
-    padding:2px;
-    background-color:rgb(34, 32, 32);
-    border-radius: 5px;
-   }
-   .line{
-    width:60%;
-    border:1.5px solid #7a6868;
-    border-radius: 5px;
-    /* padding: 2px;
-    height:2px;
-    width: 100%;
-    background-color: rgb(72, 71, 71);
-    border-radius: 5px; */
-   }
-    #usprofile{
-        display: none;
-    }
-    .header{
-    display: none;
-}
-#search{
-    margin-left: 10px;
+    #search{
+    margin-left: 35px;
     margin-top:4px;
     border-radius:50px;
     height:45px;
@@ -273,4 +336,80 @@ display: none;
     padding-left:3px;
     font-size:15px;
 }
+    .hamburger{
+    margin-right:20px;
+   margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33px;
+    height: auto;
+    border:1px solid;
+    cursor: pointer;
+    padding:4px;
+    background-color:rgba(77, 74, 74, 0.737);
+    border-radius: 5px;
+   }
+   .line{
+        margin:1px;
+        height: 2.6px;
+        border-radius:3px;
+        background-color: #f5f3f3;
+   }
+    #usprofile{
+        display: none;
+    }
+    .header{
+    display: none;
+}
+
+
+.hamburgmenu{
+ display: none;
+ position:fixed;
+ border-radius: 5px;
+ height: 500px;
+ width: 200px;
+ padding: 20px;
+ top: 0;
+ right: 0;
+ z-index:1;
+ border: 1px solid;
+ background-color: rgb(102, 58, 11);
+ .hamprofile h6{
+    position: relative;
+    top: 25px;
+    left: 65px;
+    font-size: 17px;
+    color: rgb(236, 242, 235);
+ }
+ &  #usprofile{
+    display: block;
+    position: relative;
+    top: 20px;
+    left:90px;
+    z-index: 3;
+ }
+
+ & p{
+    position: relative;
+    top: 70px;
+    left: 10px;
+    padding: 15px;
+    color:rgba(128, 128, 128, 0.792);
+ }
+ & p:hover{
+    color: #d1522e;
+ }
+
+}
+.hamburger:hover .hamburgmenu{
+    display: block;
+}
+.hamburger:hover{
+    .hamburger{
+        display: none;
+    }
+}
+
 }

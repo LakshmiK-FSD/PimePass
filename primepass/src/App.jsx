@@ -1,12 +1,14 @@
 import './App.css'
+import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
-import hero from './assets/image.png'
+import Slider from './Slider';
 function App() {
 return(
   <><div className='primepass'>
   <Header/>
-  <img src={hero} alt="" />
+  <Slider/>
+<Content/>
   <Footer/>
   </div>
   </>
