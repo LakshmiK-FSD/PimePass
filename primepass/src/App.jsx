@@ -7,9 +7,10 @@ function App() {
 return(
   <><div className='primepass'>
   <Header/>
+  <div id='bgall'>
   <Slider/>
 <Content/>
-  <Footer/>
+  <Footer/></div>
   </div>
   </>
 );
