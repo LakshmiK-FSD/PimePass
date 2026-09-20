@@ -46,7 +46,7 @@ const slide = movies.map((element)=>(<div className="slide" key={element.id}>
         <div className="sliderDot">
         <div ref={scrollRef} className="slider">
         {slide}
-        </div>
+        </div>  
          <div className="dotsSli">
            {doter}
         </div>

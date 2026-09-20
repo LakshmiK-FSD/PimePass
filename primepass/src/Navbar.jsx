@@ -1,12 +1,14 @@
+import { useNavigate } from "react-router-dom";
 function Navbar(){
+     const navigate = useNavigate();
     return (
         <>
         <div className="header">
-            <p>Home</p>
-            <p>AboutUs</p>
-            <p>Passes</p>
-            <p>Organize</p>
-            <p>MyPasses</p>
+            <p onClick={()=>navigate('/')}>Home</p>
+            <p onClick={()=>navigate('/aboutus')}>AboutUs</p>
+            <p onClick={()=>navigate('/aboutus')}>Passes</p>
+            <p onClick={()=>navigate('/aboutus')}>Organize</p>
+            <p onClick={()=>navigate('/aboutus')}>MyPasses</p>
         </div>
         </>
     );

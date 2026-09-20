@@ -6,7 +6,7 @@ import Slider from './Slider';
 function App() {
 return(
   <><div className='primepass'>
-  <Header/>
+  <Header show={true}/>
   <div id='bgall'>
   <Slider/>
 <Content/>

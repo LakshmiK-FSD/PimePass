@@ -4,61 +4,101 @@
       "id": 1,
       "img": "http://localhost:5000/photos/blastvalimai.png",
       "movename": "Valimai",
-      "description": "A gripping police drama centered on speed and justice."
+      "description": "A gripping police drama centered on speed and justice.",
+      "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 2,
       "img": "http://localhost:5000/photos/Blast.png",
       "movename": "Blast",
-      "description": "An action-packed thriller with explosive sequences."
+      "description": "An action-packed thriller with explosive sequences.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 3,
       "img": "http://localhost:5000/photos/Eleven.png",
       "movename": "Eleven",
-      "description": "A mysterious story about hidden powers and destiny."
+      "description": "A mysterious story about hidden powers and destiny.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 4,
       "img": "http://localhost:5000/photos/Jananayagan.png",
       "movename": "Favorite Two",
-      "description": "A lighthearted tale of friendship and fun."
+      "description": "A lighthearted tale of friendship and fun.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 5,
       "img": "http://localhost:5000/photos/Vadam.png",
       "movename": "Image",
-      "description": "A visual journey exploring imagination and art."
+      "description": "A visual journey exploring imagination and art.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 6,
       "img": "http://localhost:5000/photos/Jananayagan.png",
       "movename": "Jananayagan",
-      "description": "A patriotic drama celebrating leadership and courage."
+      "description": "A patriotic drama celebrating leadership and courage.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 7,
       "img": "http://localhost:5000/photos/Jananayagan.png",
       "movename": "Logo",
-      "description": "An experimental short film about identity."
+      "description": "An experimental short film about identity.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 8,
       "img": "http://localhost:5000/photos/Jananayagan.png",
       "movename": "Mandadi",
-      "description": "A family drama filled with emotions and values."
+      "description": "A family drama filled with emotions and values.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 9,
       "img": "http://localhost:5000/photos/Vadam.png",
       "movename": "User Defined",
-      "description": "A customizable interactive experience for audiences."
+      "description": "A customizable interactive experience for audiences.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     },
     {
       "id": 10,
       "img": "http://localhost:5000/photos/Vadam.png",
       "movename": "Vadam",
-      "description": "A rural action drama rooted in tradition."
+      "description": "A rural action drama rooted in tradition.",
+            "arrangement":{
+        "seating":1,
+        "capacity":30
+      }
     }
   ]
 }

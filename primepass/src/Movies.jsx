@@ -5,10 +5,9 @@ function Movies() {
 useEffect(()=>{fetch("http://localhost:5000/movies")
     .then((data)=>data.json())
     .then((response)=>
-      
        setMovie(response))
-    .catch((error)=>console.error("Error fetching data:", error))},[])
-  const movieCard =Movies.map((res)=> <MoviesCard id={res.id} img={res.img} movename={res.movename} description={res.description}/>)
+    .catch((error)=>{console.error("Error fetching data:", error)})},[])
+  const movieCard =Movies.map((res)=> <MoviesCard id={res.id} img={res.img} movename={res.movename} description={res.description} seating={res.arrangement.seating} capacity={res.arrangement.capacity}/>)
     return(
     <div className='cardalign'> 
       {movieCard}
