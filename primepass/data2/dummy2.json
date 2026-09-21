@@ -1,0 +1,38 @@
+{
+  "Valimai": [
+    { "castId": 201, "movieId": 1, "name": "Ajith Kumar", "role": "ACP Arjun Kumar" },
+    { "castId": 202, "movieId": 1, "name": "Huma Qureshi", "role": "Sophia" },
+    { "castId": 203, "movieId": 1, "name": "Kartikeya Gummakonda", "role": "Wolf Ranga" },
+    { "castId": 204, "movieId": 1, "name": "Gurbani Judge", "role": "Sara" }
+  ],
+  "Blast": [
+    { "castId": 205, "movieId": 2, "name": "Arjun Sarja", "role": "Rajaraman" },
+    { "castId": 206, "movieId": 2, "name": "Abhirami", "role": "Neelaveni" },
+    { "castId": 207, "movieId": 2, "name": "Preity Mukhundhan", "role": "Nila" },
+    { "castId": 208, "movieId": 2, "name": "John Kokken", "role": "Varun Dhayalan" }
+  ],
+  "Eleven": [
+    { "castId": 209, "movieId": 3, "name": "Naveen Chandra", "role": "Aravind" },
+    { "castId": 210, "movieId": 3, "name": "Reyaa Hari", "role": "Sanjana" },
+    { "castId": 211, "movieId": 3, "name": "Abhirami", "role": "Shanthi" },
+    { "castId": 212, "movieId": 3, "name": "Aadukalam Naren", "role": "Chandrasekar" }
+  ],
+  "Jananayagan": [
+    { "castId": 213, "movieId": 6, "name": "Joseph Vijay", "role": "Vetri Kondan" },
+    { "castId": 214, "movieId": 6, "name": "Pooja Hegde", "role": "Kayal" },
+    { "castId": 215, "movieId": 6, "name": "Bobby Deol", "role": "John Himler" },
+    { "castId": 216, "movieId": 6, "name": "Mamitha Baiju", "role": "Viji" }
+  ],
+  "Mandadi": [
+    { "castId": 217, "movieId": 8, "name": "Soori", "role": "Muthukaali" },
+    { "castId": 218, "movieId": 8, "name": "Suhas", "role": "Saattapuli" },
+    { "castId": 219, "movieId": 8, "name": "Mahima Nambiar", "role": "Angel Rakkamma" },
+    { "castId": 220, "movieId": 8, "name": "Sathyaraj", "role": "Machamuni" }
+  ],
+  "Vadam": [
+    { "castId": 221, "movieId": 10, "name": "Vimal", "role": "Lead Villager" },
+    { "castId": 222, "movieId": 10, "name": "Natty Subramaniam", "role": "Villager" },
+    { "castId": 223, "movieId": 10, "name": "Sanashka Sri", "role": "Village Woman" },
+    { "castId": 224, "movieId": 10, "name": "Munishkanth", "role": "Comic Relief" }
+  ]
+}
