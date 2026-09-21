@@ -44,8 +44,7 @@
     "description": "A visual journey exploring imagination and art.",
     "img": "http://localhost:5000/photos/Vadam.png",
     "theaterIds": [102,103,104],
-    
-"castIds":"Vadam"
+    "castIds":"Vadam"
      
   },
   {
