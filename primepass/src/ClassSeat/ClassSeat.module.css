@@ -1,0 +1,29 @@
+.classs{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    gap: 3px;
+    
+   
+}
+.seat{
+    text-align: center;
+    align-content: center;
+    background-color: blueviolet;
+    border:1px solid ;
+    border-radius:10px;
+    height:7vh;
+    width:4vw;
+    font-size:10px;
+    font-weight: 800;
+    &:hover{
+        cursor: pointer;
+    }
+
+}
+.rrowf{
+    display: flex;
+    flex-direction:row;
+    gap:2px;
+}
+

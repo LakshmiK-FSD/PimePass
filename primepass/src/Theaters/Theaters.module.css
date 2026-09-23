@@ -1,0 +1,29 @@
+.image{
+    transform: translateY(10px);
+    max-height:400px;
+    height:auto;
+    width: 100%;
+   padding-top: 10px;
+   margin-top:20px;
+   top:10px;
+   object-fit:cover;
+}
+.line{
+    width:100%;
+    border: 1px solid rgb(79, 73, 73);
+    padding-top:40px;
+}
+.theaters{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+     padding-bottom: 10px;
+}
+.ovie{
+   
+    background-color: rgba(176, 208, 208, 0.801);
+}
+.side{
+    padding:0 30px 60px 30px ;
+}

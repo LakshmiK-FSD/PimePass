@@ -1,0 +1,43 @@
+.centseat{
+    
+    justify-items: center;   
+  align-items: center; 
+  h2{
+    font-weight: 900;
+    padding:20px;
+    font-size:35px;
+    color: rgb(231, 236, 243);
+  }
+  h3{
+     font-weight: 900;
+  }
+}
+
+.screimg{
+    display: flex;
+    padding-top:5%;
+    justify-content: center;  
+    img{
+        height:auto;
+        width: 50%;
+    }
+    margin-bottom: 20px;
+}
+.theatcent{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border:3px double rgb(137, 117, 117);
+    background-color: #ffffffde;
+}
+.maintheat{
+  padding:30px;
+    height:100%;
+     display: flex;
+         flex-direction: column; 
+    justify-items: center;   
+  align-items: center; 
+  background:linear-gradient(90deg, #4b6cb7 0%, #182848e7 100%);
+}

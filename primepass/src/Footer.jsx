@@ -21,10 +21,10 @@ function Footer() {
         <div className="fs1">
           <h4>Company</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#support">Support</a></li>
+            <li><a href="#carrers">Careers</a></li>
           </ul>
         </div>
 

@@ -5,7 +5,7 @@ import Header from './Header';
 import Slider from './Slider';
 function App() {
 return(
-  <><div className='primepass'>
+  <><div  className='primepass'>
   <Header show={true}/>
   <div id='bgall'>
   <Slider/>

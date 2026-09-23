@@ -4,8 +4,8 @@ import './index.css'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import App from './App'
 import AboutUs from './AboutUs'
-import Seating from './Seating'
-import Theaters from './Theaters'
+import Seating from './Seating/Seating'
+import Theaters from './Theaters/Theaters'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element:<AboutUs/>
   },
     {
-    path:"/seating",
+    path:"/seating/:theatnam/:tmid",
     element:<Seating/>
   },{
     path:"/theaters/:id",

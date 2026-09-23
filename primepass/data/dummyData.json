@@ -1,214 +1,381 @@
-{"movies":[
-  {
-    "id": 1,
-    "movename": "Valimai",
-    "description": "A gripping police drama centered on speed and justice.",
-    "img": "http://localhost:5000/photos/blastvalimai.png",
-    "theaterIds": [101, 102],
-   
-"castIds": "Valimai"
-     
-  },
-  {
-    "id": 2,
-    "movename": "Blast",
-    "description": "An action-packed thriller with explosive sequences.",
-    "img": "http://localhost:5000/photos/Blast.png",
-    "theaterIds": [103],
-   "castIds": "Blast"
-     
-  },
-  {
-    "id": 3,
-    "movename": "Eleven",
-    "description": "A mysterious story about hidden powers and destiny.",
-    "img": "http://localhost:5000/photos/Eleven.png",
-    "theaterIds": [104],
-    
-"castIds": "Eleven"
-     
-  },
-  {
-    "id": 4,
-    "movename":  "Jananayagan",
-    "description": "A lighthearted tale of friendship and fun.",
-    "img": "http://localhost:5000/photos/Jananayagan.png",
-    "theaterIds": [104,103],
-    
-"castIds":  "Jananayagan"
-     
-  },
-  {
-    "id": 5,
-    "movename": "Vadam",
-    "description": "A visual journey exploring imagination and art.",
-    "img": "http://localhost:5000/photos/Vadam.png",
-    "theaterIds": [102,103,104],
-    "castIds":"Vadam"
-     
-  },
-  {
-    "id": 6,
-    "movename": "Jananayagan",
-    "description": "A patriotic drama celebrating leadership and courage.",
-    "img": "http://localhost:5000/photos/Jananayagan.png",
-    "theaterIds": [103,104],
-    
-"castIds": "Jananayagan"
-     
-  },
-  {
-    "id": 7,
-    "movename": "Jananayagan",
-    "description": "An experimental short film about identity.",
-    "img": "http://localhost:5000/photos/Jananayagan.png",
-    "theaterIds": [103,104],
-    "castIds": "Jananayagan"
-     
-  },
-  {
-    "id": 8,
-    "movename": "Jananayagan",
-    "description": "A family drama filled with emotions and values.",
-    "img": "http://localhost:5000/photos/Jananayagan.png",
-    "theaterIds": [103],
-    
-"castIds": "Jananayagan"
-     
-  },
-  {
-    "id": 9,
-    "movename": "Vadam",
-    "description": "A customizable interactive experience for audiences.",
-    "img": "http://localhost:5000/photos/Vadam.png",
-    "theaterIds": [102],
-    
-"castIds":"Vadam"
-     
-  },
-  {
-    "id": 10,
-    "movename": "Vadam",
-    "description": "A rural action drama rooted in tradition.",
-    "img": "http://localhost:5000/photos/Vadam.png",
-    "theaterIds": [102,104],
-    
-"castIds": "Vadam"
-  }
-],
-"101":[{
-  "timings": [
+{
+  "movies":[
     {
-      "timeId": 1,
-      "showTime": "10:00 AM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "booked" }
-      ]
+      "id": 1,
+      "movename": "Valimai",
+      "description": "A gripping police drama centered on speed and justice.",
+      "img": "http://localhost:5000/photos/blastvalimai.png",
+      "theaterIds": ["RangaRaja","LACinema"],
+      "castIds": "Valimai",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
     },
     {
-      "timeId": 2,
-      "showTime": "2:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
+      "id": 2,
+      "movename": "Blast",
+      "description": "An action-packed thriller with explosive sequences.",
+      "img": "http://localhost:5000/photos/Blast.png",
+      "theaterIds": ["PVRMall"],
+      "castIds": "Blast",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
     },
     {
-      "timeId": 3,
-      "showTime": "6:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "booked" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
+      "id": 3,
+      "movename": "Eleven",
+      "description": "A mysterious story about hidden powers and destiny.",
+      "img": "http://localhost:5000/photos/Eleven.png",
+      "theaterIds": ["IMax"],
+      "castIds": "Eleven",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 4,
+      "movename": "Jananayagan",
+      "description": "A lighthearted tale of friendship and fun.",
+      "img": "http://localhost:5000/photos/Jananayagan.png",
+      "theaterIds": ["IMax", "PVRMall"],
+      "castIds": "Jananayagan",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 5,
+      "movename": "Vadam",
+      "description": "A visual journey exploring imagination and art.",
+      "img": "http://localhost:5000/photos/Vadam.png",
+      "theaterIds": ["LACinema", "PVRMall","IMax"],
+      "castIds": "Vadam",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 6,
+      "movename": "Jananayagan",
+      "description": "A patriotic drama celebrating leadership and courage.",
+      "img": "http://localhost:5000/photos/Jananayagan.png",
+      "theaterIds": ["PVRMall","IMax"],
+      "castIds": "Jananayagan",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 7,
+      "movename": "Jananayagan",
+      "description": "An experimental short film about identity.",
+      "img": "http://localhost:5000/photos/Jananayagan.png",
+      "theaterIds": ["PVRMall","IMax"],
+      "castIds": "Jananayagan",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 8,
+      "movename": "Jananayagan",
+      "description": "A family drama filled with emotions and values.",
+      "img": "http://localhost:5000/photos/Jananayagan.png",
+      "theaterIds": ["PVRMall"],
+      "castIds": "Jananayagan",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 9,
+      "movename": "Vadam",
+      "description": "A customizable interactive experience for audiences.",
+      "img": "http://localhost:5000/photos/Vadam.png",
+      "theaterIds": ["LACinema"],
+      "castIds": "Vadam",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 10,
+      "movename": "Vadam",
+      "description": "A rural action drama rooted in tradition.",
+      "img": "http://localhost:5000/photos/Vadam.png",
+      "theaterIds": ["LACinema","IMax"],
+      "castIds": "Vadam",
+      "details": {
+        "title": "Mandaadi",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    }
+  ],
+  "RangaRaja":[{
+    "theaterAddress": ["Cuddalore", "LandMark"],
+    "cancelation": "not available",
+    "showtimes": [
+      {
+        "timeId": 1,
+        "showTime": "10:00 AM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 2,
+        "showTime": "2:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 3,
+        "showTime": "6:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      }
+    ]
+  }],
+  "LACinema":[{
+    "theaterAddress": ["Cuddalore", "LandMark"],
+    "cancelation": "not available",
+    "showtimes": [
+      {
+        "timeId": 1,
+        "showTime": "10:00 AM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 2,
+        "showTime": "2:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 3,
+        "showTime": "6:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      }
+    ]
+  }],
+  "PVRMall": [{
+    "theaterAddress": ["Cuddalore", "LandMark"],
+    "cancelation": "not available",
+    "showtimes": [
+      {
+        "timeId": 1,
+        "showTime": "10:00 AM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 2,
+        "showTime": "2:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 3,
+        "showTime": "6:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      }
+    ]
+  }],
+  "IMax": [{
+    "theaterAddress": ["Cuddalore", "LandMark"],
+    "cancelation": "not available",
+    "showtimes": [
+      {
+        "timeId": 1,
+        "showTime": "10:00 AM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 2,
+        "showTime": "2:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      },
+      {
+        "timeId": 3,
+        "showTime": "6:00 PM",
+        "seats": ["First Class","Elite Class","Second Class"]
+      }
+    ]
+  }],
+"Elite Class":[{
+  "clrow":[
+    { "row": "A", "amount":210, "number": 5, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "A", "amount":210, "number": 6, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 7, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 8, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 9, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 10, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 11, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 12, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 13, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 14, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+     {"clrow":[
+    { "row": "B", "amount":210, "number": 5, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "B", "amount":210, "number": 6, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 7, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 8, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 9, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 10, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 11, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 12, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 13, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 14, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+    {"clrow":[
+    { "row": "C", "amount":210, "number": 5, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "C", "amount":210, "number": 6, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 7, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 8, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 9, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 10, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 11, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 12, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 13, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 14, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+  { "clrow":[
+  { "row": "D", "amount":210, "number": 5, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 6, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 7, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 8, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 9, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 10, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 11, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 12, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 13, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 14, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]},{
+
+"clrow":[
+  { "row": "E", "amount":210, "number": 5, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 6, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 7, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 8, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 9, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 10, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 11, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 12, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 13, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 14, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]
+    }]
+  ,
+  "First Class":[{
+  "clrow":[
+    { "row": "A", "amount":210, "number": 1, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "A", "amount":210, "number": 2, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 3, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 4, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+    { "clrow":[
+    { "row": "B", "amount":210, "number": 1, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "B", "amount":210, "number": 2, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 3, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 4, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+    {"clrow":[
+    { "row": "C", "amount":210, "number": 1, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "C", "amount":210, "number": 2, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 3, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 4, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+   {"clrow":[
+  { "row": "D", "amount":210, "number": 1, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 2, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 3, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 4, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]},
+
+{"clrow":[
+  { "row": "E", "amount":210, "number": 1, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 2, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 3, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 4, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]
+    }]
+,
+  "Second Class": [{
+  "clrow":[
+    { "row": "A", "amount":210, "number": 15, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "A", "amount":210, "number": 16, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 17, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "A", "amount":210, "number": 18, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+     {"clrow":[
+    { "row": "B", "amount":210, "number": 15, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "B", "amount":210, "number": 16, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 17, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "B", "amount":210, "number": 18, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+    {"clrow":[
+    { "row": "C", "amount":210, "number": 15, "status": "open","bookedBy": "null", "bookingTime": "null"},
+    { "row": "C", "amount":210, "number": 16, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 17, "status": "open","bookedBy": "null", "bookingTime": "null" },
+    { "row": "C", "amount":210, "number": 18, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
+   {"clrow":[
+  { "row": "D", "amount":210, "number": 15, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 16, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 17, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "D", "amount":210, "number": 18, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]},
+
+{"clrow":[
+  { "row": "E", "amount":210, "number": 15, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 16, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 17, "status": "open", "bookedBy": "null", "bookingTime": "null" },
+  { "row": "E", "amount":210, "number": 18, "status": "open", "bookedBy": "null", "bookingTime": "null" }
+]
     }
   ]
-
-}],
-"102":[{
-  "timings": [
-    {
-      "timeId": 1,
-      "showTime": "10:00 AM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "booked" }
-      ]
-    },
-    {
-      "timeId": 2,
-      "showTime": "2:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    },
-    {
-      "timeId": 3,
-      "showTime": "6:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "booked" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    }
-  ]
-
-}],"103":[{
-  "timings": [
-    {
-      "timeId": 1,
-      "showTime": "10:00 AM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "booked" }
-      ]
-    },
-    {
-      "timeId": 2,
-      "showTime": "2:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    },
-    {
-      "timeId": 3,
-      "showTime": "6:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "booked" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    }
-  ]
-
-}],"104":[{
-  "timings": [
-    {
-      "timeId": 1,
-      "showTime": "10:00 AM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "booked" }
-      ]
-    },
-    {
-      "timeId": 2,
-      "showTime": "2:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "open" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    },
-    {
-      "timeId": 3,
-      "showTime": "6:00 PM",
-      "seats": [
-        { "seatId": 1, "row": "A", "number": 1, "status": "booked" },
-        { "seatId": 2, "row": "A", "number": 2, "status": "open" }
-      ]
-    }
-  ]
-
-}]
-
 }
