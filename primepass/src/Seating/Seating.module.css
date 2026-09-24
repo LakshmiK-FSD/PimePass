@@ -41,3 +41,33 @@
   align-items: center; 
   background:linear-gradient(90deg, #4b6cb7 0%, #182848e7 100%);
 }
+.booking{
+ background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+  color: aliceblue;
+  font-weight: 900;
+  font-size:15px;
+  padding: 7px;
+    margin: 10px;
+  text-align: center;
+  transition: 1s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 8px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  p{
+    padding: 4px;
+  }
+  &:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+   p{
+    padding: 4px;
+  }
+}
+}
+

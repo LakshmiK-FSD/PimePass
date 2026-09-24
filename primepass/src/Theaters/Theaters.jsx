@@ -5,7 +5,6 @@ import useFetcher from "../useFetcher";
 
 function Theaters() {
   const { id } = useParams();
-
 const[dataa,error]=useFetcher(`http://localhost:5000/movies/${id}`);
     if(error){
         return(<>

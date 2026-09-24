@@ -2,28 +2,47 @@
     padding:10px;
     display:flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 7px;
     
    
 }
 .seat{
     text-align: center;
     align-content: center;
-    background-color: blueviolet;
-    border:1px solid ;
-    border-radius:10px;
-    height:7vh;
-    width:4vw;
+    background-color: rgba(154, 22, 174, 0.854);
+    box-shadow: 0 0 3px rgb(199, 28, 234);
+    border:1px solid grey;
+    border-radius:5px;
+    height:6vh;
+    width:3vw;
     font-size:10px;
     font-weight: 800;
-    &:hover{
-        cursor: pointer;
-    }
+    transition:background-color 1s ;
+ 
 
 }
 .rrowf{
     display: flex;
     flex-direction:row;
-    gap:2px;
+    gap:7px;
 }
 
+.seatselect{
+    border: 1px solid rgb(97, 165, 234);
+    box-shadow: rgb(77, 145, 213) 0px 0px 8.7px 0px inset;
+    text-align: center;
+    align-content: center;
+    border-radius:5px;
+    height:6vh;
+    width:3vw;
+    font-size:10px;
+    font-weight: 800;
+    background-color:rgba(109, 147, 170, 0.667);
+    transition:background-color 1s ;
+       &:hover{
+        cursor: pointer;
+    }
+}
+.sellec{
+    
+}

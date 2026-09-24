@@ -6,6 +6,7 @@ import App from './App'
 import AboutUs from './AboutUs'
 import Seating from './Seating/Seating'
 import Theaters from './Theaters/Theaters'
+import BookDetail from './BookDetail/BookDetail'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   },{
     path:"/theaters/:id",
     element:<Theaters/>
+  },
+  {
+    path:"/bookdetail",
+    element:<BookDetail/>
   }
 ]);
 createRoot(document.getElementById('root')).render(
