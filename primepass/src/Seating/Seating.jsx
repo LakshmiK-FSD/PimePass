@@ -3,13 +3,18 @@ import useFetcher from "../useFetcher";
 import ClassSeat from "../ClassSeat/ClassSeat";
 import screen from "../assets/screen.png";
 import style from "./Seating.module.css";
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 
 function Seating() {
-  const { theatnam, tmid } = useParams();
+  const { theatnam, tmid,movnnam,movId} = useParams();
+  
   const [parentData, setParen] = useState([]);
   const navi = useNavigate();
- const arr = parentData.filter((item,index)=>parentData.indexOf(item)===index)
+ const prr = parentData.reduce((acc,[stat,value])=>{(acc[stat]=value); return acc},{})
+ const arr = Object.entries(prr).filter(([a,b])=>b).map(([a,b])=>a)
+ useEffect(()=>{
+  console.log(arr)
+ })
   function senData(arr) {
     setParen(prev => [...prev, ...arr]); 
   }
@@ -19,6 +24,8 @@ function Seating() {
   if (!data) return <div>Loading...</div>;
 
   const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
+  const time= (timeData.map((e)=>e.showTime)).join();
+   const theatdet =[theatnam,tmid,time]
   if (!timeData) return <div>Loading...</div>;
 
   const seatsT = timeData.map(e => e.seats || []);
@@ -47,15 +54,16 @@ function Seating() {
           </div>
         </div>
       </div>
-     <div onClick={()=>navi("/bookdetail")} className={style.booking}>
+    {!arr.length ==0 && <div className={style.riglef}>
+            <div className={style.frst}>
+              <h5>Movie:</h5><h3>{movnnam}</h3>
+        <h5>Seats:</h5><h4>{arr.length}</h4>
+        {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
+      </div>
+      <div onClick={()=>navi(`/bookdetail/${movId}`,{state:{arr,theatdet}})} className={style.booking}>
       <p>BookNow</p>
      </div>
-
-      <div>
-        <h4>sellected seats:{arr.length}</h4>
-        {/* <h3>Collected from children:</h3> */}
-        <pre>{JSON.stringify(arr)}</pre> 
-      </div>
+      </div>}
     </div>
   );
 }

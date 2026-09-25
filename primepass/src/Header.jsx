@@ -8,11 +8,11 @@ function Header(props){
     return (
         <>
         <div className="headersec">
-        <img id="logo" src={logo} alt="" />
+        <img id="logo" src={logo} alt="" />{props.shownav && <>
         <span id="line"></span><div className="locname">
         <div className="location">
         <MapPin/> </div><p>Cuddalore</p></div>
-          <Navbar/>
+          <Navbar/></>}
           {props.show && <span id="search"><i className="fa-solid fa-magnifying-glass"></i>
           <input id="bar" placeholder="Search,Movies,Events,..."/></span>}
           <Profile />

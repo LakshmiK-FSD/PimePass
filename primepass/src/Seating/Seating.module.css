@@ -42,7 +42,7 @@
   background:linear-gradient(90deg, #4b6cb7 0%, #182848e7 100%);
 }
 .booking{
- background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+ background-image: linear-gradient(to right, #e52d27f0 0%, #b31217e4 51%, #e52d27e3 100%);
   color: aliceblue;
   font-weight: 900;
   font-size:15px;
@@ -70,4 +70,40 @@
   }
 }
 }
+.riglef{
+  background-color: #fcfcfdf7;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  padding:10px;
+  border-radius:10px;
 
+.frst{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  width: 50vw;
+}
+h4{
+  height:30px;
+  width: 30px;
+  font-size:20px;
+  text-align: center;
+  border-radius:10px 5px;
+  font-weight: 900;
+  background-color: #444547;
+    color: rgb(250, 249, 249);
+}
+h3{
+    padding-right:50px;
+    font-size:20px;
+  font-weight: 900;
+  color: rgb(57, 23, 23);
+}
+h5{
+  padding-right: 10px;
+   font-size:19px;
+  font-weight: 700;
+  color: #46484c;
+}
+}

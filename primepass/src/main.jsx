@@ -17,14 +17,14 @@ const router = createBrowserRouter([
     element:<AboutUs/>
   },
     {
-    path:"/seating/:theatnam/:tmid",
+    path:"/seating/:theatnam/:tmid/:movnnam/:movId",
     element:<Seating/>
   },{
     path:"/theaters/:id",
     element:<Theaters/>
   },
   {
-    path:"/bookdetail",
+    path:"/bookdetail/:movId",
     element:<BookDetail/>
   }
 ]);

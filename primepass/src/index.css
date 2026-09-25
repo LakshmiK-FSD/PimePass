@@ -446,16 +446,83 @@ gap: 20px;
 justify-content: center;
 align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
+/* bookinfo css */
+.boxbook{
+    
+    display: flex;
+    width: 100%;
+    margin-top:30px;
+    border-bottom: 1px solid rgb(255, 252, 252);
+    border-radius:2px;
+    img{
+        object-fit:cover;
+        max-height:160px;
+        max-width:110px;
+        border-radius:10px;
+    }
+    .pad{
+        padding:10px 30px 0 0;
+    }
+    h5{
+        color:#343638;
+    }
+    .imgbook{
+        justify-items: right;
+    }
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.colm{
+    display: flex;
+    flex-direction: column;
+}
+.row2{
+    
+    padding: 10px 20px 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row3{
+   
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+    h6{
+        font-size:13px;
+    }
+    h4{
+        font-size:20px;
+    }
+}
+.pt{
+color: #faefefb6;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+    padding-bottom:5px;
+    font-weight: 900;
+    h6{
+        font-size:13px;
+    }
+    h4{
+        font-size:20px;
+    }
+}
+.ticket {
+  margin: 60px;
+  width: 600px;
+  height: 380px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 6px 60px 0 60px;  
+clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 0 0 600 220 L 600 380 L 0 380 L 0 220 A 55 30 0 0 0 0 180 Z");
+}
 
 
 

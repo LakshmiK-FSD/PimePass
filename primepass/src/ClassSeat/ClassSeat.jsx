@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import useFetcher from "../useFetcher";
 import style from "./ClassSeat.module.css";
 function ClassSeat({ sendFun, classs }) {
-  const [seatArr,setArr] = useState([])
   const [seatts, setSeats] = useState({});
   const [data, error] = useFetcher(`http://localhost:5000/${classs}`);
   useEffect(()=>{(console.log(seatts));
-          setArr(Object.entries(seatts))
-          sendFun(seatArr)
+       
+          sendFun(Object.entries(seatts))
         }
 ,[seatts])
 

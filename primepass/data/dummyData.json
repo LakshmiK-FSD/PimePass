@@ -12,6 +12,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+        "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -29,6 +30,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -46,6 +48,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -63,6 +66,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -80,6 +84,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -97,6 +102,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -114,6 +120,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -131,6 +138,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -148,6 +156,7 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"
@@ -165,6 +174,25 @@
         "rating": "UA16+",
         "language": "Tamil",
         "duration": "2h 34m",
+         "view": "2D",
+        "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
+        "genres": ["Drama", "Action", "Sport"],
+        "releaseDate": "10 September 2026"
+      }
+    },
+    {
+      "id": 11,
+      "movename": "MessaiyaMurruku-2",
+      "description": "A HipPop Adhis latest Flim",
+      "img": "http://localhost:5000/photos/MM2.png",
+      "theaterIds": ["IMax", "PVRMall"],
+      "castIds": "Jananayagan",
+      "details": {
+        "title": "MessaiyaMurruku-2",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+         "view": "2D",
         "summary": "Set against the world of coastal Tamil Nadu, Mandaadi follows a story shaped by boat racing, strong emotions, and life by the sea. Starring Soori, this sports action drama unfolds in a unique maritime backdrop.",
         "genres": ["Drama", "Action", "Sport"],
         "releaseDate": "10 September 2026"

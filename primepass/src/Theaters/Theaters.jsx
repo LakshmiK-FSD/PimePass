@@ -6,6 +6,7 @@ import useFetcher from "../useFetcher";
 function Theaters() {
   const { id } = useParams();
 const[dataa,error]=useFetcher(`http://localhost:5000/movies/${id}`);
+
     if(error){
         return(<>
         <p>{error}</p>
@@ -16,10 +17,11 @@ const[dataa,error]=useFetcher(`http://localhost:5000/movies/${id}`);
         <p>loading....</p>
         </>)
     }
+
   const datas = (
     <>
       {dataa.theaterIds.map((data) => (
-        <TheatersList key={data} theaterId={data}/>
+        <TheatersList movnam={dataa.movename} key={data} movId={id} theaterId={data}/>
       ))}
     </>
   );

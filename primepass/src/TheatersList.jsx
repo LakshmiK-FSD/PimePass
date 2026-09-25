@@ -48,7 +48,7 @@ function TheatersList(props) {
                   key={timeIdx}
                   className="timebutton"
                   onClick={() =>
-                    naviga(`/seating/${props.theaterId}/${e.timeId}`)
+                    naviga(`/seating/${props.theaterId}/${e.timeId}/${props.movnam}/${props.movId}`)
                   }
                 >
                   {e.showTime}
