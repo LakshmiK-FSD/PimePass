@@ -37,7 +37,7 @@ function Bookinfo(props){
        <div className="boxbook">
            <div className="row2">
              <div className="pad">
-               <div className="row4"> <h4>{moviename} </h4><p>{rating}</p> <p>{language}</p><p>{view}</p><p>{duration}</p></div>
+               <div className="row4"> <h4>{moviename} </h4><p>{rating}</p> <p>{language}</p><p>{view}</p><p style={{color:"#f4f2f268",fontSize:"12px",paddingTop:"4px"}}>{duration}</p></div>
                <div className="row3"> <h6>
                 {theatname}
               </h6> 

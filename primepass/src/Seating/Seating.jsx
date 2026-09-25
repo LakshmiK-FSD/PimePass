@@ -30,7 +30,7 @@ function Seating() {
 
   const seatsT = timeData.map(e => e.seats || []);
   if (!seatsT) return <div>Seats Loading...</div>;
-
+  const btnsh = (arr.length!==0)
   return (
     <div className={style.maintheat}>
       <div className={style.centseat}>
@@ -54,7 +54,7 @@ function Seating() {
           </div>
         </div>
       </div>
-    {!arr.length ==0 && <div className={style.riglef}>
+    {btnsh && arr.length<=2 && <div className={style.riglef}>
             <div className={style.frst}>
               <h5>Movie:</h5><h3>{movnnam}</h3>
         <h5>Seats:</h5><h4>{arr.length}</h4>
