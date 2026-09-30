@@ -1,0 +1,106 @@
+{
+    "movename": "Valimai",
+    "description": "A gripping police drama centered on speed and justice.",
+    "img": "http://localhost:5000/photos/blastvalimai.png",
+    "details": {
+        "title": "Valimai",
+        "rating": "UA16+",
+        "language": "Tamil",
+        "duration": "2h 34m",
+        "view": "2D",
+        "summary": "A gripping police drama centered on speed and justice.",
+        "genres": "Drama,Action",
+        "releaseDate": "2026-09-10"
+    },
+    "theaters": [
+        {
+            "theaterName": "RangaRaja",
+            "theaterAddress": [
+                "Cuddalore",
+                "BusStand"
+            ],
+            "cancelation": "not available",
+            "dates": [
+                {
+                    "date": "02-01-2004",
+                    "shows": [
+                        {
+                            "time": "10:00 AM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "2:00 PM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "6:00 AM",
+                            "viewcls": []
+                        }
+                    ]
+                },
+                 {
+                    "date": "03-01-2004",
+                    "shows": [
+                        {
+                            "time": "10:00 AM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "2:00 PM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "6:00 AM",
+                            "viewcls": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "theaterName": "RangaRaja",
+            "theaterAddress": [
+                "Cuddalore",
+                "BusStand"
+            ],
+            "cancelation": "not available",
+            "dates": [
+                {
+                    "date": "02-01-2004",
+                    "shows": [
+                        {
+                            "time": "10:00 AM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "2:00 PM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "6:00 AM",
+                            "viewcls": []
+                        }
+                    ]
+                },
+                 {
+                    "date": "03-01-2004",
+                    "shows": [
+                        {
+                            "time": "10:00 AM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "2:00 PM",
+                            "viewcls": []
+                        },
+                        {
+                            "time": "6:00 AM",
+                            "viewcls": []
+                        }
+                    ]
+                }
+            ]
+        }
+ 
+    ]
+}

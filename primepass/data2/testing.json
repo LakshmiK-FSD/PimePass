@@ -1,0 +1,83 @@
+{
+                                        "seatrid":9,
+                                        "rowName":"E",
+                                        "clrow":[{
+                                            "seatId": "E5",
+                                            "rowId": "E",
+                                            "number": 5,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E6",
+                                            "rowId": "E",
+                                            "number": 6,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E7",
+                                            "rowId": "E",
+                                            "number": 7,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E8",
+                                            "rowId": "E",
+                                            "number": 8,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },{
+                                            "seatId": "E9",
+                                            "rowId": "E",
+                                            "number": 9,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },{
+                                            "seatId": "E10",
+                                            "rowId": "E",
+                                            "number": 10,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E11",
+                                            "rowId": "E",
+                                            "number": 11,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E12",
+                                            "rowId": "E",
+                                            "number": 12,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },
+                                        {
+                                            "seatId": "E13",
+                                            "rowId": "E",
+                                            "number": 13,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        },{
+                                            "seatId": "E14",
+                                            "rowId": "E",
+                                            "number": 14,
+                                            "bookingTime": "null",
+                                            "bookedBy": "null",
+                                            "status": "AVAILABLE"
+                                        }
+                                    
+                                    
+                                ]}

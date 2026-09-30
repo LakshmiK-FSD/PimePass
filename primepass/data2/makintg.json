@@ -1,0 +1,858 @@
+[
+    {
+        "clsName": "First Class",
+        "amount": 210,
+        "seats": [
+            {
+                "rowName": "A",
+                "clrow": [
+                    {
+                        
+                        "seatId": "A1",
+                        "rowId": "A",
+                        "number": 1,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "A2",
+                        "rowId": "A",
+                        "number": 2,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A3",
+                        "rowId": "A",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A4",
+                        "rowId": "A",
+                        "number": 4,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "B",
+                "clrow": [
+                    {
+                        "seatId": "B1",
+                        "rowId": "B",
+                        "number": 1,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B2",
+                        "rowId": "B",
+                        "number": 2,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B3",
+                        "rowId": "B",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B4",
+                        "rowId": "B",
+                        "number": 4,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "C",
+                "clrow": [
+                    {   
+                        "seatId": "C1",
+                        "rowId": "C",
+                        "number": 1,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C2",
+                        "rowId": "C",
+                        "number": 2,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C3",
+                        "rowId": "C",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C4",
+                        "rowId": "C",
+                        "number": 4,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "D",
+                "clrow": [
+                    {
+                        "seatId": "D1",
+                        "rowId": "D",
+                        "number": 1,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "D2",
+                        "rowId": "D",
+                        "number": 2,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "D3",
+                        "rowId": "D",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "D4",
+                        "rowId": "D",
+                        "number": 4,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "E",
+                "clrow": [
+                    {
+                        "seatId": "E1",
+                        "rowId": "E",
+                        "number": 1,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "E2",
+                        "rowId": "E",
+                        "number": 2,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "E3",
+                        "rowId": "E",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "E4",
+                        "rowId": "E",
+                        "number": 4,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "clsName": "Elite Class",
+        "amount": 250,
+        "seats": [
+            {
+                "rowName": "A",
+                "clrow": [
+                    {
+                        "seatId": "A5",
+                        "rowId": "A",
+                        "number": 5,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A6",
+                        "rowId": "A",
+                        "number": 6,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A7",
+                        "rowId": "A",
+                        "number": 7,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A8",
+                        "rowId": "A",
+                        "number": 8,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A9",
+                        "rowId": "A",
+                        "number": 9,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A10",
+                        "rowId": "A",
+                        "number": 10,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A11",
+                        "rowId": "A",
+                        "number": 11,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A12",
+                        "rowId": "A",
+                        "number": 12,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A13",
+                        "rowId": "A",
+                        "number": 13,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "A14",
+                        "rowId": "A",
+                        "number": 14,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "B",
+                "clrow": [
+                    {
+                        "seatId": "B5",
+                        "rowId": "B",
+                        "number": 5,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B6",
+                        "rowId": "B",
+                        "number": 6,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B7",
+                        "rowId": "B",
+                        "number": 7,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B8",
+                        "rowId": "B",
+                        "number": 8,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B9",
+                        "rowId": "B",
+                        "number": 9,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B10",
+                        "rowId": "B",
+                        "number": 10,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B11",
+                        "rowId": "B",
+                        "number": 11,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B12",
+                        "rowId": "B",
+                        "number": 12,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B13",
+                        "rowId": "B",
+                        "number": 13,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "B14",
+                        "rowId": "B",
+                        "number": 14,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "C",
+                "clrow": [
+                    {
+                        "seatId": "C5",
+                        "rowId": "C",
+                        "number": 5,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C6",
+                        "rowId": "C",
+                        "number": 6,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C7",
+                        "rowId": "C",
+                        "number": 7,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C8",
+                        "rowId": "C",
+                        "number": 8,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C9",
+                        "rowId": "C",
+                        "number": 9,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        "seatId": "C10",
+                        "rowId": "C",
+                        "number": 10,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C11",
+                        "rowId": "C",
+                        "number": 11,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C12",
+                        "rowId": "C",
+                        "number": 12,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C13",
+                        "rowId": "C",
+                        "number": 13,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C14",
+                        "rowId": "C",
+                        "number": 14,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "D",
+                "clrow": [
+                    {
+                        
+                        "seatId": "D5",
+                        "rowId": "D",
+                        "number": 5,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D6",
+                        "rowId": "D",
+                        "number": 6,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D7",
+                        "rowId": "D",
+                        "number": 7,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D8",
+                        "rowId": "D",
+                        "number": 8,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D9",
+                        "rowId": "D",
+                        "number": 9,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D10",
+                        "rowId": "D",
+                        "number": 10,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D11",
+                        "rowId": "D",
+                        "number": 11,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D12",
+                        "rowId": "D",
+                        "number": 12,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D13",
+                        "rowId": "D",
+                        "number": 13,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D14",
+                        "rowId": "D",
+                        "number": 14,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "E",
+                "clrow": [
+                    {
+                        
+                        "seatId": "E5",
+                        "rowId": "E",
+                        "number": 5,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E6",
+                        "rowId": "E",
+                        "number": 6,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E7",
+                        "rowId": "E",
+                        "number": 7,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E8",
+                        "rowId": "E",
+                        "number": 8,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E9",
+                        "rowId": "E",
+                        "number": 9,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E10",
+                        "rowId": "E",
+                        "number": 10,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E11",
+                        "rowId": "E",
+                        "number": 11,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E12",
+                        "rowId": "E",
+                        "number": 12,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E13",
+                        "rowId": "E",
+                        "number": 13,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E14",
+                        "rowId": "E",
+                        "number": 14,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "clsName": "Second Class",
+        "amount": 210,
+        "seats": [
+            {
+                "rowName": "A",
+                "clrow": [
+                    {
+                        
+                        "seatId": "A15",
+                        "rowId": "A",
+                        "number": 15,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "A16",
+                        "rowId": "A",
+                        "number": 16,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "A17",
+                        "rowId": "A",
+                        "number": 17,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "A18",
+                        "rowId": "A",
+                        "number": 18,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "B",
+                "clrow": [
+                    {
+                        "seatId": "B15",
+                        "rowId": "B",
+                        "number": 15,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "B16",
+                        "rowId": "B",
+                        "number": 16,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "B17",
+                        "rowId": "B",
+                        "number": 17,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "B18",
+                        "rowId": "B",
+                        "number": 18,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "C",
+                "clrow": [
+                    {
+                        
+                        "seatId": "C15",
+                        "rowId": "C",
+                        "number": 15,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C16",
+                        "rowId": "C",
+                        "number": 16,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C17",
+                        "rowId": "C",
+                        "number": 17,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "C18",
+                        "rowId": "C",
+                        "number": 18,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "D",
+                "clrow": [
+                    {
+                        "seatId": "D15",
+                        "rowId": "D",
+                        "number": 15,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D16",
+                        "rowId": "D",
+                        "number": 16,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D17",
+                        "rowId": "D",
+                        "number": 17,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "D18",
+                        "rowId": "D",
+                        "number": 18,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            },
+            {
+                "rowName": "E",
+                "clrow": [
+                    {
+                        "seatId": "E15",
+                        "rowId": "E",
+                        "number": 15,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E16",
+                        "rowId": "E",
+                        "number": 16,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E17",
+                        "rowId": "E",
+                        "number": 3,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    },
+                    {
+                        
+                        "seatId": "E18",
+                        "rowId": "E",
+                        "number": 18,
+                        "bookingTime": "null",
+                        "bookedBy": "null",
+                        "status": "AVAILABLE"
+                    }
+                ]
+            }
+        ]
+    }
+]

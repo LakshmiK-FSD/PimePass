@@ -3,7 +3,7 @@ import useFetcher from "../useFetcher";
 import style from "./ClassSeat.module.css";
 function ClassSeat({ sendFun, classs }) {
   const [seatts, setSeats] = useState({});
-  const [data, error] = useFetcher(`http://localhost:5000/${classs}`);
+  const [data, error] = useFetcher(`http://localhost:8080/${classs}`);
   useEffect(()=>{(console.log(seatts));
        
           sendFun(Object.entries(seatts))
@@ -17,18 +17,16 @@ function ClassSeat({ sendFun, classs }) {
     const key = `${row}${coloum}`;
     setSeats(prev => ({ ...prev, [key]:!prev[key] }));
   }
-
   const seatar = data.map((e, rowIndex) => (
     <div key={`rowout-${rowIndex}`} className={style.rrowf}>
-      {e.clrow.map((e2, seatIndex) => {
+      {e.seating.map((e2, seatIndex) => {
         const key = `${e2.row}${e2.number}`;
         const isSelected = seatts[key];
         return (
           <div
             key={`rowin-${seatIndex}`}
             onClick={() => togglers(e2.row, e2.number)}
-            className={isSelected ? style.seat: style.seatselect}
-          >
+            className={isSelected ? style.seat: style.seatselect}>
             {e2.row}{e2.number}
           </div>
         );

@@ -381,7 +381,7 @@
     { "row": "A", "amount":210, "number": 16, "status": "open","bookedBy": "null", "bookingTime": "null" },
     { "row": "A", "amount":210, "number": 17, "status": "open","bookedBy": "null", "bookingTime": "null" },
     { "row": "A", "amount":210, "number": 18, "status": "open","bookedBy": "null", "bookingTime": "null" }]},
-     {"clrow":[
+    {"clrow":[
     { "row": "B", "amount":210, "number": 15, "status": "open","bookedBy": "null", "bookingTime": "null"},
     { "row": "B", "amount":210, "number": 16, "status": "open","bookedBy": "null", "bookingTime": "null" },
     { "row": "B", "amount":210, "number": 17, "status": "open","bookedBy": "null", "bookingTime": "null" },

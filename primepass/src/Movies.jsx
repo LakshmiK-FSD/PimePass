@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import MoviesCard from './MoviesCard';
 function Movies() {
     const [Movies,setMovie]= useState([]);
-useEffect(()=>{fetch("http://localhost:5000/movies")
+useEffect(()=>{fetch("http://localhost:8080/movies")
     .then((data)=>data.json())
     .then((response)=>
        setMovie(response))
