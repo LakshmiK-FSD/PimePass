@@ -6,10 +6,11 @@ import useFetcher from "../useFetcher";
 function Theaters() {
   const { id } = useParams();
 const[dataa,error]=useFetcher(`http://localhost:8080/movies/${id}`);
-
-    if(error){
+const[dates,error2]=useFetcher(`http://localhost:8080/theatdate`);
+    if(error && error2){
         return(<>
         <p>{error.message}</p>
+        <p>{error2.message}</p>
         </>)
     }
       if(!dataa){
@@ -17,18 +18,25 @@ const[dataa,error]=useFetcher(`http://localhost:8080/movies/${id}`);
         <p>loading....</p>
         </>)
     }
+     if(!dates){
+        return(<>
+        <p>loading....</p>
+        </>)
+    }
 
   const datas = (
     <>
-      {dataa.theaterIds.map((data) => (
-        <TheatersList movnam={dataa.movename} key={data} movId={id} theaterId={data}/>
+      {dataa.theaters.map((data) => (
+        <TheatersList movnam={dataa.movename} key={data.theatid} movId={id} theaterId={data.theatid}/>
       ))}
     </>
   );
 
   return (
     <div className={style.ovie}><div>
-      <img className={style.image} src={dataa.img} alt="" />
+     <div className={style.dates}>
+       {dates.map((e4)=><div>{e4}</div>)}
+     </div>
       </div><div className={style.side}>
       <div className={style.theaters}>
       {datas}</div>

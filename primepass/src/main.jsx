@@ -7,6 +7,7 @@ import AboutUs from './AboutUs'
 import Seating from './Seating/Seating'
 import Theaters from './Theaters/Theaters'
 import BookDetail from './BookDetail/BookDetail'
+import Datevise from './Datevise'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -15,6 +16,9 @@ const router = createBrowserRouter([
    {
     path:"/aboutus",
     element:<AboutUs/>
+  },{
+    path:"/dates/:id",
+    element:<Datevise/>
   },
     {
     path:"/seating/:theatnam/:tmid/:movnnam/:movId",

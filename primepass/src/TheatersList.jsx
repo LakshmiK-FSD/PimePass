@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import useFetcher from "./useFetcher";
 
 function TheatersList(props) {
-  const api = `http://localhost:8080/${props.theaterId}`;
+  const api = `http://localhost:8080/theater/${props.theaterId}`;
   const [data, error] = useFetcher(api);
   const naviga = useNavigate();
 
@@ -27,7 +27,7 @@ function TheatersList(props) {
           <div className="maintheat" key={data.theaterName}>
             <div className="theatdetail">
                 <div className="namtheat">
-              <h3>{props.theaterId}</h3>
+              <h3>{props.theaterid}</h3>
               <p className="landmm">
                 <h4>Location:</h4>
                 {data.theaterAddress.map((e, addrIdx) => (
@@ -42,15 +42,15 @@ function TheatersList(props) {
             </div>
 
             <div className="timetheat">
-              {data.showtimes.map((e, timeIdx) => (
+              {data.dates.map((e, timeIdx) => (
                 <div
                   key={timeIdx}
                   className="timebutton"
                   onClick={() =>
-                    naviga(`/seating/${props.theaterId}/${e.timeId}/${props.movnam}/${props.movId}`)
+                    naviga(`/seating/${props.theaterId}/${e.dateId}/${props.movnam}/${props.movId}`)
                   }
                 >
-                  {e.showTime}
+                  {e.date}
                 </div>
               ))}
             </div>
