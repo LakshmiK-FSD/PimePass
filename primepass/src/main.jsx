@@ -8,6 +8,7 @@ import Seating from './Seating/Seating'
 import Theaters from './Theaters/Theaters'
 import BookDetail from './BookDetail/BookDetail'
 import Datevise from './Datevise'
+import Timeselec from './Timeselec/Timeselec'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -21,11 +22,14 @@ const router = createBrowserRouter([
     element:<Datevise/>
   },
     {
-    path:"/seating/:theatnam/:tmid/:movnnam/:movId",
+    path:"/seating/:movid/:theatid/:dateid/:timeid",
     element:<Seating/>
   },{
     path:"/theaters/:id",
     element:<Theaters/>
+  },{
+    path:"/check/:mov/:theat/:date",
+    element:<Timeselec/>
   },
   {
     path:"/bookdetail/:movId",

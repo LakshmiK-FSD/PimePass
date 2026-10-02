@@ -3,13 +3,11 @@ import useFetcher from "../useFetcher";
 import style from "./ClassSeat.module.css";
 function ClassSeat({ sendFun, classs }) {
   const [seatts, setSeats] = useState({});
-  const [data, error] = useFetcher(`http://localhost:8080/${classs}`);
+  const [data, error] = useFetcher(`http://localhost:8080/viewclass/${classs}`);
   useEffect(()=>{(console.log(seatts));
-       
           sendFun(Object.entries(seatts))
         }
 ,[seatts])
-
   if (error) return <div>Unable to load</div>;
   if (!data) return <div>Loading...</div>;
 
@@ -17,17 +15,20 @@ function ClassSeat({ sendFun, classs }) {
     const key = `${row}${coloum}`;
     setSeats(prev => ({ ...prev, [key]:!prev[key] }));
   }
-  const seatar = data.map((e, rowIndex) => (
+  //  const seatar = data.map((e, rowIndex) => (
+  //   <div key={`rowout-${rowIndex}`} className={style.rrowf}></div>
+  const seatCreat = data.seats;
+  const seatar = seatCreat.map((e, rowIndex) => (
     <div key={`rowout-${rowIndex}`} className={style.rrowf}>
-      {e.seating.map((e2, seatIndex) => {
-        const key = `${e2.row}${e2.number}`;
+      {e.clrow.map((e2, seatIndex) => {
+        const key = `${e2.rowId}${e2.number}`;
         const isSelected = seatts[key];
         return (
           <div
             key={`rowin-${seatIndex}`}
-            onClick={() => togglers(e2.row, e2.number)}
+            onClick={() => togglers(e2.rowId, e2.number)}
             className={isSelected ? style.seat: style.seatselect}>
-            {e2.row}{e2.number}
+            {e2.rowId}{e2.number}
           </div>
         );
       })}

@@ -1,0 +1,71 @@
+.imge{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height:100vh;
+    opacity:0.;
+}
+.main{
+    position: relative;
+}
+.whit{
+    display: flex;
+    margin-top: 50px;
+    height: 100px;
+    width: 80%;
+    justify-self: center;
+    border-radius:20px;
+    background-color: rgba(240, 248, 255, 0.929);
+    position: absolute;
+    align-items: center;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    .lineh{
+        color: rgb(22, 16, 29);
+    }
+}
+.top{
+    padding:10px 20px;
+    height:80px;
+   background: linear-gradient(273deg,rgba(155, 50, 42, 0.749) 0%, rgba(199, 149, 87, 0.868) 50%, rgba(83, 170, 237, 0.863) 100%);
+    width:100%;
+}
+        .imge2{
+             border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    
+.hell{
+    padding-left: 10px;
+   p{
+    font-size: 13px;
+    font-weight: 300;
+   }
+   
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    p{
+        font-weight: 700;
+        border: 1px solid black;
+        color: rgb(200, 149, 83);;
+        border-radius:10px;
+        padding: 10px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    p:hover{
+        border: 1px solid rgb(44, 37, 37);
+        color: rgba(44, 37, 37, 0.765) ;
+    }
+}
+.shows{
+    font-weight: 800;
+    font-size: 12px;
+    padding-left: 4px;
+    color: rgb(200, 149, 83);
+}

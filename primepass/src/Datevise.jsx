@@ -19,7 +19,7 @@ function Datevise(){
                    <div className="dateimg" >
                   <img className="datimg" src={dataa.img} alt="" />
                   </div>
-        <div className="bkt" onClick={()=>navi(`/theaters/${id}`)}>BooKTicket</div>
+        <div className="bkt" onClick={()=>navi(`/theaters/${id}`,{state:{name:dataa.movename}})}>BooKTicket</div>
     </div>)
 }
 export default Datevise;

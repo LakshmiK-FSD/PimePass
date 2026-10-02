@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import useFetcher from "./useFetcher";
-
 function TheatersList(props) {
   const api = `http://localhost:8080/theater/${props.theaterId}`;
   const [data, error] = useFetcher(api);
   const naviga = useNavigate();
+
 
   // Error state
   if (error) {
@@ -23,11 +23,13 @@ function TheatersList(props) {
   // Render
   return (
     <div className="showtime">
+       <img className="theatbgimg" src={data.theaterimg} alt="" />
       <div className="theatdet">
-          <div className="maintheat" key={data.theaterName}>
+          <div className="maintheat" key={data.theatid}>
+           
             <div className="theatdetail">
                 <div className="namtheat">
-              <h3>{props.theaterid}</h3>
+              <h3>{data.theaterName}</h3>
               <p className="landmm">
                 <h4>Location:</h4>
                 {data.theaterAddress.map((e, addrIdx) => (
@@ -42,15 +44,27 @@ function TheatersList(props) {
             </div>
 
             <div className="timetheat">
+              <div className="movtheat">
+              <h5>{props.movnam}</h5>
+              <h6>Dates Available</h6></div>
               {data.dates.map((e, timeIdx) => (
-                <div
-                  key={timeIdx}
+                // <div
+                //   key={timeIdx}
+                //   className="timebutton"
+                //   onClick={() =>
+                //     naviga(`/seating/${props.theaterId}/${e.dateId}/${props.movnam}/${props.movId}`)
+                //   }
+                // >
+                //   {e.date}
+                // </div>
+                <div 
+                  key={timeIdx+10}
                   className="timebutton"
                   onClick={() =>
-                    naviga(`/seating/${props.theaterId}/${e.dateId}/${props.movnam}/${props.movId}`)
+                    naviga(`/check/${props.movId}/${data.theatid}/${e.dateId}`,{state:{img:data.theaterimg}})
                   }
                 >
-                  {e.date}
+              {e.date}
                 </div>
               ))}
             </div>
