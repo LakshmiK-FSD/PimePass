@@ -3,13 +3,13 @@ import style from "./BookDetail.module.css"
 import Bookinfo from "../Bookinfo"
 import Header from "../Header";
 function BookDetail(){
-    const {movId} = useParams();
+    const {movid} = useParams();
     const locate = useLocation();
     const arr = locate.state?.arr
-    const theater = locate.state?.theatdet
+    const theater = locate.state?.theatdet;
     return(<div>
           <Header/>
-        <Bookinfo theat={theater} movId={movId} arr={arr}/>
+        <Bookinfo theat={theater} movid={movid} arr={arr}/>
     </div>)
 }
 

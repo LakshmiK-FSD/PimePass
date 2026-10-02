@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element:<Timeselec/>
   },
   {
-    path:"/bookdetail/:movId",
+    path:"/bookdetail/:movid",
     element:<BookDetail/>
   }
 ]);

@@ -20,6 +20,7 @@ function ClassSeat({ sendFun, classs }) {
   const seatCreat = data.seats;
   const seatar = seatCreat.map((e, rowIndex) => (
     <div key={`rowout-${rowIndex}`} className={style.rrowf}>
+    
       {e.clrow.map((e2, seatIndex) => {
         const key = `${e2.rowId}${e2.number}`;
         const isSelected = seatts[key];

@@ -39,7 +39,7 @@ function Timeselec(){
             
             <div className={style.row}>{data.shows.map((e)=><p
              onClick={() =>
-                    naviga(`/seating/${theat}/${mov}/${date}/${e.timeId}`)
+                    naviga(`/seating/${mov}/${theat}/${date}/${e.timeId}`)
                   }
             >{e.time}</p>)}</div>
             

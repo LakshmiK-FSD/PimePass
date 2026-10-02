@@ -21,7 +21,7 @@ function Seating() {
     setParen(prev => [...prev, ...arr]); 
   }
 
-  if (error2) 
+  if (error || error2 || error3) 
     {
     return <div>unable to load</div>
     }
@@ -29,14 +29,16 @@ function Seating() {
     {
     return <div>Loading...</div>
     }
-
+const theatName= data2.theaterName;
+const theatdet =[theatName,timeid,theatid];
   // const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
   //const time= (timeData.map((e)=>e.showTime)).join();
-//=========>>>>>>>   const theatdet =[theatnam,tmid,time]<<<<<<=========
+   
    //need to change  uper..
   // if (!timeData) return <div>Loading...</div>;
   // const seatsT = data.timeData.map(e => e.showtimes||[]);
   const seatsT = data.viewcls.map(e => e.clsid);
+  const clsNames = data.viewcls.map(e => e.clsName);
   //if (!seatsT) return <div>Seats Loading...</div>;
   const btnsh = (arr.length!==0)
   {/*  */}
@@ -48,9 +50,9 @@ function Seating() {
         {/* {timeData.map((e, idx) => (
           <h3 key={idx}>{e.showTime}</h3>
         ))} */}
-         {data.viewcls.map((e, idx) => (
-          <h3 key={idx}>{e.clsName}</h3>
-        ))}
+         {
+          <h3>{data.time}</h3>
+        }
                                           <div className={style.theatcent}>
                                           <div className="crow">
                                            
@@ -58,7 +60,7 @@ function Seating() {
               seatGroup.map((seat, seatIdx) =>  */}
             {seatsT.map((clsid, idx) =>
                 (<div key={`${clsid}`}>
-                  {/* <h4>{seat}</h4> */}
+                  <h4>{clsNames[idx]}</h4> 
                   <ClassSeat sendFun={senData} classs={clsid} />
                 </div>
               )
@@ -72,11 +74,12 @@ function Seating() {
       {/* seat open booking */}
     {btnsh && arr.length<=2 && <div className={style.riglef}>
             <div className={style.frst}>
-              <h5>Movie:</h5><h3>{movnnam}</h3>
+              {/* <h5>Movie:</h5><h3>{movnnam}</h3> */}
+              <h5>Movie:</h5><h3>{data2.movename}</h3>
         <h5>Seats:</h5><h4>{arr.length}</h4>
         {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
       </div>
-      <div onClick={()=>navi(`/bookdetail/${movId}`,{state:{arr,theatdet}})} className={style.booking}>
+      <div onClick={()=>navi(`/bookdetail/${movid}`,{state:{arr,theatdet}})} className={style.booking}>
       <p>BookNow</p>
      </div>
       </div>}
