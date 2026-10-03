@@ -7,7 +7,7 @@ function Navbar(){
             <p onClick={()=>navigate('/')}>Home</p>
             <p onClick={()=>navigate('/aboutus')}>AboutUs</p>
             <p onClick={()=>navigate('/aboutus')}>Passes</p>
-            <p onClick={()=>navigate('/aboutus')}>Organize</p>
+            <p onClick={()=>navigate('/organize')}>Organize</p>
             <p onClick={()=>navigate('/aboutus')}>MyPasses</p>
         </div>
         </>

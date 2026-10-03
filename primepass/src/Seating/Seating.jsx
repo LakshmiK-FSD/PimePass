@@ -39,34 +39,38 @@ const theatdet =[theatName,timeid,theatid];
   // const seatsT = data.timeData.map(e => e.showtimes||[]);
   const seatsT = data.viewcls.map(e => e.clsid);
   const clsNames = data.viewcls.map(e => e.clsName);
+  const clsAmount = data.viewcls.map(e => e.amount);
   //if (!seatsT) return <div>Seats Loading...</div>;
   const btnsh = (arr.length!==0)
   {/*  */}
   return (
-                                         <div className={style.maintheat}>
-                                          <div className={style.centseat}>
-                                          {/* <h2>{theatnam}</h2> */}
-                                          <h2>{data3.theaterName}</h2>
+          <div className={style.maintheat}>
+         <div className={style.centseat}>
+            {/* <h2>{theatnam}</h2> */}
+           <h2>{data3.theaterName}</h2>
         {/* {timeData.map((e, idx) => (
           <h3 key={idx}>{e.showTime}</h3>
         ))} */}
-         {
-          <h3>{data.time}</h3>
+         {<div className={style.rower}><h3>{data2.movename}</h3><p></p>
+          <h4>{data.time}</h4></div>
         }
-                                          <div className={style.theatcent}>
-                                          <div className="crow">
+         <div className={style.theatcent}>
+        <div className="crow">
                                            
            {/* {seatsT.map((seatGroup, idx) =>  //array enter
               seatGroup.map((seat, seatIdx) =>  */}
             {seatsT.map((clsid, idx) =>
                 (<div key={`${clsid}`}>
                   <h4>{clsNames[idx]}</h4> 
+                  <div className={style.amt}><p>&#8377;{clsAmount[idx]+"  "} per seat</p></div>
                   <ClassSeat sendFun={senData} classs={clsid} />
                 </div>
               )
             )}
           </div>
+           <p className={style.scren}>screen on this way</p>
           <div className={style.screimg}>
+           
             <img src={screen} alt="screen" />
           </div>
         </div>

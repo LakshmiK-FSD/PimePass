@@ -9,6 +9,7 @@ import Theaters from './Theaters/Theaters'
 import BookDetail from './BookDetail/BookDetail'
 import Datevise from './Datevise'
 import Timeselec from './Timeselec/Timeselec'
+import Organize from './Organize/Organize'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   },{
     path:"/check/:mov/:theat/:date",
     element:<Timeselec/>
+  },
+  {
+    path:"/organize",
+    element:<Organize/>
   },
   {
     path:"/bookdetail/:movid",

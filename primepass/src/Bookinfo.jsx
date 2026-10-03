@@ -26,10 +26,6 @@ function Bookinfo(props){
     const duration = data.details.duration;
     const language = data.details.language;
     const view = data.details.view;
-    
-   
-    
-
         const datas =props.arr.map((e,i)=>(<div className="row">
         <p>{e}</p>{!(i==props.arr.length-1) && <p>,</p>}
         </div>))

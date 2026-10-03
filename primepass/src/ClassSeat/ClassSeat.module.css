@@ -9,17 +9,21 @@
 .seat{
     text-align: center;
     align-content: center;
-    background-color: rgba(154, 22, 174, 0.854);
-    box-shadow: 0 0 3px rgb(199, 28, 234);
-    border:1px solid grey;
-    border-radius:5px;
+    background-color:#ffb703;
+    box-shadow: 2px 5px 0 rgb(0, 0, 0);
+    border-radius:12px 12px 3px 3px;
     height:6vh;
     width:3vw;
     font-size:10px;
     font-weight: 800;
-    transition:background-color 1s ;
- 
-
+    cursor: pointer;
+    box-shadow: 0 0 4px #ffb703;
+    transition:background-color 0.3s ;
+    transform: translateY(-3px);
+   
+    &:hover{
+        background-color:#4b4170;
+    }
 }
 .rrowf{
     display: flex;
@@ -28,18 +32,19 @@
 }
 
 .seatselect{
-    border: 1px solid rgb(97, 165, 234);
-    box-shadow: rgb(77, 145, 213) 0px 0px 8.7px 0px inset;
+   
     text-align: center;
     align-content: center;
-    border-radius:5px;
+    border-radius:12px 12px 3px 3px;
     height:6vh;
     width:3vw;
     font-size:10px;
-    font-weight: 800;
-    background-color:rgba(109, 147, 170, 0.667);
-    transition:background-color 1s ;
+    font-weight: 600;
+    background-color:#4b4170;
+    color:white;
+    transition: background-color 1s ;
        &:hover{
+        transform: translateY(-3px);
         cursor: pointer;
     }
 }

@@ -1,5 +1,4 @@
 import Movies from "./Movies";
-
 function Content(){
     return(
         <div className="contents">

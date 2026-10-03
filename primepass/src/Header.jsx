@@ -29,7 +29,7 @@ function Header(props){
              <p onClick={()=>navigate('/')}>Home</p>
              <p onClick={()=>navigate('/aboutus')}>AboutUs</p>
              <p onClick={()=>navigate('/')}>Passes</p>
-             <p onClick={()=>navigate('/')}>Organize</p>
+             <p onClick={()=>navigate('/organize')}>Organize</p>
              <p onClick={()=>navigate('/')}>MyPasses</p>
            </div>
 </div>

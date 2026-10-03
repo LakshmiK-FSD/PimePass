@@ -9,7 +9,7 @@ return(
   <Header shownav={true} show={true}/>
   <div id='bgall'>
   <Slider/>
-<Content/>
+  <Content/>
   <Footer/></div>
   </div>
   </>

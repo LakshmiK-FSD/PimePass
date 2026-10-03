@@ -239,7 +239,7 @@ flex-direction: column;
 }.card {
   position: relative;
   border-radius:10px;
-  background: rgba(21, 68, 135, 0.655); 
+  background: rgba(35, 8, 74, 0.655); 
   backdrop-filter: blur(20px) saturate(190%);
   -webkit-backdrop-filter: blur(20px) saturate(190%);
   box-shadow: 
@@ -356,7 +356,7 @@ flex-direction: column;
     border-radius:20px;
        .theatbgimg{
         z-index:-1;
-        opacity: 0.8;
+        opacity: 0.6;
           border-radius:20px;
         object-fit: cover;
       position: absolute;
@@ -447,10 +447,11 @@ flex-direction: column;
     flex-direction: row;
     gap:70px;
   h4{
-    text-align: center;
+    padding-left: 10px;
     font-size:15px;
     font-weight: 900;
   }
+  
 }
 .timetheat{
     
@@ -566,14 +567,11 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
     border-radius: 10px;
 }
 .dateimg{
-
     position: relative;
     width: 100%;
     height: 70vh;
-    opacity:0.8;
     margin-top: 10px;
     .datimg{
-
         object-fit: cover;
           width: 100%;
          height: 70vh;
