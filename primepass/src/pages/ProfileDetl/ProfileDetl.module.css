@@ -1,0 +1,97 @@
+.profile{
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(11, 54, 148, 0.516);
+    margin:20px 30px;
+    h6{
+        top:5px;
+        left: 20px;
+        position: absolute;
+        font-size: 40px;
+    }
+}
+    .box1{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(250, 253, 255);
+        height: 50px;
+        padding:15px;
+        z-index: 1;
+    }
+
+.moveCover{
+    
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height:100%;
+    background-color: rgba(53, 52, 53, 0.502);
+}
+.boxalign{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+padding-bottom: 40px;
+}
+.nameing{
+    margin-top: -8px;
+align-self:center ;
+    h2{
+        letter-spacing: 0.5px;
+        font-size: 19px;
+        font-weight:700;
+        padding-bottom: 8px;
+    }
+    p{
+        color: rgba(32, 33, 33, 0.856);
+        font-size: 13px;
+        font-weight: 200;
+    }
+}
+.bookdet{
+    position: relative;
+    left: 30px;
+    width: 90%;
+    border-radius: 15px;
+    padding:20px 40px;
+    height: 60px;
+    background-color: antiquewhite;
+}
+.support{
+    padding-top: 10px;
+      p{
+            position: relative;
+    left: 40px;
+    padding-bottom: 6px;
+          color: rgb(20, 20, 20);
+        font-size: 15px;
+        font-weight: 700;
+      }
+    
+    h4{
+         position: relative;
+    left: 30px;
+    width: 90%;
+    border-radius: 15px;
+    padding:20px 40px;
+    height: 60px;
+    color: black;
+    background-color: antiquewhite;
+    }
+}
+.logout{
+     background-color: aliceblue;
+       position: relative;
+    left: 30px;
+    width: 90%;
+    border-radius: 15px;
+    padding:20px 40px;
+    height: 60px;
+    color: black; 
+        margin-top: 20px;
+}
+.scrprev{
+
+}

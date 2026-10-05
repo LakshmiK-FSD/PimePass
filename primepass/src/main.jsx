@@ -10,6 +10,7 @@ import BookDetail from '@pages/BookDetail/BookDetail'
 import Datevise from '@pages/Datevise'
 import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
+import ProfileDetl from '@pages/ProfileDetl/ProfileDetl'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -28,7 +29,12 @@ const router = createBrowserRouter([
   },{
     path:"/theaters/:id",
     element:<Theaters/>
-  },{
+  },
+  // {
+  //   path:"/profile",
+  //   element:<ProfileDetl/>
+  // },
+  {
     path:"/check/:mov/:theat/:date",
     element:<Timeselec/>
   },
