@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react"
-import blast from "./assets/Blast.png"
-import blastvalimai from "./assets/blastvalimai.png"
-import janayagan from "./assets/jananayagan.png"  
-import vadam from "./assets/vadam.png" 
+import blast from "../../public/Blast.png"
+import blastvalimai from "../../public/blastvalimai.png"
+import janayagan from "../../public/jananayagan.png"  
+import vadam from "../../public/vadam.png" 
 
 function Slider(){
     const width =805;

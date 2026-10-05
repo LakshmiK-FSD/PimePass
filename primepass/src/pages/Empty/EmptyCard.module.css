@@ -1,0 +1,42 @@
+.emptpr{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 20px;
+}
+.emptycrd {
+  background-image: url("@assets/logo.png");
+    position: relative;
+    display: block;
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(80, 78, 78);
+    background-color: rgba(31, 3, 50, 0.884);
+    overflow: hidden; 
+}
+
+.emptycrd::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 400%;
+    background-size: 200% 200%;
+    border-radius: 10px;  
+       transform: translateX(-100%) skewX(45deg);
+background: linear-gradient(305deg, rgba(131, 58, 180, 0.04) 0%, rgba(235, 28, 28, 0.064) 47%, rgba(255, 255, 255, 0.1826) 55%, rgba(253, 29, 29, 0.059) 70%, rgba(189, 77, 64, 0.06) 69%, rgba(89, 73, 51, 0) 100%);
+         animation: annima 3s infinite ease 0s ; 
+}
+@keyframes annima {
+  0% {
+    transform: translateX(-100%) skewX(60deg); 
+  }
+  100% {
+    transform: translateX(100%) skewX(60deg);     
+  }
+}

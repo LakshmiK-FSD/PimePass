@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetcher from "../useFetcher";
-import ClassSeat from "../ClassSeat/ClassSeat";
-import screen from "../assets/screen.png";
+import useFetcher from "@hooks/useFetcher";
+import ClassSeat from "@pages/ClassSeat/ClassSeat";
+import screen from "@assets/screen.png";
 import style from "./Seating.module.css";
 import {useEffect, useState } from "react";
 

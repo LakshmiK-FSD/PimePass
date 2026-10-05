@@ -1,7 +1,8 @@
 import { useLocation, useParams } from "react-router-dom";
 import style from "./BookDetail.module.css"
-import Bookinfo from "../Bookinfo"
-import Header from "../Header";
+import Bookinfo from "@pages/Bookinfo"
+import Header from "@components/Header";
+
 function BookDetail(){
     const {movid} = useParams();
     const locate = useLocation();

@@ -1,6 +1,6 @@
-import AboutContent from "./AboutC/AboutContent.jsx";
-import Footer from "./Footer";
-import Header from "./Header";
+import AboutContent from "@pages/AboutC/AboutContent.jsx";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
 
 function AboutUs(){
     return(

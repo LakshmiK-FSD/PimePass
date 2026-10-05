@@ -1,6 +1,6 @@
-import Navbar from "./Navbar"
-import logo from "./assets/logo.png"
-import Profile from "./Profile"
+import Navbar from "@components/Navbar"
+import logo from "@assets/logo.png"
+import Profile from "@pages/Profile"
 import { MapPin } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 function Header(props){

@@ -1,5 +1,5 @@
 import {  useLocation, useNavigate, useParams } from "react-router-dom";
-import useFetcher from "../useFetcher";
+import useFetcher from "@hooks/useFetcher";
 import style from "./Timeselec.module.css"
 function Timeselec(){
     const {mov,theat,date}=useParams();

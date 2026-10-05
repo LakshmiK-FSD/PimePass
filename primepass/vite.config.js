@@ -1,7 +1,19 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  resolve: {
+    alias: {
+      '@': import.meta.dirname + '/src',
+      '@components': import.meta.dirname + '/src/components',
+      '@pages': import.meta.dirname + '/src/pages',
+      '@hooks': import.meta.dirname + '/src/hooks',
+      '@assets': import.meta.dirname + '/src/assets',
+    },
+  },
+  server: {
+    port: 5173,
+    open: true,
+  },
+});

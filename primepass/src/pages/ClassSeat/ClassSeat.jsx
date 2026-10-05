@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useFetcher from "../useFetcher";
+import useFetcher from "@hooks/useFetcher";
 import style from "./ClassSeat.module.css";
 function ClassSeat({ sendFun, classs }) {
   const [seatts, setSeats] = useState({});

@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetcher from "./useFetcher";
+import useFetcher from "@hooks/useFetcher";
 function Datevise(){
       const {id} = useParams();
       const navi = useNavigate();

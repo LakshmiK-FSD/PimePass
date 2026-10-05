@@ -1,8 +1,8 @@
-import './App.css'
-import Content from './Content';
-import Footer from './Footer';
-import Header from './Header';
-import Slider from './Slider';
+import '@assets/App.css'
+import Content from '@pages/Content';
+import Footer from '@components/Footer';
+import Header from '@components/Header';
+import Slider from '@pages/Slider';
 function App() {
 return(
   <><div  className='primepass'>

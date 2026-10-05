@@ -1,5 +1,5 @@
-import logo from './assets/fav2.png';
-import Media from './Media';
+import logo from '@assets/fav2.png';
+import Media from '@pages/Media';
 
 function Footer() {
   return (

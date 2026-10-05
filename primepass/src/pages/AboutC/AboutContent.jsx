@@ -1,5 +1,5 @@
 import style from "./AboutContent.module.css";
-import ourteam from "../assets/ourteam.png";
+import ourteam from "@assets/ourteam.png";
 function AboutContent() {
   return (
     <div className={style.aboutConten}>

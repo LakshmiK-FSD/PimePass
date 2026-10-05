@@ -1,4 +1,4 @@
-import useFetcher from "./useFetcher";
+import useFetcher from "@hooks/useFetcher";
 
 function Bookinfo(props){
     const theatname = props.theat[0];

@@ -1,7 +1,7 @@
 import style from "./Theaters.module.css"
 import { useLocation, useParams } from "react-router-dom";
-import TheatersList from "../TheatersList";
-import useFetcher from "../useFetcher";
+import TheatersList from "@pages/TheatersList";
+import useFetcher from "@hooks/useFetcher";
 
 function Theaters() {
   const { id } = useParams();

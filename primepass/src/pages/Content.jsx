@@ -1,4 +1,4 @@
-import Movies from "./Movies";
+import Movies from "@pages/Movies";
 function Content(){
     return(
         <div className="contents">
@@ -6,6 +6,7 @@ function Content(){
            <Movies/>
            </div>
            <div><h3>Concerts:</h3>
+           {/* <input id="filesel" type="file" accept=".png, .jpg"/> */}
            <Movies/>
            </div>
             <div><h3>Hotels:</h3>
