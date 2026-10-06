@@ -61,14 +61,14 @@ align-self:center ;
 }
 .support{
     padding-top: 10px;
-      p{
+        p{
             position: relative;
-    left: 40px;
-    padding-bottom: 6px;
-          color: rgb(20, 20, 20);
-        font-size: 15px;
-        font-weight: 700;
-      }
+            left: 40px;
+            padding-bottom: 6px;
+            color: rgb(20, 20, 20);
+            font-size: 15px;
+            font-weight: 700;
+        }
     
     h4{
          position: relative;

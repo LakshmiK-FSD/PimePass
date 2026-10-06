@@ -3,7 +3,7 @@ import useFetcher from "@hooks/useFetcher";
 import style from "./ClassSeat.module.css";
 function ClassSeat({ sendFun, classs }) {
   const [seatts, setSeats] = useState({});
-  const [data, error] = useFetcher(`http://localhost:8080/viewclass/${classs}`);
+  const [data, error] = useFetcher(`http://localhost:8080/users/viewclass/${classs}`);
   useEffect(()=>{(console.log(seatts));
           sendFun(Object.entries(seatts))
         }

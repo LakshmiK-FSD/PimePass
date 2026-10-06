@@ -4,9 +4,9 @@ function Bookinfo(props){
     const theatname = props.theat[0];
     const theatid = props.theat?.[2];
     const time = props.theat?.[1];
-    const[data,error]=useFetcher(`http://localhost:8080/movies/${props.movid}`);
-    const[data2,error2]=useFetcher(`http://localhost:8080/theater/${theatid}`);
-    const[data3,error3]=useFetcher(`http://localhost:8080/time/${time}`);
+    const[data,error]=useFetcher(`http://localhost:8080/users/movies/${props.movid}`);
+    const[data2,error2]=useFetcher(`http://localhost:8080/users/theater/${theatid}`);
+    const[data3,error3]=useFetcher(`http://localhost:8080/users/time/${time}`);
     if(error || error2 || error3){
         return(<>
         <p>unnable to load</p>

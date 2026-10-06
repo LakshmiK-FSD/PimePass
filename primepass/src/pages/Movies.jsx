@@ -4,7 +4,12 @@ import EmptyCard from '@pages/Empty/EmptyCard';
 function Movies() {
     const [Movies,setMovie]= useState([]);
     const [error,setError]= useState([]);
-useEffect(()=>{fetch("http://localhost:8080/movies")
+useEffect(()=>{fetch("http://localhost:8080/users/movies", {
+  method: "GET",
+  headers: {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWtzaG1pa2FuZGFuMjAyMEBnbWFpbC5jb20iLCJpYXQiOjE3OTEzMDc1ODQsImV4cCI6MTc5MTMxMTE4NH0.tkKkD-IRLfeFcC9fd-2YcxE5g2ZCzMT56LooyEY20W8"
+  }
+})
     .then((data)=>data.json())
     .then((response)=>
        setMovie(response))

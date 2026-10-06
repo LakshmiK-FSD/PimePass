@@ -3,7 +3,7 @@ import useFetcher from "@hooks/useFetcher";
 function Datevise(){
       const {id} = useParams();
       const navi = useNavigate();
-    const[dataa,error]=useFetcher(`http://localhost:8080/movies/${id}`);
+    const[dataa,error]=useFetcher(`http://localhost:8080/users/movies/${id}`);
         if(error){
             return(<>
             <p>{error.message}</p>

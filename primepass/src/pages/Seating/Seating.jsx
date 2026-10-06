@@ -7,9 +7,9 @@ import {useEffect, useState } from "react";
 
 function Seating() {
   const { movid,theatid,dateid,timeid} = useParams();
-    const [data, error] = useFetcher(`http://localhost:8080/time/${timeid}`);
-    const [data2, error2] = useFetcher(`http://localhost:8080/movies/${movid}`);
-    const [data3, error3] = useFetcher(`http://localhost:8080/theater/${theatid}`);
+    const [data, error] = useFetcher(`http://localhost:8080/users/time/${timeid}`);
+    const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
+    const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
   const [parentData, setParen] = useState([]);
   const navi = useNavigate();
  const prr = parentData.reduce((acc,[stat,value])=>{(acc[stat]=value); return acc},{})

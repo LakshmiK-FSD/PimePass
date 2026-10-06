@@ -6,9 +6,9 @@ function Timeselec(){
     const locat = useLocation();
     const naviga = useNavigate();
     const imge = locat.state?.img;
-    const [data,error]=useFetcher(`http://localhost:8080/dates/${date}`)
-    const [data2,error2]=useFetcher(`http://localhost:8080/movies/${mov}`)
-    const [data3,error3]=useFetcher(`http://localhost:8080/theater/${theat}`)
+    const [data,error]=useFetcher(`http://localhost:8080/users/dates/${date}`)
+    const [data2,error2]=useFetcher(`http://localhost:8080/users/movies/${mov}`)
+    const [data3,error3]=useFetcher(`http://localhost:8080/users/theater/${theat}`)
   // Error state
   if (error && error2 && error3) {
     return <p>{error.message}</p>;

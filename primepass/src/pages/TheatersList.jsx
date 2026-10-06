@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import useFetcher from "@hooks/useFetcher";
 function TheatersList(props) {
-  const api = `http://localhost:8080/theater/${props.theaterId}`;
+  const api = `http://localhost:8080/users/theater/${props.theaterId}`;
   const [data, error] = useFetcher(api);
   const naviga = useNavigate();
 

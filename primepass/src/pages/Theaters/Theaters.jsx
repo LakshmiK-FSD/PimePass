@@ -7,8 +7,8 @@ function Theaters() {
   const { id } = useParams();
   const locat = useLocation();
   const name = locat.state?.name;
-const[dataa,error]=useFetcher(`http://localhost:8080/movies/${id}`);
-const[dates,error2]=useFetcher(`http://localhost:8080/theatdate`);
+const[dataa,error]=useFetcher(`http://localhost:8080/users/movies/${id}`);
+const[dates,error2]=useFetcher(`http://localhost:8080/users/theatdate`);
     if(error || error2 ){
         return(<>
         <p>{error.message}</p>

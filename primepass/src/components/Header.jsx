@@ -17,10 +17,10 @@ function Header(props){
           <input id="bar" placeholder="Search,Movies,Events,..."/></span>}
           <Profile />
           <div className="hamburger">
-            <dic className="harmof">
+            <div className="harmof">
            <span className="line"></span>
            <span className="line"></span>
-           <span className="line"></span></dic>
+           <span className="line"></span></div>
            <div className="hamburgmenu">
             <div className="hamprofile">
              <Profile />
