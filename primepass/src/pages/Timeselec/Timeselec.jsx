@@ -14,7 +14,6 @@ function Timeselec(){
     return <p>{error.message}</p>;
   }
 
-  // Loading state
   if (!data || !data2 || !data3) {
     return (
       <div>

@@ -30,6 +30,7 @@ const router = createBrowserRouter([
     path:"/theaters/:id",
     element:<Theaters/>
   },
+ 
   // {
   //   path:"/profile",
   //   element:<ProfileDetl/>

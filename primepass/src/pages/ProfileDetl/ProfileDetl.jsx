@@ -1,7 +1,14 @@
 import { useRef } from "react";
 import style from "./ProfileDetl.module.css"
+import { useNavigate } from "react-router-dom";
+import Login from "../Login/Login";
 function ProfileDetl(props){
-    
+   const loginRef =useRef();
+  function loginf(){
+    loginRef.current.style.display="block";
+
+  }
+  const navi = useNavigate();
   return(
     <div className={style.moveCover}><div className={style.scrprev}>
       <div className={style.box1}><h3>Profile</h3></div>
@@ -20,8 +27,13 @@ function ProfileDetl(props){
       <div className={style.support}>
       <h4>privacy Policy</h4>
       <div className={style.logout}><span>Logout</span></div>
-       <div className={style.logout}></div>
-      </div></div>
+       <div onClick={()=>loginf()} className={`${style.logout}`}>LogIn
+
+        <div ref={loginRef} className={style.login}><Login/></div>
+       </div>
+      </div >
+     
+      </div>
     </div>
   );
 }

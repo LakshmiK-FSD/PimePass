@@ -5,10 +5,10 @@ function Movies() {
     const [Movies,setMovie]= useState([]);
     const [error,setError]= useState([]);
 useEffect(()=>{fetch("http://localhost:8080/users/movies", {
-  method: "GET",
-  headers: {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWtzaG1pa2FuZGFuMjAyMEBnbWFpbC5jb20iLCJpYXQiOjE3OTEzMDc1ODQsImV4cCI6MTc5MTMxMTE4NH0.tkKkD-IRLfeFcC9fd-2YcxE5g2ZCzMT56LooyEY20W8"
-  }
+    method: "GET",
+    headers: {
+        "Authorization": `Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWtzaG1pa2FuZGFuMjAyMEBnbWFpbC5jb20iLCJpYXQiOjE3OTEzMTA1NDMsImV4cCI6MTc5MTMxNDE0M30.JiYMbPYE154aQIllebWaQnBDalQHEMpbu-Xuyw8eMkA`
+    }
 })
     .then((data)=>data.json())
     .then((response)=>

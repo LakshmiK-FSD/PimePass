@@ -1,0 +1,47 @@
+.loger{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(12px);    
+}
+.llogin{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: 7% 27%;
+    height: 70vh;
+    width: 50vw;
+    background-color: rgba(62, 13, 109, 0.854);
+    border-radius: 45px 15px;
+}
+.forinput{
+    padding-top: 10%;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+     p{
+        justify-self: start;
+     }
+}
+.containr
+{
+    h6{ 
+        color: #ffff;
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+    input{
+        height: 28px;
+        width: 25vw;
+        outline: none;
+        
+    }
+   .email{
+    padding-bottom: 29px;
+   }
+}
