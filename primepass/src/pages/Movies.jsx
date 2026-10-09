@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import MoviesCard from '@pages/MoviesCard';
 import EmptyCard from '@pages/Empty/EmptyCard';
 function Movies() {
+    const token = localStorage.getItem("token");
     const [Movies,setMovie]= useState([]);
     const [error,setError]= useState([]);
 useEffect(()=>{fetch("http://localhost:8080/users/movies", {
     method: "GET",
     headers: {
-        "Authorization": `Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWtzaG1pa2FuZGFuMjAyMEBnbWFpbC5jb20iLCJpYXQiOjE3OTEzMTA1NDMsImV4cCI6MTc5MTMxNDE0M30.JiYMbPYE154aQIllebWaQnBDalQHEMpbu-Xuyw8eMkA`
+        "Authorization": `Bearer ${token}`
     }
 })
     .then((data)=>data.json())

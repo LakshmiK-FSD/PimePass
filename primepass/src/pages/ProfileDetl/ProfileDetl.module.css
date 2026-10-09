@@ -1,20 +1,21 @@
 .profile{
     position: relative;
-    border: 1px solid blue;
     border-radius: 50%;
     height: 60px;
     width: 60px;
+    color: aliceblue;
     background-color: rgba(11, 54, 148, 0.516);
     margin:20px 30px;
     h6{
-        top:5px;
+        top:9px;
         left: 20px;
         position: absolute;
-        font-size: 40px;
+        font-size: 36px;
     }
 }
     .box1{
         position: fixed;
+        top: 0;
         width: 100%;
         background-color: rgb(250, 253, 255);
         height: 50px;
@@ -27,13 +28,19 @@
     scrollbar-width: none;
     overflow-y: scroll;
     height:100%;
-    background-color: rgba(53, 52, 53, 0.502);
+    background-color:#1F2230;
 }
 .boxalign{
+    border: 1px solid rgb(9, 9, 9);
     display: flex;
+    background-color:#3E4C7A;
     flex-direction: row;
-    padding-top: 60px;
-padding-bottom: 40px;
+    margin: 90px 0 40px 0;
+    border-radius: 20px;
+    width: 90%;
+    justify-self: center;
+  
+padding:15px 0;
 }
 .nameing{
     margin-top: -8px;
@@ -45,7 +52,7 @@ align-self:center ;
         padding-bottom: 8px;
     }
     p{
-        color: rgba(32, 33, 33, 0.856);
+        color: rgba(153, 156, 156, 0.856);
         font-size: 13px;
         font-weight: 200;
     }
@@ -57,44 +64,73 @@ align-self:center ;
     border-radius: 15px;
     padding:20px 40px;
     height: 60px;
-    background-color: antiquewhite;
+    color: #E6D8C3;
+    background-color:#6A6D7A;
 }
-.support{
-    padding-top: 10px;
+.support,.support2{
+    padding-top: 20px;
         p{
+            color: rgb(118, 119, 120);
             position: relative;
             left: 40px;
             padding-bottom: 6px;
-            color: rgb(20, 20, 20);
             font-size: 15px;
             font-weight: 700;
         }
     
-    h4{
+    .hed{
     position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
     left: 30px;
     width: 90%;
     border-radius: 15px;
-    padding:20px 40px;
-    height: 60px;
-    color: black;
-    background-color: antiquewhite;
+    padding:24px 40px;
+    height: 70px;
+    color: #E6D8C3;
+    background-color:#6A6D7A;
     }
 }
+.support2{
+    margin-top: -14px;
+}
 .logout{
-     background-color: aliceblue;
+    cursor: pointer;
+     background-color:#ad212dd3;
        position: relative;
     left: 30px;
     width: 90%;
     border-radius: 15px;
     padding:20px 40px;
-    height: 60px;
-    color: black; 
+    height: 50px;
+    display: flex;
+    gap: 8px;
+    flex-direction:row;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(255, 252, 252); 
         margin-top: 20px;
+        transition: 0.3s;
+        &:hover{
+            background-color:#e7424fe9;
+        }
 }
 .scrprev{
 
 }
 .login{
     display: none;
+}
+.hed{
+    h4{
+        padding-top: 3px;
+    }
+}
+.down{
+    display: flex;
+    margin-left: 40%;
+    margin-top: -4px;
+    padding-right: 10px;
 }

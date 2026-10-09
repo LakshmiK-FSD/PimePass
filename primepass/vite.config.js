@@ -10,6 +10,7 @@ export default defineConfig({
       '@pages': import.meta.dirname + '/src/pages',
       '@hooks': import.meta.dirname + '/src/hooks',
       '@assets': import.meta.dirname + '/src/assets',
+      '@services': import.meta.dirname + '/src/services',
     },
   },
   server: {

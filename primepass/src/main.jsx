@@ -11,6 +11,7 @@ import Datevise from '@pages/Datevise'
 import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
 import ProfileDetl from '@pages/ProfileDetl/ProfileDetl'
+import Register from './pages/Register/Register'
 const router = createBrowserRouter([
   {
     path:"/",

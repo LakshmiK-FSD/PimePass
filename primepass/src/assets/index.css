@@ -75,20 +75,44 @@
     display: flex;
     flex-direction: column;
 }
-#imagecs{
+.imagecs{
+    cursor: pointer;
     position: relative;
     padding: 4px;
     right:20px;
     border-radius:50%;
     height: 40px;
     width:auto;
-    border: 0.3px solid;
-    background-color:#2f2e2ed4;
+    border: 0.1px solid;
+    background-color:#050404d6;
    }
-
+.login{
+    display: none;
+}
+.imageLet{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4px;
+    right:20px;
+    border-radius:50%;
+    height: 40px;
+    width:40px;
+    border: 0.3px solid;
+    overflow: hidden;
+    background-color: black;
+    h4{
+        color: white;
+        font-size: 17px;
+        font-weight:700;
+    }
+}
 .primepass img{
+    padding: 8px;
     height:auto;
-    width: 85%;
+    width:35px;
 }
 .prmepass{
 display: flex;
