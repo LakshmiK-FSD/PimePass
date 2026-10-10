@@ -22,24 +22,21 @@
         padding:15px;
         z-index: 1;
     }
-
 .moveCover{
-    
     scrollbar-width: none;
     overflow-y: scroll;
     height:100%;
-    background-color:#1F2230;
+    background-color:#1f2230e0;
 }
 .boxalign{
-    border: 1px solid rgb(9, 9, 9);
+    
     display: flex;
     background-color:#3E4C7A;
     flex-direction: row;
-    margin: 90px 0 40px 0;
+    margin: 90px 0 10px 0;
     border-radius: 20px;
     width: 90%;
     justify-self: center;
-  
 padding:15px 0;
 }
 .nameing{
@@ -64,7 +61,7 @@ align-self:center ;
     border-radius: 15px;
     padding:20px 40px;
     height: 60px;
-    color: #E6D8C3;
+    color: #faf9f9;
     background-color:#6A6D7A;
 }
 .support,.support2{
@@ -88,7 +85,7 @@ align-self:center ;
     border-radius: 15px;
     padding:24px 40px;
     height: 70px;
-    color: #E6D8C3;
+    color: #fbfaf9;
     background-color:#6A6D7A;
     }
 }

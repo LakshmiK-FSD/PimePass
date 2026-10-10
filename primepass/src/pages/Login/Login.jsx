@@ -1,13 +1,18 @@
 import api from '@services/api'
-import { useState } from 'react';
-import style from './Login.module.css'
+import { useRef, useState } from 'react';
+import style from './Login.module.css';
+import Register from '@pages/Register/Register'
 import { useNavigate } from 'react-router-dom';
 function Login(){
+    const regRef = useRef();
     const [emails,setEmail] = useState(null);
     const [passwords,setPassword] = useState(null);
     function mail(e){
         setEmail(e.target.value);
         console.log(e.target.value);
+    }
+    function register(){
+          regRef.current.style.display = "block";
     }
     function pass(e){
         setPassword(e.target.value);
@@ -47,7 +52,7 @@ function Login(){
                         </div>
                         <div>
                             <div className={style.submit} onClick={send}>Sign in</div>
-                            <div className={style.subnew}><div className={style.cent}><p>New here?</p><h6 onClick={()=>Register()}>Create an Account</h6></div></div>
+                            <div className={style.subnew}><div className={style.cent}><p>New here?</p><h6 onClick={()=>register()}> <div ref={regRef} className={style.register}><Register/></div> Create an Account</h6></div></div>
                             <div className={style.subdemo}><div className={style.democent}> <p>Demo Login:</p><h5>lakshmikandan2020@gmail.com / 2004</h5></div></div>
                     
                         </div>

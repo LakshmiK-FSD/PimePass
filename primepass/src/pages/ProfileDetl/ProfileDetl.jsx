@@ -8,6 +8,7 @@ function ProfileDetl(props){
    const phNo = localStorage.getItem("phNo");
    const id = localStorage.getItem("id");
    const email = localStorage.getItem("email");
+   const role = localStorage.getItem("role");
   function logout(){
     localStorage.clear();
     window.location.reload();
@@ -19,7 +20,7 @@ function ProfileDetl(props){
       <div className={style.box1}><h3>Profile</h3></div>
 
      <div><div className={style.boxalign}><div className={style.profile}>
-   <h6>{userName && userName.slice(0,1)}</h6>
+   <h6>{userName && userName.slice(0,1).toUpperCase()}</h6>
     </div><div className={style.nameing}>
       <h2>{userName}</h2>
       <p>userId: #{id && id.padStart(8,"0")}</p>

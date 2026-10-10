@@ -15,7 +15,7 @@
     margin: 7% 27%;
     height: 70vh;
     width: 50vw;
-    background-color: rgba(62, 13, 109, 0.854);
+    background-color: rgba(87, 13, 109, 0.854);
     border-radius: 45px 15px;
 }
 .forinput{
@@ -41,8 +41,8 @@
         width: 25vw;
         outline: none;
         padding: 6px 8px;
-        font-size: 15px;
-        border: 1px solid black;
+        font-size: 13px;
+        border: none;
         color: white;
         border-radius: 5px;
         outline: none;
@@ -120,4 +120,15 @@
         font-size: 13px;
         color: rgba(249, 249, 249, 0.596);
     }
+}
+.register{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(19px);   
+    display: none;
 }
