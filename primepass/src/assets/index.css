@@ -45,6 +45,7 @@
     border-radius: 5px;
 }
 #search{
+    
     margin-left: auto;
     margin-top:4px;
     border-radius:50px;
@@ -636,7 +637,7 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
 }
 #search i{
 display: none;
-}
+}ch
 
 }
 @media (max-width:1000px) {
