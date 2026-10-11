@@ -3,6 +3,7 @@ import logo from "@assets/logo.png"
 import Profile from "@pages/Profile"
 import { MapPin } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
+import Search from "../pages/Search/Searcher";
 function Header(props){
   const navigate = useNavigate();
     return (
@@ -14,7 +15,9 @@ function Header(props){
         <MapPin/> </div><p>Cuddalore</p></div>
           <Navbar/></>}
           {props.show && <span id="search"><i className="fa-solid fa-magnifying-glass"></i>
-          <input id="bar" placeholder="Search,Movies,Events,..."/></span>}
+          <input id="bar" placeholder="Search,Movies,Events,..."/>
+          <Search/>
+          </span>}
           <Profile />
           <div className="hamburger">
             <div className="harmof">

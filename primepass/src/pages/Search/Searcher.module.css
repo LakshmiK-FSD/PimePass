@@ -1,0 +1,8 @@
+.srcmain{
+    position: fixed;
+    height: 95vh;
+    width: 100%;
+    background-color: blueviolet;
+    z-index: 2;
+
+}

@@ -43,11 +43,12 @@ function Register(){
                         phoneNo:phNo
                     }
                 )
-                return res;
+                if(res){
+                    window.location.reload();
+                }
             }
             catch(error){
                 console.log(error);
-                
             }
     }
    async function submit(){
@@ -67,20 +68,10 @@ function Register(){
          catch(error){
             console.log(error)
         }
-      const valid = (usename.length > 3) && (password == Cpassword) && (password.length>4) && (phNo.length==10) && (emailCheck(email));
-      if (!valid){
-        return
-      }
-           try{ 
-            const res = await sender();
-            if(res){
-                window.location.reload();
-            }
-           } 
-           catch(error){
-            console.log(error);
-           }
+        if((usename.length > 3) && (password == Cpassword) && (password.length>=4) && (phNo.length==10) && (emailCheck(email))){
+            await sender();
         }
+    }
     return(
         <div>
             <form >
@@ -93,7 +84,7 @@ function Register(){
                     <input onChange={userName} type="text" placeholder='Enter Your Name' />
                 </div>
                 <div className={style.email2}>
-                    <h5 className={style.head}>Email</h5>
+                    <h5 className={style.head}> Email</h5>
                     <input onChange={mail} type="text" placeholder='Enter Your Mail' />
                     <p className={style.digit} ref={redRef4}>Enter a Valid Mail</p>
                 </div>
