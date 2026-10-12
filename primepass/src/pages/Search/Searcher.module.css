@@ -1,8 +1,122 @@
-.srcmain{
+.mainsearch{
+    position:relative;
+    top:0;
+    left:0;
+    z-index: 3;
+}
+.searcm{
     position: fixed;
-    height: 95vh;
-    width: 100%;
-    background-color: blueviolet;
-    z-index: 2;
-
+    right:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(228, 230, 231, 0);
+    backdrop-filter: blur(20px) saturate(190%);
+   -webkit-backdrop-filter: blur(20px) saturate(190%);
+   z-index: 3;
+}
+.search{
+    position: fixed;
+    top: 0;
+    right: 225px;
+    background-color: rgb(248, 246, 246);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius:3px;
+    width: 63vw;
+    height: 99vh;
+    z-index: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.searbar{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    padding: 10px 0 10px 70px;
+    i{
+        color: rgba(149, 150, 151, 0.756);
+        padding-left: 30px;
+        font-size: 18px;
+        align-self: center;
+    }
+  input{
+    outline:none;
+    border-radius: 9px;
+    border: 0.5px solid rgba(128, 128, 128, 0.826);
+    padding: 0 20px;
+    margin-left: 10px;
+    height: 40px;
+    font-size: 15px;
+    font-weight:500;
+    letter-spacing: 1px;
+    width:600px;
+  }
+  form{
+    position: relative;
+  }
+     button {
+        position:absolute;
+        top:2px;
+        right: 10px;
+        font-size: 24px;
+        width: 41px;
+        height: 36px;
+        padding-top: 2px;
+        background-color: rgb(255, 255, 255);
+        transition: 0.2s;
+        color: rgb(128, 128, 128, 0.826);
+        &:hover{
+            color: rgb(31, 31, 31);
+        }
+    }
+ 
+}  
+ .liner{
+        width: 100%;
+        border: 1px solid rgba(50, 50, 50, 0.347);
+        height: 1px;
+        background-color: rgba(67, 65, 65, 0.265);
+    }
+.make{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 30px;
+    border-bottom:1px solid rgba(70, 69, 69, 0.516);
+    
+    img{
+        border-radius:10px;
+        height: 60px;
+        width: 50px;
+        object-fit:cover;
+    }
+ 
+}
+.mainsrc{
+    padding:0 140px;
+}
+.makefix{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 63.8%;
+}
+.top{
+    padding-top: 66px;
+}
+.subrow{
+    display: flex;
+    flex-direction: column;
+     padding-left: 70px;
+     p{
+        font-size: 12px;
+        color: rgba(128, 128, 128, 0.696);
+     }
+    h5{
+       padding-bottom: 5px;
+        font-size: 17px;
+    }
 }

@@ -3,7 +3,7 @@ import { ReceiptText,MessagesCircle,LogOut,ScrollText,MessageCircleQuestionMark}
 import style from "./ProfileDetl.module.css"
 import { useNavigate } from "react-router-dom";
 import Login from "../Login/Login";
-function ProfileDetl(props){
+function ProfileDetl(){
    const userName = localStorage.getItem("userName");
    const phNo = localStorage.getItem("phNo");
    const id = localStorage.getItem("id");

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import style from "./Register.module.css";
-import api from '@services/api'
+import api from '@services/api';
 function Register(){
     const [usename,setUsername]=useState(null);
     const [email,setEmail]=useState(null);

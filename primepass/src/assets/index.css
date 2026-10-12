@@ -45,7 +45,6 @@
     border-radius: 5px;
 }
 #search{
-    
     margin-left: auto;
     margin-top:4px;
     border-radius:50px;
@@ -54,6 +53,9 @@
     padding-left:10px;
     font-size:18px;
     border:1px solid rgba(0, 0, 0, 0.452);
+}
+.searcmain{
+    display: none;
 }
 #bar,&:focus{
     border:0px black;
@@ -111,7 +113,7 @@
     }
 }
 .primepass img{
-    padding: 8px;
+    padding: 1px;
     height:auto;
     width:35px;
 }
@@ -264,7 +266,7 @@ flex-direction: column;
 }.card {
   position: relative;
   border-radius:10px;
-  background: rgba(35, 8, 74, 0.655); 
+  background: rgba(53, 54, 53, 0.509); 
   backdrop-filter: blur(20px) saturate(190%);
   -webkit-backdrop-filter: blur(20px) saturate(190%);
   box-shadow: 
