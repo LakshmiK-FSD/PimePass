@@ -12,6 +12,7 @@
     background: linear-gradient(-45deg,(76, 41, 41), rgb(23, 23, 71), rgb(91, 180, 91), rgb(163, 116, 116));
 }
 .header p{
+    cursor: pointer;
     padding: 10px;
     border-radius: 60px;
     border: 2px ;
@@ -19,11 +20,11 @@
     transition: background-color 0.5s ;
 }
 .header p:hover{
+    cursor: pointer;
     padding: 10px;
     border-radius: 60px;
     border: 2px ;
     background-color: aquamarine;
-     
 }
 #logo{
     height: 80px;
@@ -45,7 +46,6 @@
     border-radius: 5px;
 }
 #search{
-    
     margin-left: auto;
     margin-top:4px;
     border-radius:50px;

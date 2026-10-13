@@ -3,10 +3,8 @@
     display:flex;
     flex-direction: column;
     gap: 7px;
-    
-   
 }
-.seat{
+.seatselect{
     text-align: center;
     align-content: center;
     background-color:#ffb703;
@@ -20,7 +18,6 @@
     box-shadow: 0 0 4px #ffb703;
     transition:background-color 0.3s ;
     transform: translateY(-3px);
-   
     &:hover{
         background-color:#4b4170;
     }
@@ -31,8 +28,7 @@
     gap:7px;
 }
 
-.seatselect{
-   
+.seat{
     text-align: center;
     align-content: center;
     border-radius:12px 12px 3px 3px;
@@ -50,4 +46,17 @@
 }
 .sellec{
     
+}
+.booked{
+    pointer-events: none;
+    text-align: center;
+    align-content: center;
+    border-radius:12px 12px 3px 3px;
+    height:6vh;
+    width:3vw;
+    font-size:10px;
+    font-weight: 600;
+    background-color:#242424;
+    color:white;
+    text-decoration: line-through;
 }

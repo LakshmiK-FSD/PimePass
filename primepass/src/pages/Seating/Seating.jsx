@@ -55,8 +55,7 @@ const theatdet =[theatName,timeid,theatid];
           <h4>{data.time}</h4></div>
         }
          <div className={style.theatcent}>
-        <div className="crow">
-                                           
+        <div className="crow">                             
            {/* {seatsT.map((seatGroup, idx) =>  //array enter
               seatGroup.map((seat, seatIdx) =>  */}
             {seatsT.map((clsid, idx) =>

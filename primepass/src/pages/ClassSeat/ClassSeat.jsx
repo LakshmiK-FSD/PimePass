@@ -20,15 +20,15 @@ function ClassSeat({ sendFun, classs }) {
   const seatCreat = data.seats;
   const seatar = seatCreat.map((e, rowIndex) => (
     <div key={`rowout-${rowIndex}`} className={style.rrowf}>
-    
       {e.clrow.map((e2, seatIndex) => {
         const key = `${e2.rowId}${e2.number}`;
         const isSelected = seatts[key];
+        const bookedSeat = (e2.status === "AVAILABLE" )?true:false;
         return (
-          <div
-            key={`rowin-${seatIndex}`}
+          <div key={`rowin-${seatIndex}`}
             onClick={() => togglers(e2.rowId, e2.number)}
-            className={isSelected ? style.seat: style.seatselect}>
+            className={(bookedSeat)?`${isSelected ?style.seatselect : style.seat}`:`${style.booked}`}
+            >
             {e2.rowId}{e2.number}
           </div>
         );

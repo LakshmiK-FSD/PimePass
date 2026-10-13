@@ -114,7 +114,7 @@
       word-spacing: normal;
    }
    .movie{
-   background-image: url("../assets/movbg.jpeg");
+   background-image: url("../../assets/movbg.jpeg");
    background-position: 0;
    background-repeat: no-repeat;
    background-size: cover;
@@ -130,7 +130,7 @@
   
    }
    .events{
-   background-image: url("../assets/evenbg.jpg");
+   background-image: url("../../assets/evenbg.jpg");
    background-position: 0;
    background-repeat: no-repeat;
    background-size: cover;
@@ -145,7 +145,7 @@
       border: 1px solid grey;
    }
    .organize{
-   background-image: url("../assets/orgabg.jpg");
+   background-image: url("../../assets/orgabg.jpg");
    background-position: 0;
    background-repeat: no-repeat;
    background-size: cover;

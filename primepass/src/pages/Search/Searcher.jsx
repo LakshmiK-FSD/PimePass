@@ -1,13 +1,24 @@
-import { use, useState } from 'react';
+import { useEffect,useRef,useState } from 'react';
 import api from '@services/api';
 import style from './Searcher.module.css';
 import { X } from 'lucide-react';
 import Result from './Result';
-function Searcher(props){
+function Searcher({valuer,cclick}){
+    const fnvalue = valuer;
+    const focs = useRef();
    const [res,setRes]=useState();
+   useEffect(()=>{
+    console.log(valuer)
+    if(valuer){
+        setTimeout(()=>{
+            focs.current.focus();
+        },40)
+     }
+   },[fnvalue])
+
    async function search(e){
        const valuer = e.target.value;
-       try{
+        try{
           const res = await api.get("users/search",{
             params:{
                srh:valuer
@@ -21,15 +32,14 @@ function Searcher(props){
            console.log(error);
        }
     }
-    
     return(
         <div className={style.mainsearch}>
-            <div className={style.searcm} onClick={()=>props.cclick()}>  
+            <div className={style.searcm} onClick={()=>cclick()}>  
             </div>
             <div className={style.search}>
                 <div className={style.makefix}>
                 <span  className={style.searbar}><i className="fa-solid fa-magnifying-glass"></i>
-               <form > <input ref={props.focs} name='search' onChange={search} placeholder="Search,Movies,Events,..."/>
+               <form > <input ref={focs} name='search' onChange={search} placeholder="Search,Movies,Events,..." />
                <button  type='reset'><X size={18}/></button>
                </form>
                 </span>
