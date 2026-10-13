@@ -29,7 +29,7 @@ function Searcher(props){
             <div className={style.search}>
                 <div className={style.makefix}>
                 <span  className={style.searbar}><i className="fa-solid fa-magnifying-glass"></i>
-               <form > <input name='search' onChange={search} placeholder="Search,Movies,Events,..."/>
+               <form > <input ref={props.focs} name='search' onChange={search} placeholder="Search,Movies,Events,..."/>
                <button  type='reset'><X size={18}/></button>
                </form>
                 </span>

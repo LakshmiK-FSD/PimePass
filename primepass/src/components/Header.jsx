@@ -3,11 +3,12 @@ import logo from "@assets/logo.png"
 import Profile from "@pages/Profile"
 import { MapPin } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
-import Search from "../pages/Search/Searcher";
+import Searcher from "../pages/Search/Searcher";
 import { useEffect, useRef, useState } from "react";
 function Header(props){
   const navigate = useNavigate();
   const srcmainRef = useRef();
+  const focRef = useRef();
   const[togg,setTogg]=useState(false);
   useEffect(()=>
     {
@@ -27,9 +28,9 @@ function toggler(){
         <MapPin/> </div><p>Cuddalore</p></div>
           <Navbar/></>}
           {props.show &&<> <span onClick={toggler} id="search"><i className="fa-solid fa-magnifying-glass"></i>
-          <input id="bar" placeholder="Search,Movies,Events,..."/></span>
+          <div id="bar">Search,Movies,Events,...</div></span>
           <div className="searcmain" ref={srcmainRef}>
-          <Search set={setTogg} cclick={toggler} /></div></>
+          <Searcher focs={focRef} cclick={toggler} /></div></>
           }
           <Profile />
           <div className="hamburger">

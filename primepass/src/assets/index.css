@@ -54,6 +54,16 @@
     padding-left:10px;
     font-size:18px;
     border:1px solid rgba(0, 0, 0, 0.452);
+    i{
+        padding: 10px;
+    }
+    div{
+        position: relative;
+        margin-top: -36px;
+        padding-left: 29px;
+        padding-top: 8px;
+        color:rgba(128, 128, 128, 0.658) ;
+    }
 }
 .searcmain{
     display: none;
@@ -114,7 +124,7 @@
     }
 }
 .primepass img{
-    padding: 1px;
+    padding: 2px;
     height:auto;
     width:35px;
 }
@@ -640,7 +650,19 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
 }
 #search i{
 display: none;
-}ch
+}
+#search{
+    div{
+        display: flex;
+        flex-direction:column;
+        height: 30px;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        margin-top: 2px;
+        padding-top: 8px;
+    }
+}
 
 }
 @media (max-width:1000px) {
@@ -653,6 +675,7 @@ display: none;
     padding-left:0px;
     font-size:15px;
     border:1px solid rgba(0, 0, 0, 0.452);
+   
 }
 #bar,&:focus{
     margin-left:10px;
