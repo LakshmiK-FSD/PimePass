@@ -23,13 +23,30 @@
 .ovie{
    position: relative;
    z-index: 1;
-    height: 100%;
 }
 .side{
     padding:0 30px 60px 30px ;
 }
 .paren{
-    height: 100vh;
+
+    height:700px;
     position: relative;
-background: linear-gradient(70deg,rgba(2, 0, 36, 0.68) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(5, 89, 184, 0.68) 65%, rgba(0, 212, 255, 0.68) 100%);
+   background-color: rgba(14, 3, 41, 0.922);
+/* background: linear-gradient(70deg,rgba(2, 0, 36, 0.68) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(5, 89, 184, 0.68) 65%, rgba(0, 212, 255, 0.68) 100%); */
+}
+.toprow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:120px;
+    padding-left: 70px;
+    background-color: rgba(17, 17, 36, 0.628);
+    h5{
+        color: white;
+            font-size: 50px;
+    font-weight: 800;
+    }
+    p{
+       color: gray;
+    }
 }

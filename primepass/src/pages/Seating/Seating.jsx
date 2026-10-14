@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import useFetcher from "@hooks/useFetcher";
 import ClassSeat from "@pages/ClassSeat/ClassSeat";
 import screen from "@assets/screen.png";
+import api from "@services/api"
 import style from "./Seating.module.css";
 import {useEffect, useState } from "react";
 
@@ -11,14 +12,26 @@ function Seating() {
     const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
     const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
   const [parentData, setParen] = useState([]);
+  const [seatsID, setParen2] = useState([]);
   const navi = useNavigate();
+
  const prr = parentData.reduce((acc,[stat,value])=>{(acc[stat]=value); return acc},{})
  const arr = Object.entries(prr).filter(([a,b])=>b).map(([a,b])=>a)
- useEffect(()=>{
-  console.log(arr)
- })
+ const opArr = seatsID.reduce((acc,[idx,value])=>{
+  acc[idx]=value;
+  return acc;
+
+ },{});
+ const stsIdArr = Object.entries(opArr).filter(([a,b])=>b).map(([a,b])=>a);
+//  useEffect(()=>{
+//   console.log(arr)
+//   console.log(stsIdArr)
+//  })
   function senData(arr) {
     setParen(prev => [...prev, ...arr]); 
+  }
+  function setIndex(arr){
+    setParen2(prev=>[...prev,...arr])
   }
 
   if (error || error2 || error3) 
@@ -42,6 +55,33 @@ const theatdet =[theatName,timeid,theatid];
   const clsAmount = data.viewcls.map(e => e.amount);
   //if (!seatsT) return <div>Seats Loading...</div>;
   const btnsh = (arr.length!==0)
+  async function booking(){
+    console.log(stsIdArr);
+    if(localStorage.getItem("id")){
+     try{
+        const res = await api.put("/users/booking",{
+              seats:stsIdArr,
+              booker:[localStorage.getItem("id")]
+        }
+        )
+        const str = res.data.value;
+        console.log(res.status)
+        
+        if((res.status)!=202){
+          return (<div>
+            loading ...
+          </div>)
+        }
+        if((res.status)===202){
+          const userId = localStorage.getItem("id");
+        navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId}});
+      }
+       
+     }
+     catch(error){
+      console.log(error);
+     }
+  }}
   {/*  */}
   return (
           <div className={style.maintheat}>
@@ -62,14 +102,13 @@ const theatdet =[theatName,timeid,theatid];
                 (<div key={`${clsid}`}>
                   <h4>{clsNames[idx]}</h4> 
                   <div className={style.amt}><p>&#8377;{clsAmount[idx]+"  "} per seat</p></div>
-                  <ClassSeat sendFun={senData} classs={clsid} />
+                  <ClassSeat sendFn2={setIndex} sendFun={senData} classs={clsid} />
                 </div>
               )
             )}
           </div>
            <p className={style.scren}>screen on this way</p>
           <div className={style.screimg}>
-           
             <img src={screen} alt="screen" />
           </div>
         </div>
@@ -82,8 +121,12 @@ const theatdet =[theatName,timeid,theatid];
         <h5>Seats:</h5><h4>{arr.length}</h4>
         {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
       </div>
-      <div onClick={()=>navi(`/bookdetail/${movid}`,{state:{arr,theatdet}})} className={style.booking}>
+      <div onClick={()=>{
+                         booking();
+                         
+    }} className={style.booking}>
       <p>BookNow</p>
+      
      </div>
       </div>}
     </div>

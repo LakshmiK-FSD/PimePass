@@ -8,7 +8,7 @@ function BookDetail(){
     const arr = locate.state?.arr
     const theater = locate.state?.theatdet;
     return(<div>
-          <Header shownav={true}/>
+          <Header show={true} shownav={true}/>
         <Bookinfo theat={theater} movid={movid} arr={arr}/>
     </div>)
 }

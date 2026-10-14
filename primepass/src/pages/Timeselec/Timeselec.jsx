@@ -26,7 +26,8 @@ function Timeselec(){
           <img className={style.imge} src={imge} alt="" />
           <div className={style.top}>
             <div className="row">
-              <div className={style.round}><img className={style.imge2} src={imge} alt="" /></div><div className={style.hell}><h3>{data3.theaterName}</h3>
+              <div className={style.round}><img className={style.imge2} src={imge} alt="" /></div>
+              <div className={style.hell}><h3>{data3.theaterName}</h3>
               <p>{data3.theaterAddress[0]}</p>
               </div>
            

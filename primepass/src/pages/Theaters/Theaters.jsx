@@ -37,6 +37,9 @@ const[dates,error2]=useFetcher(`http://localhost:8080/users/theatdate`);
 
   return (
     <div className={style.paren}>
+      <div className={style.toprow}><h5>{dataa.movename}</h5>
+      <p>Pick a theatre and one of its available dates.</p>
+      </div>
     <div className={style.ovie}><div> 
       </div><div className={style.side}>
       <div className={style.theaters}>

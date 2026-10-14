@@ -9,10 +9,13 @@ function Header(props){
   const navigate = useNavigate();
   const srcmainRef = useRef();
   const[togg,setTogg]=useState(false);
+  useEffect(()=>{
+    (togg)?srcmainRef.current.style.display = "block":srcmainRef.current.style.display = "none";
+  },[togg])
  
 function toggler(){
   setTogg(!togg);
-  (!togg)?srcmainRef.current.style.display = "block":srcmainRef.current.style.display = "none";
+  
 }
     return (
         <>
