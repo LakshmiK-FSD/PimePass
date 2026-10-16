@@ -13,6 +13,12 @@
     & > *{
         padding-bottom:15px;
     }
+    pre{
+        color: #646c6cce;
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
+    }
         input{
         background-color: rgba(248, 246, 249, 0.279);
         height: 38px;
@@ -21,6 +27,7 @@
         padding: 6px 8px;
         font-size: 13px;
         color: white;
+        border: 1px solid rgba(63, 62, 62, 0.338);
         border-radius: 5px;
         outline: none;
         &::placeholder{
@@ -50,7 +57,7 @@
 }
 .header{
     padding-bottom: 29px;
-     h5{
+     h2{
         letter-spacing: 1px;
         padding-top: 20px;
         font-size: 25px;

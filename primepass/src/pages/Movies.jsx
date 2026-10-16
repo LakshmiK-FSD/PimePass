@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import MoviesCard from '@pages/MoviesCard';
+import { ThreeDot } from "react-loading-indicators";
 import EmptyCard from '@pages/Empty/EmptyCard';
 function Movies() {
     const token = localStorage.getItem("token");

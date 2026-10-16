@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetcher from "@hooks/useFetcher";
+import { ThreeDot } from "react-loading-indicators";
 import { Play } from 'lucide-react';
 import Headers from "@components/Header"
 function Datevise(){
@@ -12,9 +13,9 @@ function Datevise(){
             </>)
         }
           if(!dataa){
-            return(<>
-            <p>loading....</p>
-            </>)
+            return(<div className="loading">
+        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        </div>)
         }
     
     return (<div>

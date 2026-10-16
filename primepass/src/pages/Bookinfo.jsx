@@ -1,4 +1,5 @@
 import useFetcher from "@hooks/useFetcher";
+import { ThreeDot } from "react-loading-indicators";
 function Bookinfo(props){
     const theatname = props.theat[0];
     const theatid = props.theat?.[2];
@@ -12,9 +13,9 @@ function Bookinfo(props){
         </>)
     }
       if(!data || !data2 || !data3){
-        return(<>
-        <p>loading....</p>
-        </>)
+        return(<div className="loading">
+        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        </div>)
     }
 
     const location1=data2?.theaterAddress?.[0]

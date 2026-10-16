@@ -19,7 +19,7 @@ function TheatersList(props) {
   if (!data) {
     return (
       <div>
-        <p>Loading...</p>
+        <p>   </p>
       </div>
     );
   }

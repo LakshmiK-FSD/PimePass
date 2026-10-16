@@ -8,7 +8,7 @@ function Navbar(){
             <p onClick={()=>navigate('/aboutus')}>AboutUs</p>
             <p onClick={()=>navigate('/aboutus')}>Passes</p>
             <p onClick={()=>navigate('/organize')}>Organize</p>
-            <p onClick={()=>navigate('/aboutus')}>MyPasses</p>
+            <p onClick={()=>navigate('/mypasses')}>MyPasses</p>
         </div>
         </>
     );

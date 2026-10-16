@@ -10,8 +10,10 @@ import BookDetail from '@pages/BookDetail/BookDetail'
 import Datevise from '@pages/Datevise'
 import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
+import MyPasses from './pages/MyPasses/MyPasses'
 import ProfileDetl from '@pages/ProfileDetl/ProfileDetl'
 import Register from './pages/Register/Register'
+import Payment from './pages/Payment/Payment'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -30,6 +32,12 @@ const router = createBrowserRouter([
   },{
     path:"/theaters/:id",
     element:<Theaters/>
+  },{
+    path:"/payment/:movid",
+    element:<Payment/>
+  },{
+    path:"/mypasses",
+    element:<MyPasses/>
   },
  
   // {

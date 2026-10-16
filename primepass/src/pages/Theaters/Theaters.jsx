@@ -2,7 +2,7 @@ import style from "./Theaters.module.css"
 import { useLocation, useParams } from "react-router-dom";
 import TheatersList from "@pages/TheatersList";
 import useFetcher from "@hooks/useFetcher";
-
+import { ThreeDot } from "react-loading-indicators";
 function Theaters() {
   const { id } = useParams();
   const locat = useLocation();
@@ -16,14 +16,14 @@ const[dates,error2]=useFetcher(`http://localhost:8080/users/theatdate`);
         </>)
     }
       if(!dataa){
-        return(<>
-        <p>loading....</p>
-        </>)
+         return(<div className="loading">
+        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        </div>)
     }
      if(!dates){
-        return(<>
-        <p>loading....</p>
-        </>)
+        return(<div className="loading">
+        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        </div>)
     }
     
 

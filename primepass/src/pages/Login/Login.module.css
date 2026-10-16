@@ -24,18 +24,18 @@
 .email{
     display: flex;
     flex-direction: column;
-     p{
+     .pf{
         justify-self: start;
      }
 }
 .containr
 {
-    h6{ 
+    .hf{ 
         color: #ffff;
         font-size: 14px;
         padding-bottom: 8px;
     }
-    input{
+    .iner{
         background-color: rgba(248, 246, 249, 0.279);
         height: 38px;
         width: 25vw;
@@ -83,20 +83,21 @@
         display: flex;
         flex-direction: row;
         gap:5px;
-        h6{
+      
+    .pf2{
+        color:rgba(112, 110, 110, 0.877);
+    }
+}
+    .hf2:hover{
+        color: rgba(3, 36, 158, 0.975);
+    }
+    
+     .hf2{
         cursor: pointer;
-        font-size: 15px;
+        font-size: 15px ;
         color: rgba(38, 10, 77, 0.82);
         transition: 0.3s;
     }
-    p{
-        color:rgba(112, 110, 110, 0.877);
-    }
-    h6:hover{
-        color: rgba(3, 36, 158, 0.975);
-    }
-    }
-
 }
 .subdemo{
     position: relative;
@@ -110,13 +111,13 @@
         display: flex;
         flex-direction: row;
         gap:5px;
-        p{
+        .pf3{
             color:rgba(112, 110, 110, 0.877);
             font-size: 12px;
             font-weight: 700;
         }
     }
-     h5{
+     .hfi{
         font-size: 13px;
         color: rgba(249, 249, 249, 0.596);
     }

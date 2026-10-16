@@ -11,7 +11,33 @@
      font-weight: 900;
   }
 }
-
+.log{
+  display: none;
+  h6{
+    text-align: start;
+    padding-left: 1px;
+  }
+  p{
+     padding-left:40px !important;
+     font-size: 12px !important ;
+  }
+  h3{
+        padding: 4px 0 0 0;
+        cursor: pointer;
+        font-size: 12px !important ;
+        font-size: 500 !important;
+        color: rgba(38, 10, 77, 0.82);
+        transition: 0.3s;
+    
+  }
+  h5{   
+        padding: 0 0 0 1px;
+        font-size: 14px !important;
+        color: azure !important;
+        text-align: start;
+     }
+    
+}
 .screimg{
     display: flex;
     padding-top:5%;

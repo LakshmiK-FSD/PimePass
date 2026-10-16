@@ -2,12 +2,15 @@ import { useNavigate, useParams } from "react-router-dom";
 import useFetcher from "@hooks/useFetcher";
 import ClassSeat from "@pages/ClassSeat/ClassSeat";
 import screen from "@assets/screen.png";
+import Login from "../Login/Login";
 import api from "@services/api"
 import style from "./Seating.module.css";
-import {useEffect, useState } from "react";
+import { ThreeDot } from "react-loading-indicators";
+import {useEffect, useRef, useState } from "react";
 
 function Seating() {
   const { movid,theatid,dateid,timeid} = useParams();
+  const loginRef = useRef();
     const [data, error] = useFetcher(`http://localhost:8080/users/time/${timeid}`);
     const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
     const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
@@ -33,57 +36,34 @@ function Seating() {
   function setIndex(arr){
     setParen2(prev=>[...prev,...arr])
   }
-
+  function login(){
+    loginRef.current.style.display = "block";  }
   if (error || error2 || error3) 
     {
     return <div>unable to load</div>
     }
   if (!data || !data2 || !data3 ) 
     {
-    return <div>Loading...</div>
+    return(<div className="loading">
+        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        </div>)
     }
-const theatName= data2.theaterName;
+const theatName= data3.theaterName;
 const theatdet =[theatName,timeid,theatid];
-  // const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
-  //const time= (timeData.map((e)=>e.showTime)).join();
-   
-   //need to change  uper..
-  // if (!timeData) return <div>Loading...</div>;
-  // const seatsT = data.timeData.map(e => e.showtimes||[]);
+// const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
+//const time= (timeData.map((e)=>e.showTime)).join();
+//need to change  uper..
+// if (!timeData) return <div>Loading...</div>;
+// const seatsT = data.timeData.map(e => e.showtimes||[]);
   const seatsT = data.viewcls.map(e => e.clsid);
   const clsNames = data.viewcls.map(e => e.clsName);
   const clsAmount = data.viewcls.map(e => e.amount);
   //if (!seatsT) return <div>Seats Loading...</div>;
   const btnsh = (arr.length!==0)
-  async function booking(){
-    console.log(stsIdArr);
-    if(localStorage.getItem("id")){
-     try{
-        const res = await api.put("/users/booking",{
-              seats:stsIdArr,
-              booker:[localStorage.getItem("id")]
-        }
-        )
-        const str = res.data.value;
-        console.log(res.status)
-        
-        if((res.status)!=202){
-          return (<div>
-            loading ...
-          </div>)
-        }
-        if((res.status)===202){
-          const userId = localStorage.getItem("id");
-        navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId}});
-      }
-       
-     }
-     catch(error){
-      console.log(error);
-     }
-  }}
+  
   {/*  */}
   return (
+
           <div className={style.maintheat}>
          <div className={style.centseat}>
             {/* <h2>{theatnam}</h2> */}
@@ -121,13 +101,17 @@ const theatdet =[theatName,timeid,theatid];
         <h5>Seats:</h5><h4>{arr.length}</h4>
         {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
       </div>
-      <div onClick={()=>{
-                         booking();
-                         
-    }} className={style.booking}>
+
+     
+     {localStorage.getItem("id") && <div onClick={()=> navi(`/payment/${movid}`,{state:{arr,theatdet,stsIdArr}})}
+       className={style.booking}>
       <p>BookNow</p>
-      
-     </div>
+     </div>}
+     {!localStorage.getItem("id") && <div onClick={()=> login()}
+       className={style.booking}>
+        <div className={style.log} ref={loginRef} ><Login/></div>
+      <p>BookNow</p>
+     </div>}
       </div>}
     </div>
   );
