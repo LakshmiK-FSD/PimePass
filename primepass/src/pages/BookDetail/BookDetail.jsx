@@ -6,10 +6,11 @@ function BookDetail(){
     const {movid} = useParams();
     const locate = useLocation();
     const arr = locate.state?.arr
+    const seats = locate.state?.seats
     const theater = locate.state?.theatdet;
     return(<div>
           <Header show={true} shownav={true}/>
-        <Bookinfo theat={theater} movid={movid} arr={arr}/>
+        <Bookinfo theat={theater} movid={movid} seats={seats} arr={arr}/>
     </div>)
 }
 

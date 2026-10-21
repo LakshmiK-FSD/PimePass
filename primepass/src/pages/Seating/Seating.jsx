@@ -14,6 +14,7 @@ function Seating() {
     const [data, error] = useFetcher(`http://localhost:8080/users/time/${timeid}`);
     const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
     const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
+    const[data4,error4]=useFetcher(`http://localhost:8080/users/dates/${dateid}`);
   const [parentData, setParen] = useState([]);
   const [seatsID, setParen2] = useState([]);
   const navi = useNavigate();
@@ -36,20 +37,30 @@ function Seating() {
   function setIndex(arr){
     setParen2(prev=>[...prev,...arr])
   }
+
+    async function lock() {
+      navi(`/payment/${movid}`,{state:{arr,theatdet,stsIdArr}});
+      await api.post("/users/seatlock",null,{
+        params:{
+          lockfr:stsIdArr
+        }
+      })
+    }
   function login(){
     loginRef.current.style.display = "block";  }
-  if (error || error2 || error3) 
+  if (error || error2 || error3 || error4) 
     {
     return <div>unable to load</div>
     }
-  if (!data || !data2 || !data3 ) 
+  if (!data || !data2 || !data3 || !data4) 
     {
     return(<div className="loading">
-        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        <ThreeDot size="large" variant="bounce"   color={"blue"} text="LOADING..."/>
         </div>)
     }
 const theatName= data3.theaterName;
-const theatdet =[theatName,timeid,theatid];
+const date= data4.date;
+const theatdet =[theatName,timeid,theatid,date,data.time,data2.movename];
 // const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
 //const time= (timeData.map((e)=>e.showTime)).join();
 //need to change  uper..
@@ -101,9 +112,8 @@ const theatdet =[theatName,timeid,theatid];
         <h5>Seats:</h5><h4>{arr.length}</h4>
         {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
       </div>
-
      
-     {localStorage.getItem("id") && <div onClick={()=> navi(`/payment/${movid}`,{state:{arr,theatdet,stsIdArr}})}
+     {localStorage.getItem("id") && <div onClick={()=>lock()}
        className={style.booking}>
       <p>BookNow</p>
      </div>}

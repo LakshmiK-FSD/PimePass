@@ -12,6 +12,7 @@ function Payment(){
     const seats = locat?.state.stsIdArr;
     const[priSeats,setSeats]=useState([]);
     const loadRef = useRef();
+    const lockRef = useRef();
     const[email,setSeats1]=useState();
     const[cvc,setSeats2]=useState();
     const[expire,setSeats3]=useState();
@@ -39,10 +40,8 @@ function Payment(){
         }
         geting(seats);
     },[seats])
-function loader(){
-    loadRef.current.style.display ="block";
-    setTimeout(()=>{booking()},3000)
-}
+
+
   async function booking() {
         if(localStorage.getItem("id")){
          try{
@@ -62,7 +61,7 @@ function loader(){
             if((res.status)===202){
                 console.log("202")
               const userId = localStorage.getItem("id");
-            navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId}});
+            navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId,seats}});
           }
            
          }
@@ -70,7 +69,25 @@ function loader(){
           console.log(error);
          }
       }}
+         const seatCheck=  priSeats.map((e)=>(new Date().getTime() < new Date(e.expireTime?.toString()
+   .split('.')[0]+'.'+ e.expireTime?.toString().split('.')[1].slice(0,3)+'Z').getTime()-5.5*60*60*1000))
+   .filter((e)=>e).length==0?true:false;
+    const booker=  (priSeats.map((e)=>e.bookedBy))?.[0];
+    function loader(){
 
+        if(booker == null){
+            
+        }
+    if(seatCheck || booker == localStorage.getItem("id")){
+        loadRef.current.style.display ="block";
+        setTimeout(()=>{booking()},3000)
+    }
+    if(!seatCheck || booker != localStorage.getItem("id")){
+         lockRef.current.style.display ="block";   
+    }
+}
+
+   
     return(
         <div className={style.main}><div className={style.first}>
 
@@ -108,19 +125,24 @@ function loader(){
                      <p>CVC</p><input type="text" placeholder="123"/>
                 </div>
                 <div>
-                     <p>Name on Card</p><input type="text" placeholder=" name in card"/>
-                </div>
-                <div>
-                     <h5
-                     onClick={()=>loader()}
-                     >Pay &#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
-                    acc+cur
-                    ,0)+tax+platFormFee}</h5>
-                     <pre>Secure Pay</pre>
-                     
-                </div>
-                <div ref={loadRef} className="loading2"> 
-                    <OrbitProgress size="large" text="Please Wait"  />
+                        <p>Name on Card</p><input type="text" placeholder=" name in card"/>
+                    </div>
+                    <div>
+                        <h4 ref={lockRef} className={style.seatbooked}>Sorry the seat was booked</h4>
+                        <h5
+                        onClick={()=>loader()}
+                        >Pay &#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
+                        acc+cur
+                        ,0)+tax+platFormFee}</h5>
+                        <h3>{JSON.stringify(priSeats?.map((e)=>new Date(e.expireTime?.toString()
+   .split('.')[0]+'.'+ e.expireTime?.toString().split('.')[1].slice(0,3)+'Z')))}</h3>
+                        <pre>Secure Pay</pre>
+                     <h4> {JSON.stringify(seatCheck)}</h4>
+                     <h4> {booker}</h4>
+                     <h4> {localStorage.getItem("id")}</h4>
+                    </div>
+                    <div ref={loadRef} className="loading2"> 
+                        <OrbitProgress size="large" text="Please Wait"  />
                 </div>
             </div>
         </div>
