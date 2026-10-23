@@ -1,0 +1,177 @@
+.detail{
+    display:flex;
+    flex-direction: column;
+    
+}
+.subdetai2{
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+  p{
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(228, 231, 234, 0.865);
+    padding: 3px 7px;
+    border-radius: 20px;
+    background-color: rgba(105, 108, 108, 0.653);
+  }
+}
+.subdetai3{
+    display: flex;
+    flex-direction: row;
+    padding-left: 4px;
+    div{
+        display: flex;
+        flex-direction: row;
+    }
+    .address{
+         
+    }
+}
+.subdetai{
+    padding-bottom: 6px;
+    h3{
+        font-size: 36px;
+        font-weight: 800;
+    }
+}
+.movDeta{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 30px;
+    .subImg{
+        padding: 1px;
+        border-radius:10px;
+        height: 150px;
+        width: 110px;
+        padding-right:115px;
+
+    }
+    img{
+        object-fit: cover;
+         border-radius:10px;
+        height: 150px;
+        width: 110px;
+
+    }
+
+}
+.main1{
+    display:flex;
+    flex-direction: column;
+}
+.helding{
+    padding:30px;
+    display: flex;
+    flex-direction: row;
+   gap: 43px;
+   width: 133%;
+    p{
+        color: rgba(128, 128, 128, 0.799);
+        font-size: 12px;
+        font-weight: 700;
+        padding-bottom: 6px;
+    }
+    h5{
+        font-size: 14px;
+        font-weight: 900;
+    }
+   
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 600px;
+    padding: 20px 30px;
+    border-radius:30px;
+    justify-self: center;
+    margin-top: 30px;
+}
+.qr{
+    padding-left: 53px !important;
+    display:flex;
+    flex-direction: row;
+    padding-left: 5px;
+    width:300px;
+    gap:10px;
+}
+.qr2{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    width: 130px;
+    padding-left: 20px;
+    div{
+        align-self: center; 
+        padding-bottom:6px;
+
+    }
+    p{
+        color: rgba(128, 128, 128, 0.799);
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        word-spacing: 2px;
+        text-align: center;
+        padding: 5px 0;
+    }
+    h4{
+        padding-bottom:20px;
+        text-align: center;
+        font-size: 14px;
+        width: 110%;
+        font-weight: 800;
+    }
+}
+.verti{
+    margin-left: 30px;
+    height: 100%;
+    border: 1px dashed black;
+    border-radius: 50px;
+}
+.line{
+    width:360px;
+    border: 1px solid rgba(53, 52, 52, 0.644);
+    border-radius: 50px;
+}
+.main1{
+    width: 300px;
+}
+.theaterN{
+    font-size:15px;
+    padding-top: 27px;
+}
+.address{
+    display: block;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 27px;
+    font-size: 16px;
+    gap:6px;
+    color: rgba(27, 26, 26, 0.932);
+    h6{
+        font-weight: 700;
+    }
+}
+.monther{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    h5{
+        font-weight: 900;
+        
+    }
+}
+.timers4{
+  
+}
+.rowmy{
+    p{
+         font-size: 14px;
+        font-weight: 900;
+    color: black;
+    }
+}

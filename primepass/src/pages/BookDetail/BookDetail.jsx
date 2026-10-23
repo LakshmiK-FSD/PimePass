@@ -1,5 +1,5 @@
 import { useLocation, useParams } from "react-router-dom";
-import Bookinfo from "@pages/Bookinfo"
+import Bookinfo from "@pages/Bookinfo/Bookinfo"
 import Header from "@components/Header";
 
 function BookDetail(){

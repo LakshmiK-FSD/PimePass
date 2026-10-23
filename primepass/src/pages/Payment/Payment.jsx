@@ -3,6 +3,7 @@ import style from './Payment.module.css';
 import { useEffect, useRef, useState } from "react";
 import { OrbitProgress } from "react-loading-indicators";
 import api from '@services/api';
+import Timer from "../Timer";
 function Payment(){
     const  {movid} = useParams();
     const navi = useNavigate();
@@ -89,8 +90,9 @@ function Payment(){
 
    
     return(
-        <div className={style.main}><div className={style.first}>
 
+        <div className={style.main}><div className={style.first}>
+           <Timer/>
             <div>
                 <h5>Seats</h5> <div><p>{seats.length}</p></div>
             </div>
@@ -134,12 +136,9 @@ function Payment(){
                         >Pay &#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
                         acc+cur
                         ,0)+tax+platFormFee}</h5>
-                        <h3>{JSON.stringify(priSeats?.map((e)=>new Date(e.expireTime?.toString()
-   .split('.')[0]+'.'+ e.expireTime?.toString().split('.')[1].slice(0,3)+'Z')))}</h3>
+                        
                         <pre>Secure Pay</pre>
-                     <h4> {JSON.stringify(seatCheck)}</h4>
-                     <h4> {booker}</h4>
-                     <h4> {localStorage.getItem("id")}</h4>
+                     
                     </div>
                     <div ref={loadRef} className="loading2"> 
                         <OrbitProgress size="large" text="Please Wait"  />
