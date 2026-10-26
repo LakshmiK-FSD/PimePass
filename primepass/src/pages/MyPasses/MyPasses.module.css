@@ -1,0 +1,10 @@
+.comer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h5{
+    font-size: 30px;
+    color: rgb(7, 7, 7);
+    padding: 30px;
+}

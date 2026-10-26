@@ -62,7 +62,10 @@ function Payment(){
             if((res.status)===202){
                 console.log("202")
               const userId = localStorage.getItem("id");
-            navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId,seats}});
+              const amt = (priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
+                        acc+cur
+                        ,0)+tax+platFormFee;
+            navi(`/bookdetail/${movid}`,{state:{arr,theatdet,userId,seats,amt}});
           }
            
          }

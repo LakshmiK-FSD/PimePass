@@ -26,7 +26,8 @@ function Bookinfo(props){
               showTime: timer,
               theaterName: theatname,
               theaterId: theatid,
-              movie:movieName
+              movie:movieName,
+              paidAmt:props.paid
             })
           } catch (error) {
             console.log(error)

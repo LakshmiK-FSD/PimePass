@@ -1,6 +1,8 @@
 import Header from "@components/Header";
 import { use, useEffect, useState } from "react";
+import style from './MyPasses.module.css'
 import api from '@services/api';
+import MyBookDetail from "../MyBookDetail/MyBookDetail";
 function MyPasses(){
      const id =localStorage.getItem("id");
     const [data,setData] = useState([]);
@@ -24,11 +26,17 @@ function MyPasses(){
         </h4>
     </div>
    }
-
+   const datasF = data.map((e)=>{
+       return( 
+       <MyBookDetail datas={e}/>
+       );
+   })
     return(
         <div>
+            
             <Header show ={true} shownav={true}/>
-            {data.length!=0 && JSON.stringify(data)}
+            <h5>My Bookings</h5>
+           <div className={style.comer}>{datasF}</div>
         </div>
     );
 }
