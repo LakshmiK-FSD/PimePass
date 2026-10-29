@@ -94,8 +94,12 @@ function Payment(){
    
     return(
 
-        <div className={style.main}><div className={style.first}>
-           <Timer/>
+        <div className={style.main}>
+        <div className={style.bgset}>
+            <div className={style.paybox}>
+
+           <div className={style.timerss}><Timer/></div>
+           <div className={style.first}>
             <div>
                 <h5>Seats</h5> <div><p>{seats.length}</p></div>
             </div>
@@ -109,7 +113,7 @@ function Payment(){
             <span></span>
             <div className={style.pay}><h5>Total</h5> <div><p>&#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
                     acc+cur
-                    ,0)+tax+platFormFee}</p></div></div>
+                    ,0)+tax+platFormFee}</p></div></div></div>
         </div>
             <div className={style.griding}>
                 <div className={style.head}>
@@ -142,11 +146,11 @@ function Payment(){
                         
                         <pre>Secure Pay</pre>
                      
-                    </div>
-                    <div ref={loadRef} className="loading2"> 
+                    </div>      
+            </div> <div ref={loadRef} className="loading2"> 
                         <OrbitProgress size="large" text="Please Wait"  />
                 </div>
-            </div>
+        </div>
         </div>
     );
 }

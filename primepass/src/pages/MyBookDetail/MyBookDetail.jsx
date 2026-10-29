@@ -1,8 +1,10 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CalendarClock, Armchair, Building} from 'lucide-react';
+import {QRCodeCanvas} from 'qrcode.react';
 import api from "@services/api"
 import style from "./MyBookDetail.module.css";
 function MyBookDetail({datas}){
+        const viewRef = useRef();
         const [data,setData] = useState(null);
        useEffect(()=>{
         async function getter() {
@@ -17,8 +19,17 @@ function MyBookDetail({datas}){
          getter();
         },[datas?.movie])
          if(!data){
-           return  <p>Loading ...</p>
+           return  
          }
+       function viewBook(show){
+        if(show){
+             viewRef.current.style.display="block";
+        }
+        else{
+            viewRef.current.style.display="none";
+        }
+         }
+         const seatIdQ ="#PP"+`${datas.id}`.padStart("6","0");
     return(
      <div>
     
@@ -40,8 +51,19 @@ function MyBookDetail({datas}){
                 </div>
                 <span></span>
                 <div className={style.remain3}>
-                   <div className={style.remain31}><h6>&#8377;{datas.paidAmt}</h6><p>ID:{"#PP"+`${datas.id}`.padStart("6","0")}</p></div> 
-                   <div className={style.tktbtn}>View Ticket</div>
+                   <div className={style.remain31}><h6>&#8377;{datas.paidAmt}</h6><p>ID:{seatIdQ}</p></div> 
+                   <div className={style.tktbtn} onClick={()=>viewBook(true)}>View Ticket</div>
+                   <div ref={viewRef}  className={style.viewbook}>
+                       <div>
+                            <div className={style.smtick}>
+                                <h3>{datas.movie}</h3>
+                                <div><p>{datas.theaterName}</p><p>{datas.showDate}</p><p>,{datas.showTime}</p><p>seats:{datas.seatId}</p></div>
+                            </div>
+                            <div className={style.smqr}><QRCodeCanvas value={seatIdQ} size={100}/>
+                           </div> <p>Show this QR code at the entrance</p>
+                            <div className={style.close} onClick={()=>viewBook(false)}>Close</div>
+                       </div>
+                   </div>
                 </div>
              </div>
             </div>

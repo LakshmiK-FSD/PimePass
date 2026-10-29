@@ -1,8 +1,8 @@
 .tick{
-    width: 80%;
+    width: 95%;
     height: 230px;
     display: flex;
-    justify-self: center;
+    margin-inline: 20px;
     border: 1px solid rgb(28, 78, 109);
     background-color: rgb(6, 19, 81);
     border-radius: 20px;
@@ -52,6 +52,7 @@
         height: 25px;
         color: rgba(247, 247, 247, 0.381);
         font-weight: 500;
+        font-size: 12px;
         background-color: green;
         align-items: center;
     }
@@ -76,6 +77,7 @@
     .tktbtn{
         background-color: rgba(84, 145, 235, 0.751);
         color: white;
+          cursor: pointer;
         padding:7px 10px;
         border-radius: 10px;
     }
@@ -99,5 +101,61 @@
     div{
         padding-bottom: 4px;
         padding-right:7px;
+    }
+}
+.viewbook{
+    padding-inline: 30px;
+    border:1px solid;
+    display: none;
+    height: 300px;
+    padding-top: 20px;
+    width: 500px;
+    background-color: rgba(35, 53, 141, 0.879);
+    position:fixed;
+    border-radius: 10px;
+    top:25%;
+    left:30%;
+    z-index: 2;
+    p{
+        padding:10px 0 5px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    h3{
+        font-size: 24px;
+        color: #ffff;
+    }
+}
+.smqr{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+}
+.close{
+    cursor: pointer;
+    margin-top:10px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    height:40px;
+    margin-inline: 30px;
+}
+.smtick{
+    p{
+
+        font-size: 10px;
+    }
+    div{
+        margin-top:-7px;
+        gap:3px;
+        display: flex;
+        flex-direction: row;
     }
 }

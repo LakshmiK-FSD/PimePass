@@ -29,7 +29,7 @@ function Profile(props){
            </div> 
           <div ref={moveRef} className="momve"><div className="moveMain">
               <div className="leftClick" onClick={()=>moveFunc()}><pre>  </pre></div> <div className="moveProf">
- <ProfileDetl/></div></div>
+ <ProfileDetl close={moveFunc}/></div></div>
         </div> </>
     );
 }

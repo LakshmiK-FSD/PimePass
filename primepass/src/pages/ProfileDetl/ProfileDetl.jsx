@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import { ReceiptText,MessagesCircle,LogOut,ScrollText,MessageCircleQuestionMark} from 'lucide-react';
+import { ReceiptText,MessagesCircle,LogOut,MoveLeft,ScrollText,MessageCircleQuestionMark} from 'lucide-react';
 import style from "./ProfileDetl.module.css"
 import { useNavigate } from "react-router-dom";
 import Login from "../Login/Login";
-function ProfileDetl(){
+function ProfileDetl({close}){
    const userName = localStorage.getItem("userName");
    const phNo = localStorage.getItem("phNo");
    const id = localStorage.getItem("id");
@@ -17,14 +17,16 @@ function ProfileDetl(){
   return(
     <div className={style.moveCover}>
       <div className={style.scrprev}>
-      <div className={style.box1}><h3>Profile</h3></div>
+      <div onClick={close} className={style.box1}><div className={style.arrow}><MoveLeft size={26} color="#050505" strokeWidth={2} /></div><h3>Profile</h3></div>
 
      <div><div className={style.boxalign}><div className={style.profile}>
    <h6>{userName && userName.slice(0,1).toUpperCase()}</h6>
     </div><div className={style.nameing}>
       <h2>{userName}</h2>
       <p>userId: #{id && id.padStart(8,"0")}</p>
-      </div></div> </div>
+      </div>
+      </div> 
+      </div>
       <div className={style.support}><p> Bookings</p><div className={style.hed}><ReceiptText size={24}/><h4>view bookings </h4></div></div>
       <div className={style.support}><p>Support</p>
       <div className={style.hed}><MessagesCircle size={24} /><h4>Chat With Us</h4></div>
@@ -34,7 +36,7 @@ function ProfileDetl(){
       </div>
       <div className={style.support2}>
       <div className={style.hed}><ScrollText size={24} /><h4>privacy Policy</h4></div>
-      <div onClick={logout} className={style.logout}><div className={style.down}><LogOut size={24} /> </div><span > Logout</span></div>
+      <div onClick={logout} className={style.logout}><div className={style.down}><LogOut size={18} color="#b0970b" /><h6> Logout</h6> </div></div>
       </div >
       </div>
     </div>

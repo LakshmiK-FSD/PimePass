@@ -1,7 +1,7 @@
 import Navbar from "@components/Navbar"
 import logo from "@assets/logo.png"
 import Profile from "@pages/Profile"
-import { MapPin } from 'lucide-react';
+import { MapPin,SquareMenu} from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 import Searcher from "../pages/Search/Searcher";
 import { useEffect, useRef, useState } from "react";
@@ -15,8 +15,12 @@ function Header(props){
  
 function toggler(){
   setTogg(!togg);
-  
 }
+function clear(){
+  localStorage.clear();
+  window.location.reload();
+}
+
     return (
         <>
         <div className="headersec">
@@ -33,19 +37,18 @@ function toggler(){
           <Profile />
           <div className="hamburger">
           <div className="harmof">
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span></div>
+          <SquareMenu size={34} color="#8e8585" strokeWidth={1} /></div>
           <div className="hamburgmenu">
           <div className="hamprofile">
           <Profile />
-           {props.usernamepr || <h6>Guest</h6>}
+           {localStorage.getItem("userName")?<h6 style={{margin:"0 0 0 -20px",padding:"10px 0"}}>{localStorage.getItem("userName")}</h6>:<h6>Guest</h6>}
             </div>
              <p onClick={()=>navigate('/')}>Home</p>
              <p onClick={()=>navigate('/aboutus')}>AboutUs</p>
              <p onClick={()=>navigate('/')}>Passes</p>
              <p onClick={()=>navigate('/organize')}>Organize</p>
-             <p onClick={()=>navigate('/')}>MyPasses</p>
+             <p onClick={()=>navigate('/seperat')}>MyPasses</p>
+             <div className="logouter" onClick={clear}>Logout</div>
            </div>
 </div>
           </div>

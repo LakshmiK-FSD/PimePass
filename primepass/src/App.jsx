@@ -7,7 +7,7 @@ function App() {
 return(
   <><div  className='primepass'>
   <Header shownav={true} show={true}/>
-  <div id='bgall'>
+  <div id='bgall' style={{backgroundColor:"#111714"}}>
   <Slider/>
   <Content/>
   <Footer/></div>

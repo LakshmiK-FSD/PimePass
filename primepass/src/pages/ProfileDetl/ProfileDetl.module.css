@@ -4,36 +4,47 @@
     height: 60px;
     width: 60px;
     color: aliceblue;
-    background-color: rgba(11, 54, 148, 0.516);
-    margin:20px 30px;
+    background-color: rgba(152, 116, 16, 0.884);
+    margin:0 50px;
     h6{
         top:9px;
-        left: 20px;
+        left:17px;
         position: absolute;
         font-size: 36px;
     }
 }
     .box1{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
         position: fixed;
         top: 0;
         width: 100%;
         background-color: rgb(250, 253, 255);
         height: 50px;
-        padding:15px;
         z-index: 1;
+        cursor: pointer;
+        h3{
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+       .arrow{
+        position: absolute;
+        top:8px;
+        left: 10px;
+       }
     }
 .moveCover{
     scrollbar-width: none;
     overflow-y: scroll;
     height:100%;
-    background-color:#1f2230e0;
+    background-color:#09132b;
 }
 .boxalign{
-    
     display: flex;
-    background-color:#3E4C7A;
+    background-color:#feffffd3;
     flex-direction: row;
-    margin: 90px 0 10px 0;
+    margin: 70px 0 10px 0;
     border-radius: 20px;
     width: 90%;
     justify-self: center;
@@ -50,7 +61,7 @@ align-self:center ;
     }
     p{
         color: rgba(153, 156, 156, 0.856);
-        font-size: 13px;
+        font-size: 10px;
         font-weight: 200;
     }
 }
@@ -67,7 +78,7 @@ align-self:center ;
 .support,.support2{
     padding-top: 20px;
         p{
-            color: rgb(118, 119, 120);
+            color: #b39e6b;
             position: relative;
             left: 40px;
             padding-bottom: 6px;
@@ -79,12 +90,12 @@ align-self:center ;
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 25px;
     left: 30px;
     width: 90%;
     border-radius: 15px;
-    padding:24px 40px;
-    height: 70px;
+    padding:10px 40px;
+    height: 50px;
     color: #fbfaf9;
     background-color:#6A6D7A;
     }
@@ -94,8 +105,8 @@ align-self:center ;
 }
 .logout{
     cursor: pointer;
-     background-color:#ad212dd3;
-       position: relative;
+    background-color:#9b202adb;
+    position: relative;
     left: 30px;
     width: 90%;
     border-radius: 15px;
@@ -108,11 +119,14 @@ align-self:center ;
     font-size: 17px;
     font-weight: 700;
     color: rgb(255, 252, 252); 
-        margin-top: 20px;
-        transition: 0.3s;
-        &:hover{
-            background-color:#e7424fe9;
-        }
+    margin-top: 20px;
+    transition: 0.3s;
+    padding-left: 10px;
+    font-size: 15px;
+    color: #b0970b;
+}
+    .logout:hover {
+        background-color:rgba(159, 49, 60, 0.914);
 }
 .scrprev{
 
@@ -122,12 +136,19 @@ align-self:center ;
 }
 .hed{
     h4{
-        padding-top: 3px;
+        padding-top: 6px;
+        font-size: 12px;
     }
 }
 .down{
     display: flex;
-    margin-left: 40%;
+    margin-left: 33%;
     margin-top: -4px;
     padding-right: 10px;
+    h6{
+        padding-left: 10px;
+        font-size: 15px;
+        color: #b0970b;
+    }
+    
 }

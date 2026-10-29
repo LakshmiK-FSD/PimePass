@@ -70,33 +70,7 @@ function Bookinfo(props){
         </div>))
     return(
     <>
-     {/* <div className="ticket">
-       <div className="boxbook">
-           <div className="row2">
-             <div className="pad">
-               <div className="row4"> <h4>{moviename} </h4><p>{rating}</p> <p>{language}</p><p>{view}</p><p style={{color:"#f4f2f268",fontSize:"12px",paddingTop:"4px"}}>{duration}</p></div>
-               <div className="row3"> <h6>
-                {data2?.theaterName}
-              </h6> 
-              <h5>{location1}</h5><h5>{location2}</h5> </div>
-             </div>
-             <div className="imgbook">
-                <img src={movieimg} alt=""/>
-            </div>
-           
-           </div>
-         </div> 
-         <div className="boxbook">
-          <h3>{date}</h3>
-          <h3>{data3.time}</h3>
-        </div>
-         <div className="boxbook">
 
-       <div className="colm"> <div className="row"><h3>{props.arr.length}:Tickets</h3></div><div className="row"><h4>seats:</h4><p className="row pt">{datas}</p>
-       </div></div></div>
-       </div> <QRCodeCanvas value="value THE LK" size={250} level={"H"} />
-    
-     */}
      <div className={style.main2}>
     <div className={style.main1}>
     <div className={style.movDeta}>
@@ -134,7 +108,7 @@ function Bookinfo(props){
     <div className={style.qr}>
       <span className={style.verti}></span>
       <div className={style.qr2}>
-      <div><QRCodeCanvas value={qrCode} size={100} level={"H"} /></div>
+      <div className={style.qrcode1} style={{paddingBottom:"20px"}}><QRCodeCanvas value={qrCode} size={100} level={"H"} /></div>
       <h4>{qrCode}</h4>
       <p>Please arrive 15 minutes before the show.</p>
      </div></div>

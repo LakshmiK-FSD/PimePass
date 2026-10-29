@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .header{
+    padding-left: 25px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -14,17 +15,17 @@
 .header p{
     cursor: pointer;
     padding: 10px;
-    border-radius: 60px;
     border: 2px ;
     font-weight: 700;   
     transition: background-color 0.5s ;
+     border-bottom:3px solid rgba(255, 255, 255, 0);
 }
 .header p:hover{
     cursor: pointer;
     padding: 10px;
-    border-radius: 60px;
     border: 2px ;
-    background-color: aquamarine;
+    color: #b39e6b;
+    border-bottom:3px solid #b39e6b;
 }
 #logo{
     height: 80px;
@@ -33,11 +34,19 @@
 }
 .headersec{
     display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 20;
     flex-direction: row;
     width:100%;
     align-items: center;
+    background-color:rgb(13, 43, 51);
     border-bottom: 1px solid gray;
     /* border: 2px solid black; */
+    p{
+        color:#a8a292ea;
+    }
 }
 #line{
     margin-top:15px;
@@ -53,7 +62,9 @@
     width:20%;
     padding-left:10px;
     font-size:18px;
+    box-shadow: 0 0 20px #2d8991;
     border:1px solid rgba(0, 0, 0, 0.452);
+    background-color: #ffffff6d;
     i{
         padding: 10px;
     }
@@ -62,7 +73,8 @@
         margin-top: -36px;
         padding-left: 29px;
         padding-top: 8px;
-        color:rgba(128, 128, 128, 0.658) ;
+        color:rgba(20, 19, 19, 0.76) ;
+        
     }
 }
 .searcmain{
@@ -239,7 +251,7 @@ flex-direction: column;
 }
 .location{
     padding:3px 0 0 8px;
-    color: #135007d3;
+    color: #b39e6b;
 }
 .locname{
     padding:3px 0 0 8px;
@@ -272,26 +284,28 @@ flex-direction: column;
 .cardalign{
     display: flex;
     flex-direction:row;
-    gap:20px;
+    gap:50px;
     overflow-x:auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding: 1% 0 2% 0;
 }.card {
+    cursor: pointer;
   position: relative;
   border-radius:10px;
-  background: rgba(53, 54, 53, 0.509); 
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  box-shadow: 
-    10px 4px 10px rgba(0, 0, 0, 0.642);
-  border: 1px solid rgb(186, 181, 181);
-  min-width: 300px;
+  /* background: rgba(13, 49, 29, 0.616); 
+  box-shadow: inset 0 0 10px rgb(192, 182, 125);
+  border: 1px solid rgba(186, 181, 181, 0.096); */
+  min-width: 240px;
+  max-width: 240px;
+  max-height: 400px;
+  min-height: 400px;
   padding-bottom: 7%;
 }
-.card img {
+.card img { 
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
 }
 .cardText {
@@ -303,12 +317,12 @@ flex-direction: column;
   padding: 8px;
 }
 .cardText h5 {
-     color: #fafafab0;
+     color: #b39e6b;
   margin: 4px 0;
   font-size: 20px;
 }
 .cardText p {
-     color: #0c0c0cad;
+     color: #e3dede50;
   margin: 4px 0;
   font-size: 13px;
   font-weight: 500;
@@ -494,7 +508,7 @@ flex-direction: column;
 }
 
 #bgall{
-   
+    padding-top: 70px;
 	background-size: 400% 400%;
 	animation: gradient 5s ease-in-out infinite;
 	height: 100%;
@@ -547,29 +561,7 @@ h5{
 }
 }
 /* bookinfo css */
-.boxbook{
-    
-    display: flex;
-    width: 100%;
-    margin-top:30px;
-    border-bottom: 1px solid rgb(255, 252, 252);
-    border-radius:2px;
-    img{
-        object-fit:cover;
-        max-height:160px;
-        max-width:110px;
-        border-radius:10px;
-    }
-    .pad{
-        padding:10px 30px 0 0;
-    }
-    h5{
-        color:#343638;
-    }
-    .imgbook{
-        justify-items: right;
-    }
-}
+
 .row{
     display: flex;
     flex-direction: row;
@@ -578,52 +570,12 @@ h5{
     display: flex;
     flex-direction: column;
 }
-.row2{
-    
-    padding: 10px 20px 10px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.row3{
-   
-    display: flex;
-    flex-direction: row;
-    gap:4px;
-    h6{
-        font-size:13px;
-    }
-    h4{
-        font-size:20px;
-    }
-}
+
+
 .pt{
 color: #faefefb6;
 }
-.row4{
-    display: flex;
-    flex-direction: row;
-    gap:4px;
-    padding-bottom:5px;
-    font-weight: 900;
 
-    h6{
-        font-size:13px;
-    }
-    h4{
-        font-size:20px;
-    }
-}
-.ticket {
-  margin: 60px;
-  width: 600px;
-  height: 380px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  padding: 6px 60px 0 60px;  
-clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 0 0 600 220 L 600 380 L 0 380 L 0 220 A 55 30 0 0 0 0 180 Z");
-}
 .bkt{
     cursor: pointer;
     position: absolute;
@@ -644,6 +596,13 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
          height: 80vh;
     }
 
+}
+.fake{
+    padding-block: 40px;
+}
+.movebk{
+    background-color: rgb(17, 23, 20);
+    height: 100vh;
 }
 .moviedetails{
     position: absolute;
@@ -753,6 +712,7 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
     padding:200px 600px;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(255, 255, 255, 0.039);
   backdrop-filter: blur(20px) saturate(190%);
   -webkit-backdrop-filter: blur(20px) saturate(190%);
 }
@@ -772,6 +732,13 @@ clip-path: path("M 0 0 L 600 0 L 600 90 L 580 115 L 600 100 L 600 180 A 55 30 0 
         padding-top: 20px;
         top: 0;
         left: 30%;
+        padding: 8px 10px 15px 10px;
+        border-radius: 0 0 20px 20px;
+        background-color: #6300317a;
+         backdrop-filter: blur(20px) saturate(190%);
+         p{
+            color:#ffffff;
+         }
 }
 
 
@@ -872,15 +839,9 @@ display: none;
     height: auto;
    }
    .harmof{
-       border:1px solid;
+    
     cursor: pointer;
-    padding:4px;
-    border-radius: 5px;
-     display: flex;
-      flex-direction: column;
-    justify-content: space-between;
-    background-color:rgba(77, 74, 74, 0.737);
- 
+    border-radius: 5px; 
    }
    .harmof:hover{
    visibility: hidden;
@@ -929,14 +890,20 @@ display: none;
  }
 
  & p{
+    cursor: pointer;
     position: relative;
     top: 70px;
     left: 10px;
+    margin-left:20px;
+    max-width: 90px;
     padding: 15px;
-    color:rgba(128, 128, 128, 0.792);
+    color:rgba(197, 190, 190, 0.897);
+     border-bottom:3px solid #f7f5f500;
  }
  & p:hover{
+    cursor: pointer;
     color: #d1522e;
+    border-bottom:3px solid #d1522e;
  }
 
 }

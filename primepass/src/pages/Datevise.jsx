@@ -14,15 +14,16 @@ function Datevise(){
         }
           if(!dataa){
             return(<div className="loading">
-        <ThreeDot size="large" variant="bounce" size={30} color={"blue"} text="LOADING..."/>
+        <ThreeDot size="large" variant="bounce"  color={"blue"} text="LOADING..."/>
         </div>)
         }
     
     return (<div>
                   <Headers shownav={true} show={true}/>
+                  <div className="movebk">
+                  <div className="fake"></div>
                    <div className="dateimg" >
                     <div className="moviedetails">
-                        
                             <h5>{dataa.movename}</h5>
                             <div className="langer"><span>{dataa.details.rating}</span><i></i><span>{dataa.details.language}</span><i></i><span>{dataa.details.duration}</span></div>
                             <p>The final chapter of the acclaimed thriller trilogy. Years after outsmarting the police, Vijay Salgaonkar’s past resurfaces when new evidence threatens
@@ -38,7 +39,7 @@ function Datevise(){
                   </div>
         <div className="bkt" onClick={()=>navi(`/theaters/${id}`,{state:{name:dataa.movename}})}>BooKTicket</div>
     
-    <div></div>
+    <div></div></div>
     </div>)
 }
 export default Datevise;

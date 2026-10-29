@@ -1,7 +1,7 @@
 import { useLocation, useParams } from "react-router-dom";
 import Bookinfo from "@pages/Bookinfo/Bookinfo"
 import Header from "@components/Header";
-
+import style from "./BookDetail.module.css"
 function BookDetail(){
     const {movid} = useParams();
     const locate = useLocation();
@@ -11,7 +11,7 @@ function BookDetail(){
     const amt = locate.state?.amt;
     return(<div>
           <Header show={true} shownav={true}/>
-        <Bookinfo theat={theater} movid={movid} seats={seats} arr={arr} paid={amt}/>
+        <div className={style.bkmain}><Bookinfo theat={theater} movid={movid} seats={seats} arr={arr} paid={amt}/></div>
     </div>)
 }
 

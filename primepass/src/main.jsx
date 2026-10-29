@@ -10,9 +10,7 @@ import BookDetail from '@pages/BookDetail/BookDetail'
 import Datevise from '@pages/Datevise'
 import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
-import MyPasses from './pages/MyPasses/MyPasses'
-import ProfileDetl from '@pages/ProfileDetl/ProfileDetl'
-import Register from './pages/Register/Register'
+import SeperatTime from './pages/SeperatTime/SeperatTime'
 import Payment from './pages/Payment/Payment'
 const router = createBrowserRouter([
   {
@@ -36,8 +34,8 @@ const router = createBrowserRouter([
     path:"/payment/:movid",
     element:<Payment/>
   },{
-    path:"/mypasses",
-    element:<MyPasses/>
+    path:"/seperat",
+    element:<SeperatTime/>
   },
  
   // {
