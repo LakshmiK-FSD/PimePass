@@ -38,11 +38,6 @@ const router = createBrowserRouter([
     path:"/seperat",
     element:<SeperatTime/>
   },
- 
-  // {
-  //   path:"/profile",
-  //   element:<ProfileDetl/>
-  // },
   {
     path:"/check/:mov/:theat/:date",
     element:<Timeselec/>
