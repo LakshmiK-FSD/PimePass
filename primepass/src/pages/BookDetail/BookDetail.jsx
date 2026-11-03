@@ -1,16 +1,17 @@
 import { useLocation, useParams } from "react-router-dom";
-import style from "./BookDetail.module.css"
-import Bookinfo from "@pages/Bookinfo"
+import Bookinfo from "@pages/Bookinfo/Bookinfo"
 import Header from "@components/Header";
-
+import style from "./BookDetail.module.css"
 function BookDetail(){
     const {movid} = useParams();
     const locate = useLocation();
     const arr = locate.state?.arr
+    const seats = locate.state?.seats
     const theater = locate.state?.theatdet;
+    const amt = locate.state?.amt;
     return(<div>
-          <Header/>
-        <Bookinfo theat={theater} movid={movid} arr={arr}/>
+          <Header show={true} shownav={true}/>
+        <div className={style.bkmain}><Bookinfo theat={theater} movid={movid} seats={seats} arr={arr} paid={amt}/></div>
     </div>)
 }
 

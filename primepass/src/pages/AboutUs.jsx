@@ -5,7 +5,7 @@ import Header from "@components/Header";
 function AboutUs(){
     return(
         <div>
-            <Header shownav={true}/>
+            <Header show={true} shownav={true}/>
            <AboutContent/>
             <Footer/>
         </div>

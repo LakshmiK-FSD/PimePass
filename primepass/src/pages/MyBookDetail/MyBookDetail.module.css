@@ -1,0 +1,255 @@
+.tick{
+    width: 95%;
+    height: 230px;
+    display: flex;
+    margin-inline: 20px;
+    border: 1px solid rgb(28, 78, 109);
+    background-color: rgb(6, 19, 81);
+    border-radius: 20px;
+   
+}
+.imge{
+    align-self: center;
+    padding-inline:20px;
+    height: 80%;
+    width: 15%;
+    
+    img{
+       
+        object-fit:cover;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+}
+.remain{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-inline: 20px;
+  
+    span{
+        width: 100%;
+        border: 1px solid rgba(128, 128, 128, 0.799);
+    }
+}
+.remain1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-block:20px;
+    h3{
+        color: white;
+        font-size: 25px;
+        font-weight:700;
+    }
+    p{
+        display: flex;
+        padding-inline:10px;
+        border-radius: 20px;
+        height: 25px;
+        color: rgba(247, 247, 247, 0.381);
+        font-weight: 500;
+        font-size: 12px;
+        background-color: green;
+        align-items: center;
+    }
+}
+.remain2{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-block:20px;
+    color: grey;
+    & >*{
+        display: flex;
+        flex-direction:row;
+    }
+}
+.remain3{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-block:20px;
+    color: grey;
+    .tktbtn{
+        background-color: rgba(84, 145, 235, 0.751);
+        color: white;
+          cursor: pointer;
+        padding:7px 10px;
+        border-radius: 10px;
+    }
+}
+.remain31{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    h6{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 10px;
+        font-weight: 600;
+        padding-top: 7px;
+    }
+}
+.remain22,.remain23,.remain21{
+    div{
+        padding-bottom: 4px;
+        padding-right:7px;
+    }
+}
+.viewbook{
+    padding-inline: 30px;
+    border:1px solid;
+    display: none;
+    height: 300px;
+    padding-top: 20px;
+    width: 500px;
+    background-color: rgba(35, 53, 141, 0.879);
+    position:fixed;
+    border-radius: 10px;
+    top:25%;
+    left:30%;
+    z-index: 2;
+    p{
+        padding:10px 0 5px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    h3{
+        font-size: 24px;
+        color: #ffff;
+    }
+}
+.smqr{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+}
+.close{
+    cursor: pointer;
+    margin-top:10px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    height:40px;
+    margin-inline: 30px;
+}
+.smtick{
+    p{
+
+        font-size: 10px;
+    }
+    div{
+        margin-top:-7px;
+        gap:3px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:830px) {
+    .remain2{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding-block:0px;
+    color: grey;
+    p {
+        color: #ffffffba;
+        padding: 6px 0 0 0;
+        font-size: 8px;
+    }
+    }
+ .remain1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 16px;
+        h3 {
+        color: white;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+}
+.remain{
+    height: 90%;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 10px;
+    /* padding-inline: 20px; */
+}
+.imge{
+    align-self: center;
+    padding-inline: 20px;
+    height: 80%;
+    width: 40%;
+}
+.remain1{
+    p {
+        display: flex;
+        padding-inline: 5px;
+        padding-top: 5px;
+        border-radius: 15px;
+        height: 20px;
+        color: rgb(247 247 247 / 67%);
+        font-weight: 300;
+        font-size: 12px;
+        background-color: green;
+        align-items: center;
+    }
+}
+.remain31{ 
+    p {
+        color: gray;
+        font-size: 5px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    h6 {
+        color: white;
+        padding-top: 5px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+    .tktbtn{
+        background-color: rgba(84, 145, 235, 0.751);
+        color: white;
+        cursor: pointer;
+        padding: 5px 6px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .viewbook{
+    padding-inline: 17px;
+    display: none;
+    height: 320px;
+    padding-top: 20px;
+    width: 83%;
+    background-color: rgba(35, 53, 141, 0.879);
+    position: fixed;
+    border-radius: 10px;
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+}
+    h3 {
+        font-size: 21px;
+        color: #ffff;
+    }
+}

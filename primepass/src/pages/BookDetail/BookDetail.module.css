@@ -2,3 +2,8 @@
     display:flex;
     flex-direction: row;
 }
+.bkmain{
+    padding-top: 100px;
+    background-color: rgb(17, 23, 20);
+    min-height: 100vh;
+}

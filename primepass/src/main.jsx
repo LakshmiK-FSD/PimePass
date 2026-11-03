@@ -10,8 +10,9 @@ import BookDetail from '@pages/BookDetail/BookDetail'
 import Datevise from '@pages/Datevise'
 import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
-import ProfileDetl from '@pages/ProfileDetl/ProfileDetl'
-import Register from './pages/Register/Register'
+import SeperatTime from './pages/SeperatTime/SeperatTime'
+import Payment from './pages/Payment/Payment'
+import Error from './pages/Error'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
   },{
     path:"/theaters/:id",
     element:<Theaters/>
+  },{
+    path:"/payment/:movid",
+    element:<Payment/>
+  },{
+    path:"/seperat",
+    element:<SeperatTime/>
   },
  
   // {
@@ -42,12 +49,17 @@ const router = createBrowserRouter([
   },
   {
     path:"/organize",
-    element:<Organize/>
+    element:<Organize/>,
+    errorElement:<Error/>
   },
   {
     path:"/bookdetail/:movid",
     element:<BookDetail/>
-  }
+  },
+  {
+    path: '*',
+    element: <Error/>,
+  },
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

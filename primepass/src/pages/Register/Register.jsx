@@ -76,8 +76,8 @@ function Register(){
         <div>
             <form >
             <div className={style.regi}> 
-                 <div className={style.header}><h5>Create Account</h5>
-            <p>Register to start Booking</p>
+                 <div className={style.header}><h2>Create Account</h2>
+            <pre>Register to start Booking</pre>
             </div>
                 <div className={style.userName}>
                     <h5 className={style.head}>UserName</h5>
