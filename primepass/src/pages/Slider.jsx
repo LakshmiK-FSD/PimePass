@@ -5,7 +5,7 @@ import janayagan from "@assets/jananayagan.png"
 import vadam from "@assets/vadam.png" 
 
 function Slider(){
-    const width =805;
+    const [width, setWidth] = useState(window.innerWidth > 920 ? 805 : 305);
     const [index,setIndex]=useState(0);
     const scrollRef=useRef(null);
     function goto(i){
@@ -18,6 +18,7 @@ function Slider(){
         setIndex(newIndex);
     }
     useEffect(()=>{
+        
    const timer = setInterval(nextMove,3000)
     return ()=> clearInterval(timer);
 },[index]);

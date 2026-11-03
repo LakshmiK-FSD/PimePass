@@ -8,11 +8,19 @@
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(6,1fr);
     padding-bottom: 20px;
+<<<<<<< HEAD
     background-color: #f1eefc00; 
     backdrop-filter: blur(20px) saturate(190%);
     -webkit-backdrop-filter: blur(20px) saturate(190%);   
       h4{
        
+=======
+    background-color: #f1eefc00;
+    backdrop-filter: blur(20px) saturate(190%);
+    -webkit-backdrop-filter: blur(20px) saturate(190%);   
+      h4{
+                
+>>>>>>> b6ba53b7c3c576069c135e7319de5f4fca034018
             margin-right: 30px;
         font-size: 13px;
         color: #a49fc7;

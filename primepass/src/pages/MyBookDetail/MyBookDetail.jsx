@@ -63,7 +63,10 @@ function MyBookDetail({datas}){
                             <div className={style.smqr}><QRCodeCanvas value={seatIdQ} size={100}/>
                            </div> <p>Show this QR code at the entrance</p>
                             <div className={style.close} onClick={()=>viewBook(false)}>Close</div>
+<<<<<<< HEAD
                             
+=======
+>>>>>>> b6ba53b7c3c576069c135e7319de5f4fca034018
                        </div>
                    </div>
                 </div>

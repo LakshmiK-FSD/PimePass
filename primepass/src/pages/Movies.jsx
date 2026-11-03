@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import MoviesCard from '@pages/MoviesCard';
+import { ThreeDot } from "react-loading-indicators";
 import EmptyCard from '@pages/Empty/EmptyCard';
-function Movies() {
+function Movies({result}) {
     const token = localStorage.getItem("token");
     const [Movies,setMovie]= useState([]);
     const [error,setError]= useState([]);
-useEffect(()=>{fetch("http://localhost:8080/users/movies", {
+useEffect(()=>{fetch(`${window.location.protocol}//${window.location.hostname}:8080/users/movies`, {
     method: "GET",
     headers: {
         "Authorization": `Bearer ${token}`
@@ -20,7 +21,7 @@ useEffect(()=>{fetch("http://localhost:8080/users/movies", {
 if(error){
   console.error("Error fetching data:", error)
 }
- const movieCard =Movies.map((res)=> <MoviesCard id={res.id} img={res.img} movename={res.movename} description={res.description} />)
+ const movieCard =(result==1)?Movies.map((res)=> <MoviesCard id={res.id} img={res.img} movename={res.movename} description={res.description} />):Movies.filter((e)=>e.id>7).map((res)=> <MoviesCard id={res.id} img={res.img} movename={res.movename} description={res.description} />);
 if(!movieCard){
   return(
     <div>

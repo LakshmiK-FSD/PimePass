@@ -6,9 +6,9 @@ function Timeselec(){
     const locat = useLocation();
     const naviga = useNavigate();
     const imge = locat.state?.img;
-    const [data,error]=useFetcher(`http://localhost:8080/users/dates/${date}`)
-    const [data2,error2]=useFetcher(`http://localhost:8080/users/movies/${mov}`)
-    const [data3,error3]=useFetcher(`http://localhost:8080/users/theater/${theat}`)
+    const [data,error]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/dates/${date}`)
+    const [data2,error2]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${mov}`)
+    const [data3,error3]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/theater/${theat}`)
   // Error state
   if (error && error2 && error3) {
     return <p>{error.message}</p>;
@@ -23,10 +23,13 @@ function Timeselec(){
   }
     return(
         <div className={style.main}>
-          <img className={style.imge} src={imge} alt="" />
+     <img className={style.imge} src={`../../../${imge}`} alt="" />
           <div className={style.top}>
             <div className="row">
-              <div className={style.round}><img className={style.imge2} src={imge} alt="" /></div><div className={style.hell}><h3>{data3.theaterName}</h3>
+              <div className={style.round}>
+              <img className={style.imge2} src={`../../../${imge}`} alt="" />
+                </div>
+              <div className={style.hell}><h3>{data3.theaterName}</h3>
               <p>{data3.theaterAddress[0]}</p>
               </div>
            

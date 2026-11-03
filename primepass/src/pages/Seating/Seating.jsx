@@ -2,48 +2,79 @@ import { useNavigate, useParams } from "react-router-dom";
 import useFetcher from "@hooks/useFetcher";
 import ClassSeat from "@pages/ClassSeat/ClassSeat";
 import screen from "@assets/screen.png";
+import Login from "../Login/Login";
+import api from "@services/api"
 import style from "./Seating.module.css";
-import {useEffect, useState } from "react";
+import { ThreeDot } from "react-loading-indicators";
+import {useEffect, useRef, useState } from "react";
 
 function Seating() {
   const { movid,theatid,dateid,timeid} = useParams();
-    const [data, error] = useFetcher(`http://localhost:8080/users/time/${timeid}`);
-    const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
-    const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
+  const loginRef = useRef();
+    const [data, error] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/time/${timeid}`);
+    const [data2, error2] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${movid}`);
+    const [data3, error3] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/theater/${theatid}`);
+    const[data4,error4]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/dates/${dateid}`);
   const [parentData, setParen] = useState([]);
+  const [seatsID, setParen2] = useState([]);
   const navi = useNavigate();
+
  const prr = parentData.reduce((acc,[stat,value])=>{(acc[stat]=value); return acc},{})
  const arr = Object.entries(prr).filter(([a,b])=>b).map(([a,b])=>a)
- useEffect(()=>{
-  console.log(arr)
- })
+ const opArr = seatsID.reduce((acc,[idx,value])=>{
+  acc[idx]=value;
+  return acc;
+
+ },{});
+ const stsIdArr = Object.entries(opArr).filter(([a,b])=>b).map(([a,b])=>a);
+//  useEffect(()=>{
+//   console.log(arr)
+//   console.log(stsIdArr)
+//  })
   function senData(arr) {
     setParen(prev => [...prev, ...arr]); 
   }
+  function setIndex(arr){
+    setParen2(prev=>[...prev,...arr])
+  }
 
-  if (error || error2 || error3) 
+    async function lock() {
+      navi(`/payment/${movid}`,{state:{arr,theatdet,stsIdArr}});
+      await api.post("/users/seatlock",null,{
+        params:{
+          lockfr:stsIdArr
+        }
+      })
+    }
+  function login(){
+    loginRef.current.style.display = "block";  }
+  if (error || error2 || error3 || error4) 
     {
     return <div>unable to load</div>
     }
-  if (!data || !data2 || !data3 ) 
+  if (!data || !data2 || !data3 || !data4) 
     {
-    return <div>Loading...</div>
+    return(<div className="loading">
+        <ThreeDot size="large" variant="bounce"   color={"blue"} text="LOADING..."/>
+        </div>)
     }
-const theatName= data2.theaterName;
-const theatdet =[theatName,timeid,theatid];
-  // const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
-  //const time= (timeData.map((e)=>e.showTime)).join();
-   
-   //need to change  uper..
-  // if (!timeData) return <div>Loading...</div>;
-  // const seatsT = data.timeData.map(e => e.showtimes||[]);
+const theatName= data3.theaterName;
+const date= data4.date;
+const theatdet =[theatName,timeid,theatid,date,data.time,data2.movename];
+// const timeData = data.map(e => e.showtimes.find(en => en.timeId == tmid));
+//const time= (timeData.map((e)=>e.showTime)).join();
+//need to change  uper..
+// if (!timeData) return <div>Loading...</div>;
+// const seatsT = data.timeData.map(e => e.showtimes||[]);
   const seatsT = data.viewcls.map(e => e.clsid);
   const clsNames = data.viewcls.map(e => e.clsName);
   const clsAmount = data.viewcls.map(e => e.amount);
   //if (!seatsT) return <div>Seats Loading...</div>;
   const btnsh = (arr.length!==0)
+  
   {/*  */}
   return (
+
           <div className={style.maintheat}>
          <div className={style.centseat}>
             {/* <h2>{theatnam}</h2> */}
@@ -55,22 +86,20 @@ const theatdet =[theatName,timeid,theatid];
           <h4>{data.time}</h4></div>
         }
          <div className={style.theatcent}>
-        <div className="crow">
-                                           
+        <div className="crow">                             
            {/* {seatsT.map((seatGroup, idx) =>  //array enter
               seatGroup.map((seat, seatIdx) =>  */}
             {seatsT.map((clsid, idx) =>
                 (<div key={`${clsid}`}>
                   <h4>{clsNames[idx]}</h4> 
                   <div className={style.amt}><p>&#8377;{clsAmount[idx]+"  "} per seat</p></div>
-                  <ClassSeat sendFun={senData} classs={clsid} />
+                  <ClassSeat sendFn2={setIndex} sendFun={senData} classs={clsid} />
                 </div>
               )
             )}
           </div>
            <p className={style.scren}>screen on this way</p>
           <div className={style.screimg}>
-           
             <img src={screen} alt="screen" />
           </div>
         </div>
@@ -83,9 +112,16 @@ const theatdet =[theatName,timeid,theatid];
         <h5>Seats:</h5><h4>{arr.length}</h4>
         {/* <pre>{JSON.stringify(arr.sort((a,b)=>a-b))}</pre>  */}
       </div>
-      <div onClick={()=>navi(`/bookdetail/${movid}`,{state:{arr,theatdet}})} className={style.booking}>
+     
+     {localStorage.getItem("id") && <div onClick={()=>lock()}
+       className={style.booking}>
       <p>BookNow</p>
-     </div>
+     </div>}
+     {!localStorage.getItem("id") && <div onClick={()=> login()}
+       className={style.booking}>
+        <div className={style.log} ref={loginRef} ><Login/></div>
+      <p>BookNow</p>
+     </div>}
       </div>}
     </div>
   );

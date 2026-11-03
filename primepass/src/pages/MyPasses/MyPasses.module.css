@@ -1,0 +1,21 @@
+.comer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.noBooking{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 70px;
+    div{
+        transform: rotate(25deg);
+    }
+    h6{
+       color:#8e858588;
+       font-size:22px;
+       word-spacing:5px;
+       text-align: center;
+       font-weight: 600;
+    }
+}

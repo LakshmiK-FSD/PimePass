@@ -43,17 +43,20 @@ function Login(){
                 <div className={style.forinput}>
                     <div className={style.containr}>
                         <div className={style.email}>
-                           <h6>Email</h6>
-                           <input onChange={mail} type="text" placeholder='abc@example.com' />
+                           <h6 className={style.hf}>Email</h6>
+                           <input className={style.iner} onChange={mail} type="text" placeholder='abc@example.com' />
                         </div>
                         <div className={style.password}>
-                            <h6>Password</h6>
-                            <input onChange={pass} type="password" placeholder='At least 4 character'/>
+                            <h6 className={style.hf}>Password</h6>
+                            <input className={style.iner} onChange={pass} type="password" placeholder='At least 4 character'/>
                         </div>
                         <div>
                             <div className={style.submit} onClick={send}>Sign in</div>
-                            <div className={style.subnew}><div className={style.cent}><p>New here?</p><h6 onClick={()=>register()}> <div ref={regRef} className={style.register}><Register/></div> Create an Account</h6></div></div>
-                            <div className={style.subdemo}><div className={style.democent}> <p>Demo Login:</p><h5>lakshmikandan2020@gmail.com / 2004</h5></div></div>
+                            <div className={style.subnew}><div className={style.cent}><p className={style.pf2}>New here?</p><h3 className={style.hf2} onClick={()=>register()}> 
+                                <div ref={regRef} className={style.register}><Register/>
+                            </div> Create an Account</h3></div></div>
+                            <div className={style.subdemo}><div className={style.democent}> 
+                            </div></div>
                     
                         </div>
                     </div>
