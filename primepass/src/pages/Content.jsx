@@ -1,5 +1,6 @@
 import Movies from "@pages/Movies";
 function Content(){
+
     return(
         <div className="contents">
            <div className="movies"><h3 style={{color:"#b39e6b"}}>Movies:</h3>

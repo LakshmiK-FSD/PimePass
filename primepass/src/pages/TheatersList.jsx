@@ -3,7 +3,7 @@ import useFetcher from "@hooks/useFetcher";
  import { CircleX } from 'lucide-react';
  import { MapPinCheck } from 'lucide-react';
 function TheatersList(props) {
-  const api = `http://localhost:8080/users/theater/${props.theaterId}`;
+  const api = `${window.location.protocol}//${window.location.hostname}:8080/users/theater/${props.theaterId}`;
   const [data, error] = useFetcher(api);
   const naviga = useNavigate();
   
@@ -46,11 +46,7 @@ function TheatersList(props) {
             </div>
 
             <div className="timetheat">
-              <div className="movtheat">
 
-              {/* <h5>{props.movnam}</h5>
-              <h6>Dates Available</h6> */}
-              </div>
               {data.dates.map((e, timeIdx) => (
                 // <div
                 //   key={timeIdx}

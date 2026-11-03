@@ -6,6 +6,7 @@ import {QRCodeCanvas} from 'qrcode.react';
 import api from "@services/api";
 
 function Bookinfo(props){
+    const [width,setWidth]=useState(false);
     const theatname = props.theat[0];
     const theatid = props.theat?.[2];
     const date = props.theat?.[3];
@@ -15,6 +16,10 @@ function Bookinfo(props){
     const seats = props.seats;    
     const strDate = date.split("-").reverse().toString();
     useEffect(()=>{
+      if(window.innerWidth<440){
+        setWidth(true);
+      }
+      
       async function booker() {
           try {
                const res = await api.post("/users/booker",{
@@ -36,9 +41,9 @@ function Bookinfo(props){
         }
         booker();
       },[])
-    const[data,error]=useFetcher(`http://localhost:8080/users/movies/${props.movid}`);
-    const[data2,error2]=useFetcher(`http://localhost:8080/users/theater/${theatid}`);
-    const[data3,error3]=useFetcher(`http://localhost:8080/users/time/${time}`);
+    const[data,error]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${props.movid}`);
+    const[data2,error2]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/theater/${theatid}`);
+    const[data3,error3]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/time/${time}`);
      
     if(error && error2 && error3){
         return(<>
@@ -75,7 +80,7 @@ function Bookinfo(props){
     <div className={style.main1}>
     <div className={style.movDeta}>
       <div className={style.subImg}>
-        <img src={movieimg} alt=""/>
+        <img src={`../../${movieimg}`} alt=""/>
       </div>
       <div className={style.detail}>
         <div className={style.subdetai}>
@@ -108,7 +113,9 @@ function Bookinfo(props){
     <div className={style.qr}>
       <span className={style.verti}></span>
       <div className={style.qr2}>
-      <div className={style.qrcode1} style={{paddingBottom:"20px"}}><QRCodeCanvas value={qrCode} size={100} level={"H"} /></div>
+      <div className={style.qrcode1} >
+        {width?<QRCodeCanvas value={qrCode} size={30} level={"H"} />:<QRCodeCanvas value={qrCode} size={90} level={"H"} />}
+        </div>
       <h4>{qrCode}</h4>
       <p>Please arrive 15 minutes before the show.</p>
      </div></div>

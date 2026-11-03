@@ -35,7 +35,14 @@
         color: white;
         font-size: 27px;
     }
-    p{
-       
-    }
+  
+}
+@media (max-width:440px) {
+    .bgmain{
+    padding-inline: 3px;
+    min-height: 100vh;
+}
+h5{
+    font-size: 20px !important;
+}
 }

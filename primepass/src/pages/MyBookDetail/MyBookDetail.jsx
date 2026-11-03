@@ -6,6 +6,7 @@ import style from "./MyBookDetail.module.css";
 function MyBookDetail({datas}){
         const viewRef = useRef();
         const [data,setData] = useState(null);
+        const [width,setWidth] = useState(window.innerWidth<830);
        useEffect(()=>{
         async function getter() {
             try { 
@@ -45,9 +46,9 @@ function MyBookDetail({datas}){
                      <p>confirmed</p>
                 </div>
                 <div className={style.remain2}>
-                    <div className={style.remain21}><div><Building size={18}/></div><p>{datas.theaterName}</p></div>
-                    <div className={style.remain22}><div><CalendarClock size={17}/></div><p>{datas.showDate}</p>,<p>{datas.showTime}</p></div>
-                    <div className={style.remain23}><div><Armchair size={19} strokeWidth={1.5} /></div>seats: <p>{datas.seatId}</p></div>
+                    <div className={style.remain21}><div className={style.build}>{width?<Building size={10}/>:<Building size={18}/>}</div><p>{datas.theaterName}</p></div>
+                    <div className={style.remain22}><div className={style.build}>{width?<CalendarClock size={10}/>:<CalendarClock size={17}/>}</div><p>{datas.showDate}</p>,<p>{datas.showTime}</p></div>
+                    <div className={style.remain23}><div className={style.build}>{width?<Armchair size={10} strokeWidth={1.5} />:<Armchair size={19} strokeWidth={1.5} />}</div><p>seats: {datas.seatId}</p></div>
                 </div>
                 <span></span>
                 <div className={style.remain3}>

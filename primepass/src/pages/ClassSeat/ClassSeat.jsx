@@ -4,7 +4,7 @@ import style from "./ClassSeat.module.css";
 function ClassSeat({sendFn2, sendFun, classs }) {
   const [seatts, setSeats] = useState({});
   const [stsIndex, setSts] = useState({});
-  const [data, error] = useFetcher(`http://localhost:8080/users/viewclass/${classs}`);
+  const [data, error] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/viewclass/${classs}`);
   useEffect(()=>{
           sendFun(Object.entries(seatts));
           sendFn2(Object.entries(stsIndex));

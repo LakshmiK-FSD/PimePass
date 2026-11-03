@@ -4,6 +4,8 @@
     padding: 5px;
     gap: 50px;
 }
+
+
 .emptycrd {
   background-image: url("@assets/logo.png");
     position: relative;
@@ -39,4 +41,20 @@ background: linear-gradient(305deg, rgba(131, 58, 180, 0.04) 0%, rgba(235, 28, 2
   100% {
     transform: translateX(100%) skewX(60deg);     
   }
+}
+@media (max-width:900px) {
+.emptycrd{
+    background-image: url(/src/assets/logo.png);
+    position: relative;
+    display: block;
+    background-size: 30% 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 150px;
+    min-height: 230px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(80, 78, 78); */
+    background-color: rgb(27, 36, 31);
+    overflow: hidden;
+}
 }

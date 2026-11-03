@@ -44,9 +44,6 @@
         cursor: pointer;
     }
 }
-.sellec{
-    
-}
 .booked{
     pointer-events: none;
     text-align: center;
@@ -59,4 +56,50 @@
     background-color:#242424;
     color:white;
     text-decoration: line-through;
+}
+@media (max-width:440px) {
+    .booked{
+   pointer-events: none;
+    text-align: center;
+    align-content: center;
+    border-radius: 8px 8px 3px 3px;
+    height: 20px;
+    width: 26px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #242424;
+    color: white;
+    text-decoration: line-through;
+}
+    .seat{
+    text-align: center;
+    align-content: center;
+    padding-inline: 0px;
+    border-radius: 8px 8px 2px 2px;
+    height: 20px;
+    width: 26px;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #4b4170;
+    color: white;
+    transition: background-color 1s;
+}
+.seatselect{
+    text-align: center;
+    align-content: center;
+    background-color:#ffb703;
+    box-shadow: 2px 5px 0 rgb(0, 0, 0);
+    border-radius:8px 8px 2px 2px;
+    height:20px;
+    width:26px;
+    font-size:10px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 0 4px #ffb703;
+    transition:background-color 0.3s ;
+    transform: translateY(-3px);
+    &:hover{
+        background-color:#4b4170;
+    }
+}
 }

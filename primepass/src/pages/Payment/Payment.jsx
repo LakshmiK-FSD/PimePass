@@ -111,9 +111,9 @@ function Payment(){
             <div><h5>PlatFormFee</h5> <div><p>&#8377;{platFormFee}</p></div></div>
             <div><h5>Tax</h5> <div><p>&#8377;{tax}</p></div></div>
             <span></span>
-            <div className={style.pay}><h5>Total</h5> <div><p>&#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
-                    acc+cur
-                    ,0)+tax+platFormFee}</p></div></div></div>
+            <div className={style.pay}><h5>Total</h5> <div><p>&#8377;{(`${(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
+                        acc+cur
+                        ,0)+tax+platFormFee}`).substring(0,6)}</p></div></div></div>
         </div>
             <div className={style.griding}>
                 <div className={style.head}>
@@ -140,9 +140,9 @@ function Payment(){
                         <h4 ref={lockRef} className={style.seatbooked}>Sorry the seat was booked</h4>
                         <h5
                         onClick={()=>loader()}
-                        >Pay &#8377;{(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
+                        >Pay &#8377;{(`${(priSeats.map((e)=>e.prize)).reduce((acc,cur)=>
                         acc+cur
-                        ,0)+tax+platFormFee}</h5>
+                        ,0)+tax+platFormFee}`).substring(0,6)}</h5>
                         
                         <pre>Secure Pay</pre>
                      

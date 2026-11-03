@@ -7,6 +7,7 @@ function Searcher({valuer,cclick}){
     const fnvalue = valuer;
     const focs = useRef();
    const [res,setRes]=useState();
+   const [width,setWidth]=useState(window.innerWidth<360);
    useEffect(()=>{
     console.log(valuer)
     if(valuer){
@@ -14,7 +15,7 @@ function Searcher({valuer,cclick}){
             focs.current.focus();
         },40)
      }
-   },[fnvalue])
+   },[fnvalue,width])
 
    async function search(e){
        const valuer = e.target.value;
@@ -39,7 +40,7 @@ function Searcher({valuer,cclick}){
             <div className={style.search}>
                 <div className={style.makefix}>
                 <span  className={style.searbar}><i className="fa-solid fa-magnifying-glass"></i>
-               <form > <input ref={focs} name='search' onChange={search} placeholder="Search,Movies,Events,..." />
+               <form > <input ref={focs} name='search' onChange={search} placeholder={(width)?"Search,Movies,Events,...":"Search,..."} />
                <button  type='reset'><X size={18}/></button>
                </form>
                 </span>

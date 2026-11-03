@@ -7,8 +7,8 @@ function Theaters() {
   const { id } = useParams();
   const locat = useLocation();
   const name = locat.state?.name;
-const[dataa,error]=useFetcher(`http://localhost:8080/users/movies/${id}`);
-const[dates,error2]=useFetcher(`http://localhost:8080/users/theatdate`);
+const[dataa,error]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${id}`);
+const[dates,error2]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/theatdate`);
     if(error || error2 ){
         return(<>
         <p>{error.message}</p>
@@ -40,8 +40,7 @@ const[dates,error2]=useFetcher(`http://localhost:8080/users/theatdate`);
       <div className={style.toprow}><h5>{dataa.movename}</h5>
       <p>Pick a theatre and one of its available dates.</p>
       </div>
-    <div className={style.ovie}><div> 
-      </div><div className={style.side}>
+    <div className={style.ovie}><div className={style.side}>
       <div className={style.theaters}>
       {datas}</div>
      </div>

@@ -6,7 +6,7 @@ function Movies({result}) {
     const token = localStorage.getItem("token");
     const [Movies,setMovie]= useState([]);
     const [error,setError]= useState([]);
-useEffect(()=>{fetch("http://localhost:8080/users/movies", {
+useEffect(()=>{fetch(`${window.location.protocol}//${window.location.hostname}:8080/users/movies`, {
     method: "GET",
     headers: {
         "Authorization": `Bearer ${token}`

@@ -6,7 +6,7 @@ import Headers from "@components/Header"
 function Datevise(){
       const {id} = useParams();
       const navi = useNavigate();
-    const[dataa,error]=useFetcher(`http://localhost:8080/users/movies/${id}`);
+    const[dataa,error]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${id}`);
         if(error){
             return(<>
             <p>{error.message}</p>
@@ -31,11 +31,11 @@ function Datevise(){
                                Accessibility through Audio Description (AD) &amp; Closed Captions (CC) is available for this movie on the 'CineDubs' app.</p>
                             <div><div className="movebar">{(dataa.details.genres).split(",").map((e)=><div>{e}</div>)}</div></div>
                             <div className="release">ReleaseDate: {dataa.details.releaseDate}</div>
-                        <div className="trail"><img  src={dataa.img} alt="" />
+                        <div className="trail"><img  src={`../${dataa.img}`} alt="" />
                         <div className="ccply"><Play size={20} /></div>
                         </div>
                     </div>
-                  <img className="datimg" src={dataa.img} alt="" />
+                  <img className="datimg" src={`../${dataa.img}`} alt="" />
                   </div>
         <div className="bkt" onClick={()=>navi(`/theaters/${id}`,{state:{name:dataa.movename}})}>BooKTicket</div>
     

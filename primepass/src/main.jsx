@@ -12,6 +12,7 @@ import Timeselec from '@pages/Timeselec/Timeselec'
 import Organize from '@pages/Organize/Organize'
 import SeperatTime from './pages/SeperatTime/SeperatTime'
 import Payment from './pages/Payment/Payment'
+import Error from './pages/Error'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -48,12 +49,17 @@ const router = createBrowserRouter([
   },
   {
     path:"/organize",
-    element:<Organize/>
+    element:<Organize/>,
+    errorElement:<Error/>
   },
   {
     path:"/bookdetail/:movid",
     element:<BookDetail/>
-  }
+  },
+  {
+    path: '*',
+    element: <Error/>,
+  },
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

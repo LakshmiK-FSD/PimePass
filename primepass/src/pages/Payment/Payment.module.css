@@ -121,7 +121,6 @@
     flex-direction: row;
     background-color:#283440 ;
  
-
 }
 .bgset{
     display: flex;
@@ -197,4 +196,27 @@
     width: 100%;
     position: relative;
     left: 80px;
+}
+@media (max-width:440px) {
+    .bgset{
+    display: flex;
+    flex-direction: column;
+}
+   .first{
+            border-radius: 20px;
+            gap: 19px;
+            margin-inline: 120px;
+            padding:20px 20px;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            margin-bottom: 20px;
+            background-color: #010002a7;
+   }
+   .griding{
+    padding-left: 60px;
+    left: 80px;
+    row-gap: 0;
+    column-gap: 35px;
+   }
 }

@@ -7,11 +7,21 @@ import Searcher from "../pages/Search/Searcher";
 import { useEffect, useRef, useState } from "react";
 function Header(props){
   const navigate = useNavigate();
+  const [width,setWidth] = useState(false);
   const srcmainRef = useRef();
   const[togg,setTogg]=useState(false);
   useEffect(()=>{
     (togg)?srcmainRef.current.style.display = "block":srcmainRef.current.style.display = "none";
+   
   },[togg])
+ 
+  useEffect(()=>{
+    if(window.innerWidth<480){
+    setWidth(true);}
+    else{
+      setWidth(false);
+    }
+  },[])
  
 function toggler(){
   setTogg(!togg);
@@ -20,7 +30,6 @@ function clear(){
   localStorage.clear();
   window.location.reload();
 }
-
     return (
         <>
         <div className="headersec">
@@ -30,18 +39,18 @@ function clear(){
         <MapPin/> </div><p>Cuddalore</p></div>
           <Navbar/></>}
           {props.show &&<> <span onClick={toggler} id="search"><i  className="fa-solid fa-magnifying-glass"></i>
-          <div id="bar">Search,Movies,Events,...</div></span>
+          {width?<div id="bar">Search,Movies,...</div>:<div id="bar">Search,Movies,Events,...</div>}</span>
           <div className="searcmain" ref={srcmainRef}>
           <Searcher valuer={togg}  cclick={toggler} /></div></>
           }
           <Profile />
           <div className="hamburger">
           <div className="harmof">
-          <SquareMenu size={34} color="#8e8585" strokeWidth={1} /></div>
+          {width?<SquareMenu size={25} color="#8e8585" strokeWidth={1} />:<SquareMenu size={34} color="#8e8585" strokeWidth={1} />}</div>
           <div className="hamburgmenu">
           <div className="hamprofile">
           <Profile />
-           {localStorage.getItem("userName")?<h6 style={{margin:"0 0 0 -20px",padding:"10px 0"}}>{localStorage.getItem("userName")}</h6>:<h6>Guest</h6>}
+           {localStorage.getItem("userName")?<h6 style={{margin:"0 0 0 -10px",padding:"10px 0"}}>{localStorage.getItem("userName")}</h6>:<h6>Guest</h6>}
             </div>
              <p onClick={()=>navigate('/')}>Home</p>
              <p onClick={()=>navigate('/aboutus')}>AboutUs</p>

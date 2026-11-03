@@ -1,7 +1,17 @@
 import logo from '@assets/fav2.png';
 import Media from '@pages/Media';
+import { useState,useEffect } from 'react';
 
 function Footer() {
+      const[width,setWidth]=useState(false);
+      useEffect(()=>{
+          if(window.innerWidth<420){
+              setWidth(true)
+          }
+          else{
+              setWidth(false)
+          }
+      },[])
   return (
      <div className="footermain">
     <div className="footer">
@@ -18,7 +28,7 @@ function Footer() {
         <Media/>
         </div>
 
-        <div className="fs1">
+      { !width && <div className="fs1">
           <h4>Company</h4>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -26,9 +36,9 @@ function Footer() {
             <li><a href="#support">Support</a></li>
             <li><a href="#carrers">Careers</a></li>
           </ul>
-        </div>
+        </div>}
 
-        <div className="fs2">
+       { !width && <div className="fs2">
           <h4>Passes</h4>
           <ul>
             <li><a href="#">EventPass</a></li>
@@ -36,7 +46,7 @@ function Footer() {
             <li><a href="#">Gift cards</a></li>
             <li><a href="#">Offers</a></li>
           </ul>
-        </div>
+        </div>}
 
         <div className="fs3">
           <h4>Get in Touch</h4>

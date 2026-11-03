@@ -11,10 +11,10 @@ import {useEffect, useRef, useState } from "react";
 function Seating() {
   const { movid,theatid,dateid,timeid} = useParams();
   const loginRef = useRef();
-    const [data, error] = useFetcher(`http://localhost:8080/users/time/${timeid}`);
-    const [data2, error2] = useFetcher(`http://localhost:8080/users/movies/${movid}`);
-    const [data3, error3] = useFetcher(`http://localhost:8080/users/theater/${theatid}`);
-    const[data4,error4]=useFetcher(`http://localhost:8080/users/dates/${dateid}`);
+    const [data, error] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/time/${timeid}`);
+    const [data2, error2] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/movies/${movid}`);
+    const [data3, error3] = useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/theater/${theatid}`);
+    const[data4,error4]=useFetcher(`${window.location.protocol}//${window.location.hostname}:8080/users/dates/${dateid}`);
   const [parentData, setParen] = useState([]);
   const [seatsID, setParen2] = useState([]);
   const navi = useNavigate();
